@@ -1,0 +1,6 @@
+set mouse
+#set autoindent
+#set tabstospaces
+
+include ~/.nano/syntax/ALL.nanorc
+

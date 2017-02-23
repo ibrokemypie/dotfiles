@@ -2,11 +2,15 @@
 zmodload zsh/datetime
 start=$EPOCHREALTIME
 
-#the sauce
-source ~/.profile
-source ~/.aliases
+# Detect distribution
+if [ "$(uname -s)" = "Darwin" ]; then
+    IS_MACOS=true
+else
+    IS_MACOS=false
+fi
+
+#common sauce
 source ~/.zsh/history.zsh
-source ~/.zsh/.iterm2_shell_integration.zsh
 source ~/.zsh/gpg.zsh
 source ~/.zsh/fasd.zsh
 source ~/.zsh/theme-and-appearance.zsh
@@ -17,6 +21,17 @@ source ~/.zsh/zsh-256color/zsh-256color.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes.zsh
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+if ISMACOS=true; then
+# mac sauce
+source ~/.zsh/profileOSX
+source ~/.zsh/aliasesOSX
+source ~/.zsh/iterm2_shell_integration.zsh
+else
+#non-mac sauce
+source ~/.zsh/profileUNIX
+source ~/.zsh/aliasesUNIX
+fi
 
 #end timer
 dur=$(echo "$EPOCHREALTIME - $start" | bc)

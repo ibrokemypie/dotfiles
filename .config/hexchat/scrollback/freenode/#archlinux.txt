@@ -50,3 +50,42 @@ T 1487940252 24*	p71 has quit (Read error: Connection timed out)
 T 1487940253 24*	dmlloyd has quit (Ping timeout: 268 seconds)
 T 1487940255 23*	somis (~somis@149.56.153.18523) has joined
 T 1487940265 23*	blueness (~blueness@gentoo/developer/blueness23) has joined
+T 1487940359 23*	p71 (~chatzilla@75-128-224-180.dhcp.mrqt.mi.charter.com23) has joined
+T 1487940397 18<Khorne18>	dviola, just a call to i3lock with some options, sec
+T 1487940411 23*	mclement (mclement@nat/ibm/x-sqixxeszejrbyhmf23) has joined
+T 1487940424 18<Khorne18>	https://ptpb.pw/zcp7.sh
+T 1487940458 23*	wanqcrypt (~cylon@85.106.109.13623) has joined
+T 1487940463 24*	hutch34 has quit (Ping timeout: 240 seconds)
+T 1487940473 18<dviola18>	Khorne: cool, thanks
+T 1487940503 23*	sekhmet (~pez@wilug/madlug/sekhmet23) has joined
+T 1487940537 24*	SpaceAce has quit (Quit: Leaving)
+T 1487940544 23*	timahvo1 (~rogue@197.156.133.8123) has joined
+T 1487940553 23*	Shakeel__ (~Shakeel_@cpe-65-190-131-178.nc.res.rr.com23) has joined
+T 1487940570 18<Khorne18>	dviola, if you want to see how it looks: https://ptpb.pw/Mah8.webm at the end
+T 1487940570 24*	blueness has quit (Quit: blueness)
+T 1487940581 18<dviola18>	I can't reproduce the hang with this: i3lock && sleep 2 && systemctl suspend
+T 1487940584 24*	mdmga has quit (Remote host closed the connection)
+T 1487940590 18<dviola18>	I suppose I will just use this for now
+T 1487940613 24*	Shakeel_ has quit (Ping timeout: 240 seconds)
+T 1487940623 18<dviola18>	Khorne: looks neat ;)
+T 1487940643 18<dviola18>	Khorne: is that i3-gaps or bspwm?
+T 1487940650 18<Khorne18>	bspwm
+T 1487940669 18<dviola18>	oh it says it in your terminal
+T 1487940689 24*	pfrench has quit (Remote host closed the connection)
+T 1487940715 23*	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com23) has joined
+T 1487940740 18<Khorne18>	yes ;)
+T 1487940747 24*	opthomasprime has quit (Remote host closed the connection)
+T 1487940777 24*	govg has quit (Ping timeout: 240 seconds)
+T 1487940778 23*	kuldeep (~kuldeepdh@unaffiliated/kuldeepdhaka23) has joined
+T 1487940782 24*	wanqcrypt has quit (Ping timeout: 240 seconds)
+T 1487940828 23*	opthomasprime (~thomas@p2003006A623E2D77BEEE7BFFFE785E9D.dip0.t-ipconnect.de23) has joined
+T 1487940841 -18SaslServ-	conor!~Conor@120.146.25.253 has just authenticated as you (ibrokemypie)
+T 1487940847 23*	conor (~Conor@120.146.25.25323) has joined
+T 1487940878 24*	p71 has quit (Max SendQ exceeded)
+T 1487940887 24*	conor has quit (Client Quit)
+T 1487940905 23*	blueness (~blueness@gentoo/developer/blueness23) has joined
+T 1487940928 24*	pfrench has quit (Remote host closed the connection)
+T 1487940957 23*	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com23) has joined
+T 1487940970 23*	KaseiWang (~KaseiWang@gateway/tor-sasl/kaseiwang23) has joined
+T 1487940970 FiSHLiM plugin unloaded
+T 1487940970 Python interface unloaded

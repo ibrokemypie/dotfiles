@@ -48,3 +48,14 @@ T 1487937870 24*	Pcatinean_ has quit (Quit: Leaving)
 T 1487937887 23*	PCatinean (~PCatinean@86.127.154.9323) has joined
 T 1487938262 23*	jhadvig (~jhadvig@78-141-120-86.dynamic.orange.sk23) has joined
 T 1487938360 23*	alexshi2 (~alexs@104.237.91.17823) has joined
+T 1487940381 23*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com23) has joined
+T 1487940385 24*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com24) has left
+T 1487940434 23*	dn5 (~dn5@212.39.106.9823) has joined
+T 1487940473 23*	abcu24 (~abcu24@58.60.101.8723) has joined
+T 1487940510 23*	supersixone (~super6one@unaffiliated/supersixone23) has joined
+T 1487940560 24*	magrawal has quit (Quit: Leaving)
+T 1487940606 24*	jscotka has quit (Quit: Leaving)
+T 1487940808 23*	guest049 (afc36616@gateway/web/cgi-irc/kiwiirc.com/ip.175.195.102.2223) has joined
+T 1487940819 24*	guest049 (afc36616@gateway/web/cgi-irc/kiwiirc.com/ip.175.195.102.2224) has left
+T 1487940945 23*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com23) has joined
+T 1487940949 24*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com24) has left

@@ -1,5 +1,5 @@
 [Added Associations]
-text/plain=wine-extension-txt.desktop;
+text/plain=sublime_text_3.desktop;wine-extension-txt.desktop;
 application/octet-stream=sublime_text_3.desktop;
 x-scheme-handler/http=userapp-Waterfox-FAGSVY.desktop;
 x-scheme-handler/https=userapp-Waterfox-FAGSVY.desktop;
@@ -13,6 +13,8 @@ application/xhtml+xml=userapp-Waterfox-FAGSVY.desktop;
 application/x-extension-xhtml=userapp-Waterfox-FAGSVY.desktop;
 application/x-extension-xht=userapp-Waterfox-FAGSVY.desktop;
 text/x-install=sublime_text_3.desktop;
+text/x-matlab=sublime_text_3.desktop;
+image/png=vlc.desktop;wine-extension-png.desktop;pinta.desktop;
 
 [Default Applications]
 application/octet-stream=sublime_text_3.desktop
@@ -27,3 +29,5 @@ application/x-extension-shtml=userapp-Waterfox-FAGSVY.desktop
 application/xhtml+xml=userapp-Waterfox-FAGSVY.desktop
 application/x-extension-xhtml=userapp-Waterfox-FAGSVY.desktop
 application/x-extension-xht=userapp-Waterfox-FAGSVY.desktop
+text/plain=sublime_text_3.desktop
+image/png=pinta.desktop

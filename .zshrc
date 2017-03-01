@@ -10,6 +10,7 @@ else
 fi
 
 #common sauce
+source ~/.zsh/aliases
 source ~/.zsh/history.zsh
 source ~/.zsh/gpg.zsh
 source ~/.zsh/fasd.zsh
@@ -25,12 +26,10 @@ source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 if [ $IS_MACOS = true ]; then
 # mac sauce
 	source ~/.zsh/profileOSX
-	source ~/.zsh/aliasesOSX
 	source ~/.zsh/iterm2_shell_integration.zsh
 else
 #non-mac sauce
 	source ~/.zsh/profileUNIX
-	source ~/.zsh/aliasesUNIX
 fi
 
 #end timer

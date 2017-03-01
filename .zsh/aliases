@@ -1,4 +1,15 @@
+#OSX
 alias cask="brew cask"
 alias whois='/usr/local/bin/whois'
 alias proxy="autossh -M 20000 -f -N -p22 -D 9999 root@searx.space"
 alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1 | tail -n 1)) && eval $TF_CMD ; test -n "$TF_CMD" && print -s $TF_CMD'
+
+#LINUX
+function aur() {
+su hey -c "pacaur $*";
+}
+alias ll="ls -aF"
+alias aurd="aur -Syua --devel --noedit --noconfirm"
+function paste() {
+$* | curl -F c=@- https://ptpb.pw 
+}

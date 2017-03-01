@@ -1,3 +1,8 @@
 function aur() {
 su hey -c "pacaur $*";
 }
+alias ll="ls -aF"
+alias aurd="aur -Syua --devel --noedit --noconfirm"
+function paste() {
+$* | curl -F c=@- https://ptpb.pw 
+}

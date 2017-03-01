@@ -1,0 +1,155 @@
+{
+    "about_add_new_rule": {
+        "message": "Add New Rule"
+    }, 
+    "about_and": {
+        "message": ", and"
+    }, 
+    "about_created_by": {
+        "message": "Kreita de"
+    }, 
+    "about_donate_eff": {
+        "message": "Donaci al EFF"
+    }, 
+    "about_donate_tor": {
+        "message": "Donaci al Tor"
+    }, 
+    "about_ext_description": {
+        "message": "\u0108ifrigu la reton! A\u016dtomate uzu HTTPS\u2010sekurecon \u0109e multaj retejoj."
+    }, 
+    "about_ext_name": {
+        "message": "HTTPS-\u0108ie"
+    }, 
+    "about_librarians": {
+        "message": "Libraristoj pri regularo"
+    }, 
+    "about_many_contributors": {
+        "message": "Many many contributors, including"
+    }, 
+    "about_noscript": {
+        "message": "Also, portions of HTTPS Everywhere are based on code from NoScript, by Giorgio Maone and others.  We are grateful for their excellent work!"
+    }, 
+    "about_or": {
+        "message": "a\u016d"
+    }, 
+    "about_thanks": {
+        "message": "Dankoj al"
+    }, 
+    "about_title": {
+        "message": "Pri HTTPS-\u0108ie"
+    }, 
+    "about_tor_lang_code": {
+        "message": "eo"
+    }, 
+    "about_version": {
+        "message": "Versio"
+    }, 
+    "chrome_add_new_rule": {
+        "message": "Add a new rule for this site"
+    }, 
+    "chrome_add_rule": {
+        "message": "Add a rule for this site"
+    }, 
+    "chrome_always_https_for_host": {
+        "message": "Always use https for this host"
+    }, 
+    "chrome_experimental_rules": {
+        "message": "Experimental rules"
+    }, 
+    "chrome_experimental_rules_description": {
+        "message": "May cause warnings or breakage. Disabled by default."
+    }, 
+    "chrome_hide_advanced": {
+        "message": "Hide advanced"
+    }, 
+    "chrome_host": {
+        "message": "Host:"
+    }, 
+    "chrome_redirect_to": {
+        "message": "Redirect to"
+    }, 
+    "chrome_regex": {
+        "message": "Matching regex"
+    }, 
+    "chrome_rule_name": {
+        "message": "Rule name"
+    }, 
+    "chrome_show_advanced": {
+        "message": "Show advanced"
+    }, 
+    "chrome_stable_rules": {
+        "message": "Stable rules"
+    }, 
+    "chrome_stable_rules_description": {
+        "message": "Force encrypted connections to these websites:"
+    }, 
+    "chrome_status_cancel_button": {
+        "message": "Rezigni"
+    }, 
+    "menu_about": {
+        "message": "Pri HTTPS-\u0108ie"
+    }, 
+    "menu_blockUnencryptedRequests": {
+        "message": "Block all unencrypted requests"
+    }, 
+    "menu_donate_eff_imperative": {
+        "message": "Donate to EFF"
+    }, 
+    "menu_globalDisable": {
+        "message": "Mal\u015dalti HTTPS-\u0108ie"
+    }, 
+    "menu_globalEnable": {
+        "message": "En\u015dalti HTTPS-\u0108ie"
+    }, 
+    "menu_observatory": {
+        "message": "Agordoj de SSL-Observatorio"
+    }, 
+    "menu_showCounter": {
+        "message": "vidi nombrilo"
+    }, 
+    "menu_viewAllRules": {
+        "message": "View All Rules"
+    }, 
+    "prefs_disable_all": {
+        "message": "Mal\u015dalti \u0109iujn"
+    }, 
+    "prefs_enable_all": {
+        "message": "En\u015dalti \u0109iujn"
+    }, 
+    "prefs_enabled": {
+        "message": "En\u015daltita"
+    }, 
+    "prefs_here_link": {
+        "message": "\u0109i tie"
+    }, 
+    "prefs_list_caption": {
+        "message": "Kiuj reguloj pri HTTPS-alidirektado apliki\u011di?"
+    }, 
+    "prefs_notes": {
+        "message": "Notoj"
+    }, 
+    "prefs_reset_default": {
+        "message": "Re\u015dargi al aprioroj"
+    }, 
+    "prefs_reset_defaults": {
+        "message": "Re\u015dargi al aprioroj"
+    }, 
+    "prefs_ruleset_howto": {
+        "message": "Vi povas lerni kiel verki viajn proprajn regularojn (por aldoni subtenon por aliaj retejoj)"
+    }, 
+    "prefs_search": {
+        "message": "Ser\u0109i"
+    }, 
+    "prefs_site": {
+        "message": "Retejo"
+    }, 
+    "prefs_title": {
+        "message": "Agordoj de HTTPS-\u0108ie"
+    }, 
+    "prefs_toggle": {
+        "message": "\u015calti"
+    }, 
+    "prefs_view_xml_source": {
+        "message": "Vidi XML-fonton"
+    }
+}

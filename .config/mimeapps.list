@@ -1,20 +1,15 @@
 [Added Associations]
 text/plain=sublime_text_3.desktop;wine-extension-txt.desktop;
 application/octet-stream=sublime_text_3.desktop;
-x-scheme-handler/http=userapp-Waterfox-FAGSVY.desktop;
-x-scheme-handler/https=userapp-Waterfox-FAGSVY.desktop;
-x-scheme-handler/ftp=userapp-Waterfox-FAGSVY.desktop;
-x-scheme-handler/chrome=userapp-Waterfox-FAGSVY.desktop;
-text/html=userapp-Waterfox-FAGSVY.desktop;
-application/x-extension-htm=userapp-Waterfox-FAGSVY.desktop;
-application/x-extension-html=userapp-Waterfox-FAGSVY.desktop;
-application/x-extension-shtml=userapp-Waterfox-FAGSVY.desktop;
-application/xhtml+xml=userapp-Waterfox-FAGSVY.desktop;
-application/x-extension-xhtml=userapp-Waterfox-FAGSVY.desktop;
-application/x-extension-xht=userapp-Waterfox-FAGSVY.desktop;
+x-scheme-handler/http=exo-web-browser.desktop;
+x-scheme-handler/https=exo-web-browser.desktop;
 text/x-install=sublime_text_3.desktop;
 text/x-matlab=sublime_text_3.desktop;
 image/png=vlc.desktop;wine-extension-png.desktop;pinta.desktop;
+application/xml=sublime_text_3.desktop;wine-extension-xml.desktop;
+application/x-shellscript=sublime_text_3.desktop;
+application/x-desktop=sublime_text_3.desktop;
+application/x-yaml=sublime_text_3.desktop;
 
 [Default Applications]
 application/octet-stream=sublime_text_3.desktop

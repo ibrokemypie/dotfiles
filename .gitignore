@@ -2,3 +2,7 @@
 */.DS_STORE
 .weechat/logs/
 .weechat/logs/*
+.config/StardewValley/
+.config/StardewValley/*
+.config/vivaldi/
+.config/vivaldi/*

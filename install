@@ -1,54 +1,77 @@
 #!/bin/bash
 ############################
 # install
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# This script creates symlinks from the home directory to any desired dotfiles in $HOME/dotfiles
 ############################
+
+
+git submodule init 
+git submodule update
+
+if [[ $(printf "${PWD##*/}") != "dotfiles" ]]; then
+	printf "CD to dotfiles dir or check its name first"
+	exit
+fi
+
 
 ############################
 # check if using zsh
 ############################
-if $(echo $0) != "-zsh"; then
-        which zsh &>/dev/null
-        [ $? -eq 0 ] || echo "Install zsh before this script continues" && exit 
-    echo "Please set zsh as your default shell to zsh with chsh /bin/zsh before running this script" && exit
-fi
+#if $(printf $0) != "-zsh"; then
+#        which zsh &>/dev/null
+#        [ $? -eq 0 ] || printf "Install zsh before this script continues" && exit 
+#    printf "Please set zsh as your default shell to zsh with chsh /bin/zsh before running this script" && exit
+#fi
 
 ############################
 # osx homebrew init
 ############################
-if [ "$(uname -s)" = "Darwin" ]; then
-    if [ "$(uwhich brew)" != "/usr/local/bin/brew" ]; then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    fi
-    brew update
-    brew install wget
-    brew upgrade
-    brew install coreutils --default-names
-fi
+# if [ "$(uname -s)" = "Darwin" ]; then
+#     if [ "$(uwhich brew)" != "/usr/local/bin/brew" ]; then
+#         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#     fi
+#     brew update
+#     brew install wget
+#     brew upgrade
+#     brew install coreutils --default-names
+# fi
 
-########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
-ignored=".git .gitignore .gitmodules install"			#ignored files in dotfiles dir
-files=$(ls -A)    # list of files/folders to symlink in homedir
+#dir="$HOME/dotfiles"                    # dotfiles directory
+olddir="$HOME/dotfiles_old"             # old dotfiles backup directory
+
+GLOBIGNORE=".git:.gitignore:.gitmodules:install"; files=(.*)
+
 
 ##########
 
 # create dotfiles_old in homedir
-echo "Creating $olddir for backup of any existing dotfiles in ~"
-mkdir -p $olddir
-echo "...done"
+if [ ! -d "$olddir" ]
+then
+    printf "Creating $olddir for backup of any existing dotfiles in $HOME"
+	mkdir -p $olddir
+	printf "...done"
+fi
 
-# change to the dotfiles directory
-echo "Changing to the $dir directory"
-cd $dir
-echo "...done"
+
+
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
-for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+for f in ${files[*]}; do
+    if [ -f "$HOME/$f" ] || [ -d "$HOME/$f" ]; then
+    	echo "file exists"
+    	if [ ! -L "$HOME/$f" ]; then
+    		echo "not a symlink"
+    		printf "\n Moving $HOME/$f to $olddir/$f\n"
+ 			mv --backup "$HOME/$f" "$HOME/dotfiles_old/$f"
+ 			printf "\n Linking $HOME/$f to $(pwd)/$f\n"
+    		ln -s "$(pwd)/$f" "$HOME/$f"
+ 		else
+ 			echo  "is a symlink"
+ 		fi
+    else
+    	echo "dopesnt exsit"
+    	printf "\n Linking $HOME/$f to $(pwd)/$f\n"
+    	ln -s "$(pwd)/$f" "$HOME/$f"
+    fi
 done

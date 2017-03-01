@@ -1,3 +1,0 @@
-function aur() {
-su hey -c "pacaur $*";
-}

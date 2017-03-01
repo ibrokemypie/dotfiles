@@ -1,0 +1,61 @@
+T 1487930261 23*	James-T-Kirk (~James-T-K@esm222.neoplus.adsl.tpnet.pl23) has joined
+T 1487930311 24*	liuxg has quit (Ping timeout: 260 seconds)
+T 1487930312 23*	sibi (uid10089@gateway/web/irccloud.com/x-zopdowhkgoyzpvhm23) has joined
+T 1487930573 23*	jhadvig (~jhadvig@85-237-234-6.dynamic.orange.sk23) has joined
+T 1487930652 24*	James-T-Kirk has quit (Ping timeout: 260 seconds)
+T 1487930711 23*	mkumatag (~mkumatag@125.16.236.13023) has joined
+T 1487930931 23*	Farooq (b24ecd73@gateway/web/freenode/ip.178.78.205.11523) has joined
+T 1487930966 24*	Farooq has quit (Client Quit)
+T 1487930994 23*	Faro (b24ecd73@gateway/web/freenode/ip.178.78.205.11523) has joined
+T 1487931016 24*	Faro has quit (Client Quit)
+T 1487931100 24*	S-AKY has quit (Ping timeout: 260 seconds)
+T 1487931140 23*	Pcatinean_ (~PCatinean@86.127.154.9323) has joined
+T 1487931373 24*	PCatinean has quit (Ping timeout: 268 seconds)
+T 1487931977 24*	rahul_bajaj has quit (Quit: Leaving)
+T 1487932178 23*	S-AKY (~Thunderbi@ai126173058062.46.access-internet.ne.jp23) has joined
+T 1487932194 23*	stensbaktlf (~1557@217.68.116.15423) has joined
+T 1487932264 23*	LittleJohn (55eb1234@gateway/web/freenode/ip.85.235.18.5223) has joined
+T 1487932314 24*	LittleJohn (55eb1234@gateway/web/freenode/ip.85.235.18.5224) has left
+T 1487932651 24*	28postre is now known as 18postrecito
+T 1487932751 23*	Tuxedo[Qyou] (~Tux@unaffiliated/tux-qyou/x-482204823) has joined
+T 1487932892 24*	jhadvig has quit (Ping timeout: 260 seconds)
+T 1487932924 23*	jhadvig (~jhadvig@85-237-234-6.dynamic.orange.sk23) has joined
+T 1487932984 23*	Daniel (~Lulalaby@x59cc9b9f.dyn.telefonica.de23) has joined
+T 1487933008 24*	28Daniel is now known as 18Guest33172
+T 1487933032 24*	Guest33172 has quit (Client Quit)
+T 1487933037 24*	arpu has quit (Ping timeout: 240 seconds)
+T 1487933040 23*	Lulalaby (~Lulalaby@x59cc9b9f.dyn.telefonica.de23) has joined
+T 1487933095 24*	Lulalaby has quit (Client Quit)
+T 1487933115 23*	Lulalaby (~Lulalaby@x59cc9b9f.dyn.telefonica.de23) has joined
+T 1487933166 24*	Lulalaby has quit (Client Quit)
+T 1487933535 23*	Ikoru (~Ikoru@host86-137-56-85.range86-137.btcentralplus.com23) has joined
+T 1487933811 23*	arpu (~arpu@178.165.131.126.wireless.dyn.drei.com23) has joined
+T 1487934288 24*	jimbit (~jimbit@c-71-224-11-214.hsd1.pa.comcast.net24) has left
+T 1487934667 23*	brexit2 (~1557@217.68.116.15423) has joined
+T 1487934670 24*	stensbaktlf has quit (Read error: Connection reset by peer)
+T 1487934740 23*	stensbaktlf (~1557@217.68.116.15423) has joined
+T 1487934743 24*	brexit2 has quit (Read error: Connection reset by peer)
+T 1487934987 24*	stensbaktlf has quit (Ping timeout: 240 seconds)
+T 1487935827 23*	Humana (5b426410@gateway/web/freenode/ip.91.66.100.1623) has joined
+T 1487936160 24*	Humana (5b426410@gateway/web/freenode/ip.91.66.100.1624) has left
+T 1487936812 24*	jhadvig has quit (Ping timeout: 260 seconds)
+T 1487936815 24*	S-AKY has quit (Read error: Connection reset by peer)
+T 1487936959 24*	FictorDeAlJabr has quit (Quit: Connection closed for inactivity)
+T 1487936982 23*	maat (~maat@unaffiliated/maat23) has joined
+T 1487937237 24*	mohankumar has quit (Ping timeout: 240 seconds)
+T 1487937428 24*	mkumatag has quit (Ping timeout: 260 seconds)
+T 1487937870 24*	Pcatinean_ has quit (Quit: Leaving)
+T 1487937887 23*	PCatinean (~PCatinean@86.127.154.9323) has joined
+T 1487938262 23*	jhadvig (~jhadvig@78-141-120-86.dynamic.orange.sk23) has joined
+T 1487938360 23*	alexshi2 (~alexs@104.237.91.17823) has joined
+T 1487940381 23*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com23) has joined
+T 1487940385 24*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com24) has left
+T 1487940434 23*	dn5 (~dn5@212.39.106.9823) has joined
+T 1487940473 23*	abcu24 (~abcu24@58.60.101.8723) has joined
+T 1487940510 23*	supersixone (~super6one@unaffiliated/supersixone23) has joined
+T 1487940560 24*	magrawal has quit (Quit: Leaving)
+T 1487940606 24*	jscotka has quit (Quit: Leaving)
+T 1487940808 23*	guest049 (afc36616@gateway/web/cgi-irc/kiwiirc.com/ip.175.195.102.2223) has joined
+T 1487940819 24*	guest049 (afc36616@gateway/web/cgi-irc/kiwiirc.com/ip.175.195.102.2224) has left
+T 1487940945 23*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com23) has joined
+T 1487940949 24*	Guest91228 (~Cory@24-240-67-80.dhcp.mdsn.wi.charter.com24) has left

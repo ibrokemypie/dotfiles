@@ -1,0 +1,91 @@
+T 1487937740 24*	davorb has quit (Read error: Connection reset by peer)
+T 1487937774 24*	mongy has quit (Ping timeout: 268 seconds)
+T 1487937779 23*	Shinryuu (~gdsptuwtd@mobile-access-bcee1e-187.dhcp.inet.fi23) has joined
+T 1487937799 23*	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net23) has joined
+T 1487937810 20<pwnart1st>30	anyone able to help with th globbing?
+T 1487937821 20<pwnart1st>30	it actually works in bash just not in the script
+T 1487937845 19<nnscr>	pwnart1st, your most likely missing double quotes
+T 1487937888 20<pwnart1st>30	nnscr, where?
+T 1487937911 24*	Nizumzen has quit (Ping timeout: 255 seconds)
+T 1487937941 19<nnscr>	pwnart1st, around the expression that uses globbing, don't know your code
+T 1487937944 23*	patarr (~patarr@unaffiliated/patarr23) has joined
+T 1487937952 20<pwnart1st>30	GLOBIGNORE=".git:.gitignore:.gitmodules:install"; files=(.*)
+T 1487937967 24*	qt-x has quit (Quit: qt-x)
+T 1487937992 24*	mohabaks has quit (Ping timeout: 255 seconds)
+T 1487938057 23*	c0nch1t0 (~c0nch1t0@121.96.9.21023) has joined
+T 1487938077 23*	solenodic (~solenodic@unaffiliated/solenodic23) has joined
+T 1487938078 19<nnscr>	pwnart1st, that works for me
+T 1487938081 23*	modlin (~modlin@93.123.41.16723) has joined
+T 1487938121 20<pwnart1st>30	it gets all files?
+T 1487938134 19<nnscr>	pwnart1st, all dotfiles, yes
+T 1487938144 20<pwnart1st>30	for me it seems to only get the first
+T 1487938145 18<nnscr18>	in an array as excpected
+T 1487938150 20<pwnart1st>30	and that is in a bash script?
+T 1487938199 19<nnscr>	pwnart1st, i just typed it into my zsh, maybe try something like echo ${files[*]}
+T 1487938205 23*	sdothum (~znc@dsl-173-206-148-241.tor.primus.ca23) has joined
+T 1487938206 23*	udp_666 (~udp_666@176.120.252.2323) has joined
+T 1487938222 24*	TheSilentLink has quit (Quit: ZNC 1.6.4 - http://znc.in)
+T 1487938228 23*	kuldeep_ (~kuldeepdh@unaffiliated/kuldeepdhaka23) has joined
+T 1487938232 19<grawity>	zsh? wasn't pwnart1st talking abotu a bash script?
+T 1487938243 24*	patarr has quit (Ping timeout: 240 seconds)
+T 1487938290 18<nnscr18>	grawity, just tested in bash, works there as well if you read the array as one should
+T 1487938307 23*	cgundersson (~christian@87.251.200.8223) has joined
+T 1487938321 24*	pfrench has quit (Remote host closed the connection)
+T 1487938331 20<pwnart1st>30	ah
+T 1487938332 20<pwnart1st>30	yes
+T 1487938333 20<pwnart1st>30	thats it
+T 1487938335 20<pwnart1st>30	thankyou
+T 1487938338 20<pwnart1st>30	works now
+T 1487938342 24*	Weaselweb has quit (Ping timeout: 240 seconds)
+T 1487938342 18<nnscr18>	your welcome
+T 1487938342 18<Penguin18>	nnscr: you're
+T 1487938344 23*	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com23) has joined
+T 1487938349 23*	brogon_ (~brogon@unaffiliated/brogon23) has joined
+T 1487938362 24*	kuldeep has quit (Ping timeout: 240 seconds)
+T 1487938371 18<nnscr18>	oh great, now we even have grammar bots? :D
+T 1487938377 24*	watered has quit (Ping timeout: 240 seconds)
+T 1487940206 24*	lspw has quit (Remote host closed the connection)
+T 1487940208 23*	hutch34 (~hutch34@h125.241.138.40.static.ip.windstream.net23) has joined
+T 1487940252 24*	p71 has quit (Read error: Connection timed out)
+T 1487940253 24*	dmlloyd has quit (Ping timeout: 268 seconds)
+T 1487940255 23*	somis (~somis@149.56.153.18523) has joined
+T 1487940265 23*	blueness (~blueness@gentoo/developer/blueness23) has joined
+T 1487940359 23*	p71 (~chatzilla@75-128-224-180.dhcp.mrqt.mi.charter.com23) has joined
+T 1487940397 18<Khorne18>	dviola, just a call to i3lock with some options, sec
+T 1487940411 23*	mclement (mclement@nat/ibm/x-sqixxeszejrbyhmf23) has joined
+T 1487940424 18<Khorne18>	https://ptpb.pw/zcp7.sh
+T 1487940458 23*	wanqcrypt (~cylon@85.106.109.13623) has joined
+T 1487940463 24*	hutch34 has quit (Ping timeout: 240 seconds)
+T 1487940473 18<dviola18>	Khorne: cool, thanks
+T 1487940503 23*	sekhmet (~pez@wilug/madlug/sekhmet23) has joined
+T 1487940537 24*	SpaceAce has quit (Quit: Leaving)
+T 1487940544 23*	timahvo1 (~rogue@197.156.133.8123) has joined
+T 1487940553 23*	Shakeel__ (~Shakeel_@cpe-65-190-131-178.nc.res.rr.com23) has joined
+T 1487940570 18<Khorne18>	dviola, if you want to see how it looks: https://ptpb.pw/Mah8.webm at the end
+T 1487940570 24*	blueness has quit (Quit: blueness)
+T 1487940581 18<dviola18>	I can't reproduce the hang with this: i3lock && sleep 2 && systemctl suspend
+T 1487940584 24*	mdmga has quit (Remote host closed the connection)
+T 1487940590 18<dviola18>	I suppose I will just use this for now
+T 1487940613 24*	Shakeel_ has quit (Ping timeout: 240 seconds)
+T 1487940623 18<dviola18>	Khorne: looks neat ;)
+T 1487940643 18<dviola18>	Khorne: is that i3-gaps or bspwm?
+T 1487940650 18<Khorne18>	bspwm
+T 1487940669 18<dviola18>	oh it says it in your terminal
+T 1487940689 24*	pfrench has quit (Remote host closed the connection)
+T 1487940715 23*	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com23) has joined
+T 1487940740 18<Khorne18>	yes ;)
+T 1487940747 24*	opthomasprime has quit (Remote host closed the connection)
+T 1487940777 24*	govg has quit (Ping timeout: 240 seconds)
+T 1487940778 23*	kuldeep (~kuldeepdh@unaffiliated/kuldeepdhaka23) has joined
+T 1487940782 24*	wanqcrypt has quit (Ping timeout: 240 seconds)
+T 1487940828 23*	opthomasprime (~thomas@p2003006A623E2D77BEEE7BFFFE785E9D.dip0.t-ipconnect.de23) has joined
+T 1487940841 -18SaslServ-	conor!~Conor@120.146.25.253 has just authenticated as you (ibrokemypie)
+T 1487940847 23*	conor (~Conor@120.146.25.25323) has joined
+T 1487940878 24*	p71 has quit (Max SendQ exceeded)
+T 1487940887 24*	conor has quit (Client Quit)
+T 1487940905 23*	blueness (~blueness@gentoo/developer/blueness23) has joined
+T 1487940928 24*	pfrench has quit (Remote host closed the connection)
+T 1487940957 23*	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com23) has joined
+T 1487940970 23*	KaseiWang (~KaseiWang@gateway/tor-sasl/kaseiwang23) has joined
+T 1487940970 FiSHLiM plugin unloaded
+T 1487940970 Python interface unloaded

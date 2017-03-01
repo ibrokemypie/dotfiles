@@ -1,0 +1,549 @@
+**** BEGIN LOGGING AT Fri Feb 24 20:56:57 2017
+
+Feb 24 20:56:57 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 20:57:58 <heftig>	pwnart1st: note that other dotfiles like .foobar will then be in the $files array; if you don't want that, use GLOBIGNORE=".*:install"
+Feb 24 20:58:45 *	batmanos- (uid155229@gateway/web/irccloud.com/x-anvcbaqjfdcobonc) has joined
+Feb 24 20:59:29 heftig heftig[m] Heikai heinrich5991 hejki Hello71 HeN Henry_Jia HerbY_NL2 hexa- hexagon51n hexagoxel hexchain_ 
+Feb 24 20:59:40 <pwnart1st>	heftig, the poiint is to have dotfiles, thats all i need
+Feb 24 20:59:43 <pwnart1st>	thanks!
+Feb 24 20:59:44 <pwnart1st>	however
+Feb 24 20:59:53 <pwnart1st>	dot files arent actually getting globbed...
+Feb 24 21:00:03 *	torak (~torak@85.106.42.236) has joined
+Feb 24 21:00:10 *	sonat12akma has quit (Remote host closed the connection)
+Feb 24 21:00:19 <pwnart1st>	oh nvm
+Feb 24 21:00:20 <pwnart1st>	got it
+Feb 24 21:00:22 <pwnart1st>	thanks!
+Feb 24 21:00:41 *	panikovsky (~panikovsk@87.117.37.9) has joined
+Feb 24 21:01:33 *	Oins (~Oins@unaffiliated/oins) has left
+Feb 24 21:01:45 *	parchd has quit (Quit: gone)
+Feb 24 21:01:50 <pwnart1st>	oh fuck
+Feb 24 21:02:15 <pwnart1st>	is there any way to save openbox and xorg configs from what is running if you no longer have the config files?
+Feb 24 21:02:16 *	davorb has quit (Read error: Connection reset by peer)
+Feb 24 21:02:22 *	Keniyal (~Keniyal@unaffiliated/keniyal) has joined
+Feb 24 21:02:40 *	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net) has joined
+Feb 24 21:02:43 *	solenodic has quit (Ping timeout: 240 seconds)
+Feb 24 21:02:45 <pwnart1st>	i just accidentally deleted .config and ye
+Feb 24 21:02:55 *	Celmor (~Celmor@unaffiliated/celmor) has left
+Feb 24 21:02:59 <pwnart1st>	any help would be immensly appreciated
+Feb 24 21:03:11 *	c0nch1t0 has quit (Ping timeout: 260 seconds)
+Feb 24 21:04:21 *	enzogorlomi (~miles@unaffiliated/enzogorlomi) has joined
+Feb 24 21:04:24 <awal>	you deleted the ~/.config directory?
+Feb 24 21:04:28 <pwnart1st>	yep
+Feb 24 21:04:28 <JJJollyjim>	pwnart1st: what's ye?
+Feb 24 21:04:30 *	nuck has quit (Ping timeout: 268 seconds)
+Feb 24 21:05:03 <awal>	so just restore from backup? you have backups, right?
+Feb 24 21:05:07 *	SamSagaZ_ has quit (Ping timeout: 268 seconds)
+Feb 24 21:05:17 <JJJollyjim>	-.-
+Feb 24 21:05:29 <pwnart1st>	...
+Feb 24 21:05:45 <awal>	where is your god now
+Feb 24 21:05:48 *	semyon (~semyon@unaffiliated/semyon) has joined
+Feb 24 21:05:56 <awal>	you don't have backups, shame!
+Feb 24 21:06:08 <pwnart1st>	well was actually setting up a dotfiles repo on github
+Feb 24 21:06:10 <pwnart1st>	thats how i lost it
+Feb 24 21:06:17 *	Shtene (~Shtene@s55942125.adsl.online.nl) has joined
+Feb 24 21:06:25 <alwyn>	:D
+Feb 24 21:06:27 *	egrain has quit (Remote host closed the connection)
+Feb 24 21:07:41 <speak>	Oops
+Feb 24 21:07:47 <JJJollyjim>	pwnart1st: I suggest you dump the memory of those processes now, then even if you close them there's a chance of getting it back: http://serverfault.com/a/408929/68815
+Feb 24 21:07:49 <phrik>	Title: Dump a linux process's memory to file - Server Fault (at serverfault.com)
+Feb 24 21:08:05 <awal>	pwnart1st: I don't have much experience recovering deleted files, but I was in a similar situation for my i3 config way back and my solution was to recover it from vim's cache dir. obviously this might not apply to you but in case it does and you missed it...
+Feb 24 21:09:42 *	semyon has quit (Client Quit)
+Feb 24 21:10:18 *	mdmga (~mdmga@mail2.hugofs.com) has joined
+Feb 24 21:11:02 <pwnart1st>	JJJollyjim, alright, now got hundreds of .dump files...
+Feb 24 21:11:28 <JJJollyjim>	pwnart1st: grep -r for something that you know is in one of the configs I guess
+Feb 24 21:11:41 *	beest (~beest@unaffiliated/gnubeest) has joined
+Feb 24 21:12:22 *	ferr1 (~ferr@81.7.68.230) has joined
+Feb 24 21:13:17 *	jtc123 (~Thunderbi@193.165.160.14) has joined
+Feb 24 21:13:27 <JJJollyjim>	Use -a to match binary files as well
+Feb 24 21:14:05 *	calincru has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+Feb 24 21:14:10 *	KindTwo (kindone@freenode/father-christmas/kindone) has joined
+Feb 24 21:14:13 *	petervaro has quit (Ping timeout: 240 seconds)
+Feb 24 21:15:15 *	solenodic (~solenodic@unaffiliated/solenodic) has joined
+Feb 24 21:16:04 *	edvorg has quit (Remote host closed the connection)
+Feb 24 21:17:10 *	KindOne has quit (Ping timeout: 264 seconds)
+Feb 24 21:17:13 *	ygeLN has quit (Ping timeout: 240 seconds)
+Feb 24 21:17:27 *	pfrench has quit (Remote host closed the connection)
+Feb 24 21:17:53 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 21:18:23 *	KindTwo is now known as KindOne
+Feb 24 21:18:44 <avrelaun>	Is there some environment variable to tell pacman where to look for pacman.conf ?
+Feb 24 21:18:55 *	edvorg (~edvorg@1.52.67.102) has joined
+Feb 24 21:19:05 *	ripdog has quit ()
+Feb 24 21:19:18 *	lithiumpt has quit (Ping timeout: 268 seconds)
+Feb 24 21:19:19 *	ripdog (sid166153@gateway/web/irccloud.com/x-zrswsmybjvyttfet) has joined
+Feb 24 21:19:26 <JJJollyjim>	avrelaun: is --config= suitable?
+Feb 24 21:19:27 <krarkrrrc>	what if you had an os with a mode where it keeps a small profile on various frequently used programs, then alerts you, or simply writes to a log, when it detects something has changed
+Feb 24 21:19:46 *	_cyrus__ (~cyrus@210.246.42.23) has left
+Feb 24 21:19:47 <krarkrrrc>	what if you had an os with a mode where it keeps a small profile on various frequently used programs, then alerts you, or simply writes to a log, when it detects something has changed
+Feb 24 21:19:51 <krarkrrrc>	oops
+Feb 24 21:19:56 <A124>	What is better to use: zram or zswap?
+Feb 24 21:20:00 <krarkrrrc>	wasnt scrolled to bottom
+Feb 24 21:20:04 *	voltbit has quit (Ping timeout: 260 seconds)
+Feb 24 21:20:14 *	dhil (~dhil@dhcp-90-078.inf.ed.ac.uk) has joined
+Feb 24 21:20:17 *	semyon (~semyon@unaffiliated/semyon) has joined
+Feb 24 21:20:29 *	murkx (~mur@unaffiliated/murkx) has joined
+Feb 24 21:20:33 <krarkrrrc>	how many needless bug searches would that remedy?
+Feb 24 21:20:53 <avrelaun>	I'm using the pacaur wrapper but I can't pass --config to pacman
+Feb 24 21:21:05 <pwnart1st>	hm
+Feb 24 21:21:23 <avrelaun>	maybe I shall add a local bin called pacman which adds it automatically
+Feb 24 21:21:45 *	pfrench has quit (Remote host closed the connection)
+Feb 24 21:22:12 *	beest has quit (Quit: WeeChat 1.7)
+Feb 24 21:22:12 <JJJollyjim>	Yeah maybe
+Feb 24 21:22:13 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 21:22:23 <avrelaun>	though that's ugly
+Feb 24 21:22:40 *	peaveyman has quit (Quit: WeeChat 1.7)
+Feb 24 21:22:44 <avrelaun>	is there some  PACMAN_CONF_LOCATION 
+Feb 24 21:23:15 *	boyne (~cirrus@host-92-22-37-254.as13285.net) has joined
+Feb 24 21:23:30 *	beest (~beest@unaffiliated/gnubeest) has joined
+Feb 24 21:23:36 *	mohsen_ (~Mohsen@130.255.210.115) has joined
+Feb 24 21:24:11 *	edh has quit (Quit: WeeChat 1.7)
+Feb 24 21:24:18 *	kuldeep__ (~kuldeepdh@unaffiliated/kuldeepdhaka) has joined
+Feb 24 21:24:26 <JJJollyjim>	Ugh I don't have a user dbus right now for some reason
+Feb 24 21:24:28 <alwyn>	/etc/pacman.conf?
+Feb 24 21:24:46 *	kotto has quit (Ping timeout: 260 seconds)
+Feb 24 21:24:53 <enzogorlomi>	does this help https://wiki.archlinux.org/index.php/pacman#Maintain_several_configuration_files
+Feb 24 21:24:54 <avrelaun>	alwyn: I'd like to change this location
+Feb 24 21:24:54 <phrik>	Title: pacman - ArchWiki (at wiki.archlinux.org)
+Feb 24 21:25:03 *	edh (~edh1@2001:4ca0:0:f226:76df:bfff:fe30:a443) has joined
+Feb 24 21:26:29 *	philwyettreb (~philwyett@host-92-1-236-176.as43234.net) has joined
+Feb 24 21:26:37 *	kuldeep_ has quit (Ping timeout: 255 seconds)
+Feb 24 21:27:41 *	kuldeep (~kuldeepdh@unaffiliated/kuldeepdhaka) has joined
+Feb 24 21:27:59 *	pfrench has quit (Remote host closed the connection)
+Feb 24 21:28:13 *	localuser-_ has quit (Ping timeout: 240 seconds)
+Feb 24 21:28:24 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 21:28:27 *	wiske57 has quit (Ping timeout: 240 seconds)
+Feb 24 21:28:31 *	tmg (~tmg@unaffiliated/tmg) has joined
+Feb 24 21:28:43 *	kuldeep__ has quit (Ping timeout: 240 seconds)
+Feb 24 21:29:08 <krarkrrrc>	would there be any efficient way to put my entire user directory in a git repo?
+Feb 24 21:29:27 *	ostkind has quit (Quit: ostkind)
+Feb 24 21:29:29 *	Valicek1 has quit (Remote host closed the connection)
+Feb 24 21:29:57 <avrelaun>	krarkrrrc: just your config ?
+Feb 24 21:30:02 <avrelaun>	krarkrrrc: or all files ?
+Feb 24 21:30:05 <krarkrrrc>	everything
+Feb 24 21:30:06 <alwyn>	I'd do explicit inclusion instead of implicit "everything"
+Feb 24 21:30:19 <avrelaun>	do not recommend that
+Feb 24 21:30:27 <avrelaun>	a lot of files change
+Feb 24 21:30:33 <krarkrrrc>	i know thats why im asking how to do it efficiently
+Feb 24 21:30:50 <avrelaun>	krarkrrrc: I'm currently doing it, but only in my .config folder
+Feb 24 21:31:01 <krarkrrrc>	i want to create a troubleshooting layer that i can easily see if a file has changed and can catch bugs that way
+Feb 24 21:31:18 <krarkrrrc>	actually if i could get it for the entire / that would be even better
+Feb 24 21:31:20 <alwyn>	avrelaun: exactly. So you should only include the files you want, not include everything automatically :P (git add .)
+Feb 24 21:31:34 *	Levex (~levex@fedora/Levex) has joined
+Feb 24 21:31:34 *	bnw has quit (Quit: Leaving)
+Feb 24 21:32:01 <krarkrrrc>	yea but if you have a git repo inside a git repo, theres a conflict
+Feb 24 21:32:10 *	TheSilentLink has quit (K-Lined)
+Feb 24 21:32:12 <alwyn>	krarkrrrc: maybe you need something like puppet?
+Feb 24 21:32:15 *	Valicek1 (~Thunderbi@55-125-149-46.synanet.cz) has joined
+Feb 24 21:32:24 <alwyn>	Then you can put your puppet code in git :thinking:
+Feb 24 21:32:26 <awal>	maybe you need to be careful
+Feb 24 21:32:36 <alwyn>	And that.
+Feb 24 21:32:36 <krarkrrrc>	no thats a horrible idea
+Feb 24 21:32:53 <alwyn>	krarkrrrc: putting / in git is a horrible idea
+Feb 24 21:32:58 <krarkrrrc>	agreed
+Feb 24 21:33:24 *	tinnotl (~tinnotl@unaffiliated/tinnotl) has joined
+Feb 24 21:33:28 *	torak has quit (Remote host closed the connection)
+Feb 24 21:33:36 *	nordern (~nordern@unaffiliated/nordern) has joined
+Feb 24 21:33:38 <plow>	What does 'unsupported signature formatwarning' mean while installing from a third party repo. The package has been verified with pacman-key --verify before pacman -U
+Feb 24 21:33:41 <awal>	~ contains ~/.cache which contains a ridiculously huge amount of bloat, tracking which with git is not going to end well
+Feb 24 21:33:50 *	maolang has quit (Ping timeout: 255 seconds)
+Feb 24 21:34:13 <avrelaun>	krarkrrrc: that's why I have a git repo for .config and not home
+Feb 24 21:34:44 <krarkrrrc>	heres my reasoning: to move forward at any reasonable pace in tech, me must use other peoples code, code that we dont intimately understand, therefore a way to profile files is justified
+Feb 24 21:34:46 *	maolang (~quassel@vil93-5-82-230-197-98.fbx.proxad.net) has joined
+Feb 24 21:35:17 <avrelaun>	krarkrrrc: if you need some others folders outside .config
+Feb 24 21:35:21 <avrelaun>	just symlink them
+Feb 24 21:35:53 <krarkrrrc>	the problem with that approach is it assumes you know where the problems will be to begin with
+Feb 24 21:36:04 *	Keniyal has quit (Ping timeout: 255 seconds)
+Feb 24 21:36:06 <krarkrrrc>	so you have to have a problem from there to know to include it
+Feb 24 21:36:26 *	Levex has quit (Ping timeout: 260 seconds)
+Feb 24 21:37:20 *	ralpheeee has quit (Ping timeout: 260 seconds)
+Feb 24 21:37:22 <mkoskar>	krarkrrrc: there is a gitignore * trick punching holes to what you need then gitignore !/... them back or just force add, that's how I do it for ~/ and /etc ... works ok
+Feb 24 21:37:56 <krarkrrrc>	mkoskar: you have / in a repo?
+Feb 24 21:38:01 *	smirky has quit (Quit: Leaving.)
+Feb 24 21:38:17 *	kotto (~user@191.223.56.132) has joined
+Feb 24 21:38:18 *	_Timon (~Timon@tt.cloud.tilaa.com) has joined
+Feb 24 21:38:24 *	smirky (~smirky@15.203.233.80) has joined
+Feb 24 21:38:30 <mkoskar>	no, 2 repos $HOME and /etc
+Feb 24 21:39:03 <krarkrrrc>	and obviously yea, if youre 'careful' you can avoid all this, but being careful assumes youve learned enough to know where to be careful, in which case you dont save any time
+Feb 24 21:39:23 *	kelvan has quit (Remote host closed the connection)
+Feb 24 21:39:44 <mkoskar>	not saying I recommend it, or that it is ideal but I wanted something simple to start tracking files without making it complicated with symlinks or some other tools, turns out 3/4 years later I'm still at this :)
+Feb 24 21:39:48 *	troulouliou_div2 has quit (Quit: Leaving)
+Feb 24 21:40:08 <krarkrrrc>	hmm
+Feb 24 21:40:29 *	MrLinuxFish has quit (Remote host closed the connection)
+Feb 24 21:40:37 <krarkrrrc>	mkoskar: how are you deciding when to commit? when you just feel like something is stable?
+Feb 24 21:40:54 <krarkrrrc>	and how long does it take to and from commits?
+Feb 24 21:41:03 <krarkrrrc>	to go*
+Feb 24 21:41:56 *	pfrench has quit (Remote host closed the connection)
+Feb 24 21:42:24 *	hutch34 (~hutch34@h125.241.138.40.static.ip.windstream.net) has joined
+Feb 24 21:42:25 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 21:42:30 <krarkrrrc>	my entire intention for this is to be able to effectively pinpoint bugs in config files/scripts when something unexpected happens
+Feb 24 21:42:44 *	godane has quit (Ping timeout: 268 seconds)
+Feb 24 21:43:02 *	ArchNoob (~ArchNoob@unaffiliated/archnoob) has joined
+Feb 24 21:43:03 <krarkrrrc>	how many times there was an accidental comment out of a line or something and you wasted 30 min finding it?
+Feb 24 21:43:13 <krarkrrrc>	thats a huge leak
+Feb 24 21:45:08 *	turlando (~turlando@151.64.31.132) has joined
+Feb 24 21:45:16 <krarkrrrc>	and this type of problem will only get worse since we have to rely more and more on other peoples code
+Feb 24 21:45:24 <mkoskar>	krarkrrrc: well, that's the point of tracking ... I see the changes with git stat, as for commits I'm constantly tinkering with some homefiles so I was some changes all the time, but I usually don't commit them separately but rewind one commit git reset --soft HEAD~1 and commit again, then once upon a time I push it
+Feb 24 21:45:38 *	lithiumpt (~lithium@6530.hostserv.eu) has joined
+Feb 24 21:45:48 <mkoskar>	s/was/has/
+Feb 24 21:45:59 <mkoskar>	*have
+Feb 24 21:46:12 *	chandan has quit (Ping timeout: 260 seconds)
+Feb 24 21:46:21 *	TheSilentLink (~TheSilent@unaffiliated/thesilentlink) has joined
+Feb 24 21:46:24 <krarkrrrc>	actually that sounds better than dropbox
+Feb 24 21:46:31 *	localuser- (~quassel@unaffiliated/localuser-) has joined
+Feb 24 21:47:08 *	hutch34 has quit (Ping timeout: 260 seconds)
+Feb 24 21:47:09 *	ostkind (~ostkind@p4FD0F715.dip0.t-ipconnect.de) has joined
+Feb 24 21:47:09 <krarkrrrc>	so you only ever keep one commit
+Feb 24 21:47:13 <krarkrrrc>	thats a good idea actually
+Feb 24 21:47:16 *	ponyrider (~cf2iqx@unaffiliated/ponyrider) has joined
+Feb 24 21:48:10 <mkoskar>	for well know directories I don't need to force add, e.g., ~/bin other files scattered around I force add and then can list with "git ls" ... here is my .gitignore https://github.com/mkoskar/homefiles/blob/master/.gitignore
+Feb 24 21:48:12 <phrik>	Title: homefiles/.gitignore at master · mkoskar/homefiles · GitHub (at github.com)
+Feb 24 21:49:24 <krarkrrrc>	have you ever reinstalled arch and pulled your entire home di?
+Feb 24 21:49:26 <krarkrrrc>	dir*
+Feb 24 21:49:35 <krarkrrrc>	jw if that would actually work
+Feb 24 21:49:46 <JJJollyjim>	Arghhg I am fighting with systemd and I am one DBUS issue from just switching to BSD and going 
+Feb 24 21:49:47 *	modlin (~modlin@93.123.41.167) has joined
+Feb 24 21:49:50 <JJJollyjim>	to live in the woods
+Feb 24 21:49:59 *	peaveyman (~gary@unaffiliated/peaveyman) has joined
+Feb 24 21:50:26 *	in1t3r_ has quit (Ping timeout: 260 seconds)
+Feb 24 21:50:43 *	dqi has quit (Quit: WeeChat 1.7)
+Feb 24 21:51:25 *	ostkind has quit (Client Quit)
+Feb 24 21:52:02 *	chjj has quit (Ping timeout: 240 seconds)
+Feb 24 21:52:02 *	Lateraloctober has quit (Ping timeout: 240 seconds)
+Feb 24 21:52:03 *	archlinux-newbie (7cfd9ae4@gateway/web/freenode/ip.124.253.154.228) has joined
+Feb 24 21:52:07 <archlinux-newbie>	Hi
+Feb 24 21:52:17 <jelle>	JJJollyjim: ok, have fun there!
+Feb 24 21:52:32 <JJJollyjim>	:P
+Feb 24 21:52:32 *	archlinux-newbie is now known as hitman1
+Feb 24 21:52:36 <mkoskar>	krarkrrrc: sure it would work, it's just home directory, I clone it on other machines ... but again, there are tools to separate it, and manage more "profiles" for different machines and so on, I didn't need it and using git directly was straightforward
+Feb 24 21:52:45 *	Lateraloctober (aaron.seib@2600:3c03::f03c:91ff:feb0:83ab) has joined
+Feb 24 21:53:21 *	Keniyal (~Keniyal@unaffiliated/keniyal) has joined
+Feb 24 21:53:28 <krarkrrrc>	mkoskar: yea true, ty for sharing your workflow i like it im going to try it
+Feb 24 21:53:28 <hitman1>	What is the name of file in grub that is responsible for boot ?
+Feb 24 21:53:28 *	Repentinus (~repentinu@fsfe/repentinus) has joined
+Feb 24 21:54:13 <hitman1>	I want to give path to boot options priorities. My boot option is UEFI.
+Feb 24 21:56:17 <hitman1>	When I try to boot into arch boot stucks at this message - "Starting PXE ove IPV4"
+Feb 24 21:56:38 *	evil-work has quit (Quit: Leaving)
+Feb 24 21:57:26 *	bluedrc has quit (Ping timeout: 260 seconds)
+Feb 24 21:57:52 *	Hunts (~hunts@dhcp9.eps.hw.ac.uk) has joined
+Feb 24 21:58:11 *	gratidude has quit (Quit: WeeChat 1.7)
+Feb 24 22:00:00 *	localuser- has quit (Ping timeout: 268 seconds)
+Feb 24 22:00:29 *	cgundersson has quit (Quit: cgundersson)
+Feb 24 22:01:09 *	throw403 (~user@180.215.120.145) has joined
+Feb 24 22:01:16 *	Narwhaal (~quassel@188.166.150.103) has joined
+Feb 24 22:01:45 *	Matombo (~Matombo@p579912C6.dip0.t-ipconnect.de) has joined
+Feb 24 22:01:53 *	blueness (~blueness@gentoo/developer/blueness) has joined
+Feb 24 22:02:06 *	panikovsky has quit (Ping timeout: 260 seconds)
+Feb 24 22:02:15 *	leopard has quit (Quit: leaving)
+Feb 24 22:02:23 *	throw403 has quit (Client Quit)
+Feb 24 22:02:31 *	lspw (~lspw@host24-249-static.229-95-b.business.telecomitalia.it) has joined
+Feb 24 22:02:32 *	amcrae (~allan@archlinux/developer/allan) has joined
+Feb 24 22:03:12 *	Purec has quit (Quit: ZNC 1.6.4 - http://znc.in)
+Feb 24 22:03:22 *	beest has quit (Ping timeout: 240 seconds)
+Feb 24 22:03:49 *	icyjug (~icyjug@2001:4c50:4ae:b500:1e3e:84ff:fea6:a2d9) has joined
+Feb 24 22:03:54 *	chocopuff (~ethan@unaffiliated/chocopuff) has joined
+Feb 24 22:04:26 <krarkrrrc>	does git look in ~/ or somewhere in / for the global .gitignore file?
+Feb 24 22:04:30 *	dienogest (~dienogest@2a02:8071:2481:a7f0:8094:e69f:87cd:3bc3) has joined
+Feb 24 22:04:38 *	pgug (~pgug@h236.natout.aau.dk) has joined
+Feb 24 22:04:50 *	Foxtrot (~fox@unaffiliated/foxtrot) has joined
+Feb 24 22:04:51 <grawity>	~/.config/git/ignore
+Feb 24 22:05:00 <krarkrrrc>	oh nice
+Feb 24 22:05:01 *	Foxtrot is now known as foxtrot
+Feb 24 22:05:05 <krarkrrrc>	ty
+Feb 24 22:05:25 <grawity>	in older versions you needed to manually set core.excludesfile
+Feb 24 22:05:45 <alyptik>	krarkrrrc› yeah i have config --global core.excludesfile set to ~/.cvsignore
+Feb 24 22:05:51 <krarkrrrc>	only bleeding edge releases for me
+Feb 24 22:05:52 *	daey__ (~Flutterba@unaffiliated/day) has joined
+Feb 24 22:06:04 *	throw403 (~user@180.215.120.145) has joined
+Feb 24 22:06:05 <krarkrrrc>	alyptik: why in the hell
+Feb 24 22:06:23 <alyptik>	dunno, i took the name from when i installed ctags
+Feb 24 22:06:24 *	xfc83e_ has quit (Read error: Connection reset by peer)
+Feb 24 22:06:27 *	solenodic has quit (Ping timeout: 240 seconds)
+Feb 24 22:06:34 <alyptik>	havent bothered to change it
+Feb 24 22:06:41 <akaWolf>	what is the app which is serve as alt+f2 analog for tiling wm?
+Feb 24 22:06:49 *	edh has quit (Quit: WeeChat 1.7)
+Feb 24 22:07:08 <grawity>	there's plenty, but dmenu is a popular one
+Feb 24 22:07:09 <krarkrrrc>	i guess its not horrible
+Feb 24 22:07:30 <grawity>	or that other one, bsomething
+Feb 24 22:07:40 <akaWolf>	is there kmix replace in plasma 5?
+Feb 24 22:07:48 *	patarr (~patarr@unaffiliated/patarr) has joined
+Feb 24 22:07:55 <alyptik>	i think other (d)cvs systems use ~/.cvsignore
+Feb 24 22:07:58 <alyptik>	but i could be wrong
+Feb 24 22:08:00 *	daey___ (~Flutterba@unaffiliated/day) has joined
+Feb 24 22:08:10 <murkx>	Is there any way to use a virtual network-device as a "proxy", so i route my lynx request through that device? 
+Feb 24 22:08:18 <grawity>	murkx: for what purpose?
+Feb 24 22:08:18 *	daey___ is now known as daey
+Feb 24 22:08:43 <grawity>	I mean, overall, that's what routing tables or policy routing or SO_BINDTODEVICE do
+Feb 24 22:08:49 <alyptik>	krarkrrrc› all i have in there atm is "tags" anyway
+Feb 24 22:09:03 <alyptik>	should prob add more things
+Feb 24 22:09:08 <akaWolf>	grawity: yeah thanks dmenu is what I mean. forgot the name..
+Feb 24 22:09:17 <murkx>	grawity: to check my iptables rules e.g.
+Feb 24 22:09:22 *	nothingnew (~quassel@77-85-58-60.ip.btc-net.bg) has joined
+Feb 24 22:09:49 *	poljar (~poljar@93-141-130-101.adsl.net.t-com.hr) has joined
+Feb 24 22:10:18 <Quetzal>	akaWolf: If I'm right pulseaudio is used with pulseaudioctl
+Feb 24 22:10:28 <murkx>	grawity: like, i got 4 different virtual wifi-devices, and it's called wifi_1 to wifi_4 and now, i wanna simulate a request from wifi_3
+Feb 24 22:10:43 *	daey__ has quit (Ping timeout: 240 seconds)
+Feb 24 22:10:48 *	ShalokShalom_ is now known as ShalokShalom
+Feb 24 22:11:25 <demize>	alyptik: ~/.cvsignore is for cvs in particular, and you're thinking of DVCS, not DCVS. ;)
+Feb 24 22:11:46 <alyptik>	demize› aha you are right
+Feb 24 22:11:53 *	xfc83e (~xfc83e@95.141.37.164) has joined
+Feb 24 22:12:03 *	UrsaTempest is now known as Kyuubey
+Feb 24 22:12:16 <hitman1>	I am getting now - you need to load the kernel first ?
+Feb 24 22:12:18 <krarkrrrc>	how new is .config/git?
+Feb 24 22:12:18 <hitman1>	HELP
+Feb 24 22:12:19 <alyptik>	that De-Cen... always gets me lmao
+Feb 24 22:12:24 *	Kyuubey is now known as UrsaTempest
+Feb 24 22:12:32 <krarkrrrc>	i dont have it but have the latest pacman package
+Feb 24 22:12:47 <grawity>	it's one of those paths which don't create themselves automatically
+Feb 24 22:12:48 <chocopuff>	hitman1: what do you need help with? 
+Feb 24 22:12:59 <hitman1>	I am unable to boot.
+Feb 24 22:13:02 *	Purec (~Purec@unaffiliated/purec) has joined
+Feb 24 22:13:09 *	Vibor (~waveaway@120.193.158.183) has joined
+Feb 24 22:13:10 <demize>	krarkrrrc: 1.7.12
+Feb 24 22:13:11 *	patarr has quit (Ping timeout: 260 seconds)
+Feb 24 22:13:14 <chocopuff>	hitman1: what do you suspect is the issue? 
+Feb 24 22:13:14 *	Vibor (~waveaway@120.193.158.183) has left
+Feb 24 22:13:16 <Quetzal>	akaWolf: Don't know the name of the config app but it looks exactly like pavucontrol
+Feb 24 22:13:17 <krarkrrrc>	im at 2.11
+Feb 24 22:13:37 <demize>	But as already said, it won't create itself automatically.
+Feb 24 22:13:46 <chocopuff>	hitman1: and what bootloader are you using? 
+Feb 24 22:13:47 <hitman1>	chocopuff, GRUB, is saying load the kernel first, so I don't know
+Feb 24 22:13:52 <krarkrrrc>	oh?
+Feb 24 22:13:56 <hitman1>	using GRUB
+Feb 24 22:13:56 <krarkrrrc>	let me read back
+Feb 24 22:14:00 <akaWolf>	Quetzal: ok thanks. can I use it instead of legacy kmix?
+Feb 24 22:14:13 <chocopuff>	hitman1: hmm, EFI? 
+Feb 24 22:14:16 *	alexandros_c (~alexandro@unaffiliated/alexandros-c/x-1684531) has joined
+Feb 24 22:14:17 <hitman1>	yes
+Feb 24 22:15:02 *	ThatBob9001 has quit (Ping timeout: 240 seconds)
+Feb 24 22:15:02 *	panikovsky (~panikovsk@87.117.12.215) has joined
+Feb 24 22:15:04 *	zaki has quit (Quit: Farewell! God knows when we shall meet again.)
+Feb 24 22:15:20 *	bluedrc (~bluebrain@dgg143.neoplus.adsl.tpnet.pl) has joined
+Feb 24 22:15:36 <Quetzal>	It = ? That's the question! :·) But yes, you don't need kmix if you have "it" (still trying to find out how it's called).
+Feb 24 22:16:21 <chocopuff>	hitman1: I'm assuming you have checked the fstab and the kernel is in the right place? 
+Feb 24 22:16:33 *	opthomasprime (~thomas@p2003006A623E2D77BEEE7BFFFE785E9D.dip0.t-ipconnect.de) has joined
+Feb 24 22:16:46 <akaWolf>	Quetzal: any comments about pavucontrol vs. kmix?
+Feb 24 22:16:56 <chocopuff>	hitman1: i understand bootloader frustrations and struggles
+Feb 24 22:17:27 *	pfrench has quit (Remote host closed the connection)
+Feb 24 22:17:32 <hitman1>	yes
+Feb 24 22:17:52 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 22:19:25 *	ArchNoob has quit (Read error: Connection reset by peer)
+Feb 24 22:19:27 <hitman1>	currently I am in grub command line mode.
+Feb 24 22:19:28 <Quetzal>	akaWolf: https://dot.kde.org/2015/08/11/plasma-54-beta-adds-shine There's a mention about the new app. Didn't use kmix since quite some time, so I can't compare, but this new implementation is realy awesome (and the plasmoid is really good!)
+Feb 24 22:19:29 <phrik>	Title: Plasma 5.4 Beta Adds Shine | KDE.news (at dot.kde.org)
+Feb 24 22:19:36 *	amcrae has quit (Ping timeout: 260 seconds)
+Feb 24 22:20:35 *	solenodic (~solenodic@unaffiliated/solenodic) has joined
+Feb 24 22:20:42 *	RubenKelevra (~RubenKele@rig.vfn-nrw.de) has joined
+Feb 24 22:20:46 *	frvr has quit (Ping timeout: 260 seconds)
+Feb 24 22:20:59 <akaWolf>	Quetzal: how is related pavucontrol and that plasmoid?
+Feb 24 22:21:00 <Quetzal>	akaWolf: you can't see it on the screenshot there but on the plasmoid too you have a tab to manage individually each apps volume.
+Feb 24 22:21:16 <pwnart1st>	sooo
+Feb 24 22:21:22 *	panostimos (~ptim@athedsl-120268.home.otenet.gr) has joined
+Feb 24 22:21:29 <pwnart1st>	i dumpoed the memory of xinit and openbox
+Feb 24 22:21:35 <pwnart1st>	have about 100 .dump files now
+Feb 24 22:21:49 <pwnart1st>	how dould i go about retreiving what i can from the,?
+Feb 24 22:22:06 <Quetzal>	akaWolf: From my point of view, it's like a kde wrapped pavucontrol.
+Feb 24 22:22:15 *	mstruebing (~mstruebin@tzd-bioz-005.ibh-dialin.net) has joined
+Feb 24 22:22:42 <hitman1>	chocopuff, there is nothing inside /devsda/boot directory
+Feb 24 22:22:57 <Quetzal>	It works the same way, but you have it in the system settings, like any other configuration app.
+Feb 24 22:23:04 *	terlar has quit (Quit: WeeChat 1.7)
+Feb 24 22:23:24 <Quetzal>	Tabs are all the same.
+Feb 24 22:23:31 *	opthomasprime has quit (Remote host closed the connection)
+Feb 24 22:23:38 <Quetzal>	The same as pavucontrol.
+Feb 24 22:23:41 *	mariachi has quit (Ping timeout: 260 seconds)
+Feb 24 22:23:45 *	tunnelrat (~tunnelrat@gateway/tor-sasl/tunnelrat) has joined
+Feb 24 22:23:56 *	terlar (~terje@h-37-123-145-122.na.cust.bahnhof.se) has joined
+Feb 24 22:24:24 <alwyn>	Hello, I'm trying to ssh to a host with a specific identity file, but I'm getting "Received disconnect from xxx.xxx.xxx.xxx: 2: Failed to read binary packet data!" What could be the cause? Searching for this message has only resulted in seemingly unrelated issues
+Feb 24 22:24:56 *	lspw has quit (Ping timeout: 260 seconds)
+Feb 24 22:24:56 <pwnart1st>	its all idek what
+Feb 24 22:25:01 <pwnart1st>	not quite hex
+Feb 24 22:25:08 *	terlar has quit (Client Quit)
+Feb 24 22:25:09 <grazzolini>	alwyn: ssh -v
+Feb 24 22:25:18 *	Bluewind has quit (Quit: WeeChat 1.7)
+Feb 24 22:25:34 *	opthomasprime (~thomas@p2003006A623E2D77BEEE7BFFFE785E9D.dip0.t-ipconnect.de) has joined
+Feb 24 22:26:01 *	modlin has quit (Quit: modlin)
+Feb 24 22:26:05 *	semyon has quit (Quit: install gentoo)
+Feb 24 22:26:06 *	mohabaks (~mohabaks@154.122.79.102) has joined
+Feb 24 22:26:22 <akaWolf>	Quetzal ok thanks. looks like it cant stay in tray...
+Feb 24 22:26:41 *	venmx (~pactadmin@cpc8-camd15-2-0-cust699.20-2.cable.virginm.net) has joined
+Feb 24 22:26:44 <Quetzal>	akaWolf: What do you mean?
+Feb 24 22:26:51 <akaWolf>	like kmix
+Feb 24 22:27:35 <Quetzal>	Well you have a volume widget.
+Feb 24 22:27:43 *	tunnelrat (~tunnelrat@gateway/tor-sasl/tunnelrat) has left
+Feb 24 22:28:13 <Quetzal>	Ah, you talk about pavucontrol! Don't you!
+Feb 24 22:28:22 *	Net147 has quit (Ping timeout: 268 seconds)
+Feb 24 22:28:28 <Quetzal>	! -> ?   ;·)
+Feb 24 22:28:29 <phrik>	Quetzal: Say what?
+Feb 24 22:28:58 <akaWolf>	Quetzal: yeah I'm about pavucontrol... I'm using tiling wm. that's why I'm asking
+Feb 24 22:28:59 <alwyn>	grazzolini: https://ptpb.pw/w9Xf
+Feb 24 22:29:04 *	Bluewind (~Bluewind@archlinux/developer/Bluewind) has joined
+Feb 24 22:29:23 <Quetzal>	phrik: talking to akaWolf about volume managers.
+Feb 24 22:29:23 <phrik>	Quetzal: BLEEP BLOOP
+Feb 24 22:29:29 *	redShadow (~redShadow@unaffiliated/redshadow) has joined
+Feb 24 22:29:55 <grazzolini>	alwyn: wtf is Maverick sshd?
+Feb 24 22:30:25 <alwyn>	grazzolini: no idea v0v
+Feb 24 22:30:43 <Quetzal>	akaWolf: I use i3blocks for volume management, but I guess there should be an app to get a tray icon.
+Feb 24 22:31:00 <alwyn>	Basically we need to transfer a file to a client's sftp every now and then
+Feb 24 22:31:12 <grazzolini>	alwyn: java ssh server
+Feb 24 22:31:28 *	venmx has quit (Ping timeout: 260 seconds)
+Feb 24 22:31:32 <alwyn>	Oh, lovely
+Feb 24 22:31:46 *	kuldeep_ (~kuldeepdh@unaffiliated/kuldeepdhaka) has joined
+Feb 24 22:32:07 <grazzolini>	alwyn: yeah, and it doesn't use aes by default. probably that's your issue. ssh has 3des/blowfish disable by default these days, iirc
+Feb 24 22:32:08 *	mohsen_ has quit (Read error: Connection reset by peer)
+Feb 24 22:32:17 <grazzolini>	alwyn: specially arch version which is up to date
+Feb 24 22:32:45 *	enzogorlomi has quit (Quit: leaving)
+Feb 24 22:33:34 *	Net147 (~Net147@unaffiliated/net147) has joined
+Feb 24 22:33:47 *	hitman1 has quit (Quit: Page closed)
+Feb 24 22:33:50 *	cereal_poster (~Cereal@177.16.72.90) has joined
+Feb 24 22:34:13 *	kuldeep has quit (Ping timeout: 240 seconds)
+Feb 24 22:34:14 <grazzolini>	alwyn: wait a sec, it still has
+Feb 24 22:34:19 <grazzolini>	alwyn: ssh -Q cipher
+Feb 24 22:34:54 *	earnestly (~Earnestly@unaffiliated/earnestly) has joined
+Feb 24 22:35:35 <alwyn>	grazzolini: just ssh -Q cipher?
+Feb 24 22:35:46 *	pfrench has quit (Remote host closed the connection)
+Feb 24 22:36:06 *	kuldeep (~kuldeepdh@unaffiliated/kuldeepdhaka) has joined
+Feb 24 22:36:13 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 22:36:19 *	fireion (fireion@nat/iiit/x-rjpqicohvzdczdto) has joined
+Feb 24 22:36:20 <grazzolini>	alwyn: yes, query
+Feb 24 22:36:37 *	watered (~water@91.140.187.186) has joined
+Feb 24 22:36:37 *	AndrevS (~andrevs@2001:982:2b90:1:3ea9:f4ff:fe63:9784) has joined
+Feb 24 22:36:38 <Quetzal>	akaWolf: that's what I was talking about, but I guess it's now irrelevant (tabs on volume widget) https://www.kde.org/announcements/plasma-5.7.0.php
+Feb 24 22:36:39 <phrik>	Title: KDE - KDE Plasma 5.7 Release (at www.kde.org)
+Feb 24 22:36:47 *	ArchNoob (~ArchNoob@unaffiliated/archnoob) has joined
+Feb 24 22:36:53 <fireion>	Hi! My mouse is not working on gnome, is it just me or it's an update ?
+Feb 24 22:36:54 <alwyn>	grazzolini: https://ptpb.pw/2R-i
+Feb 24 22:37:27 <grazzolini>	alwyn: I didn't meant for you to paste it. if you're running up to date arch, I already knew the output
+Feb 24 22:37:27 *	kuldeep_ has quit (Ping timeout: 240 seconds)
+Feb 24 22:37:48 <fireion>	On logging in gnome centers the mouse (lightdm + nvidia + gnome), and then the mouse (touchpad) stops working
+Feb 24 22:37:58 <Quetzal>	akaWolf: did you test pavucontrol-qt? Maybe there is a tray icon there.
+Feb 24 22:38:00 *	p71_ (~chatzilla@75-128-224-180.dhcp.mrqt.mi.charter.com) has joined
+Feb 24 22:38:09 <grazzolini>	alwyn: my bet is, the server is starting the kex and it is saying that it supports aes cbc, but it doesn't and the ssh client tries to read it and fails
+Feb 24 22:38:17 <alwyn>	o
+Feb 24 22:38:27 <alwyn>	gg I guess
+Feb 24 22:38:28 <pwnart1st>	https://bpaste.net/show/4c0c77b4c08c
+Feb 24 22:38:30 <phrik>	Title: show at bpaste (at bpaste.net)
+Feb 24 22:38:35 <alwyn>	But basically, it's on the client's side, not ours
+Feb 24 22:38:43 *	p71 has quit (Ping timeout: 240 seconds)
+Feb 24 22:38:54 *	p71_ is now known as p71
+Feb 24 22:39:52 <grazzolini>	alwyn: yes. just tell them to use openssh
+Feb 24 22:40:42 *	nnscr (~nnscr@pD951BC77.dip0.t-ipconnect.de) has joined
+Feb 24 22:41:18 <alwyn>	grazzolini: what's "the kex" btw?
+Feb 24 22:41:19 <watered>	anyone know how to force triple buffering and vsync?
+Feb 24 22:41:44 <grazzolini>	alwyn: key exchange
+Feb 24 22:42:01 <alwyn>	Ah :)
+Feb 24 22:42:08 *	gebruiker (~gebruiker@77.172.237.233) has joined
+Feb 24 22:42:33 *	bluedrc has quit (Ping timeout: 268 seconds)
+Feb 24 22:42:39 *	turlando has quit (Remote host closed the connection)
+Feb 24 22:42:43 *	mongy (~dean@unaffiliated/duffydack) has joined
+Feb 24 22:43:39 *	kevin123 (~kevin123@unaffiliated/kevin123) has joined
+Feb 24 22:43:59 *	localuser- (~quassel@unaffiliated/localuser-) has joined
+Feb 24 22:44:17 *	sz0 has quit (Quit: Connection closed for inactivity)
+Feb 24 22:44:52 *	BrainDamage_ (~BrainDama@unaffiliated/braindamage) has joined
+Feb 24 22:45:03 <nnscr>	someone else here experienced problems with starting repetierHost?
+Feb 24 22:45:54 *	Matrixiumn has quit (Quit: C-x C-c)
+Feb 24 22:45:57 *	BrainDamage has quit (Ping timeout: 240 seconds)
+Feb 24 22:45:58 *	BrainDamage_ is now known as BrainDamage
+Feb 24 22:46:24 *	grawity has quit (Ping timeout: 260 seconds)
+Feb 24 22:47:06 *	abbec_ (~abbec@94.255.165.160) has joined
+Feb 24 22:47:11 <akaWolf>	Quetzal no there is no icon
+Feb 24 22:47:12 *	Quetzal has quit (Remote host closed the connection)
+Feb 24 22:47:43 *	mohabaks has quit (Ping timeout: 240 seconds)
+Feb 24 22:47:44 *	lspw (~lspw@host24-249-static.229-95-b.business.telecomitalia.it) has joined
+Feb 24 22:48:30 *	Quetzal (~Quetzal@ALille-656-1-197-53.w92-155.abo.wanadoo.fr) has joined
+Feb 24 22:48:48 *	chandan (~chandan@122.172.249.199) has joined
+Feb 24 22:49:14 *	Matrixiumn (~Matrixium@unaffiliated/matrixiumn) has joined
+Feb 24 22:49:43 *	pfrench has quit (Remote host closed the connection)
+Feb 24 22:50:01 *	TheSilentLink has quit (Quit: ZNC 1.6.4 - http://znc.in)
+Feb 24 22:50:08 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 22:51:06 <xoan>	nnscr, "problems" is too much ambiguous
+Feb 24 22:51:22 *	abbec_ has quit (Ping timeout: 240 seconds)
+Feb 24 22:51:31 *	jomg (~jomg@ip4d16fcc4.dynamic.kabel-deutschland.de) has joined
+Feb 24 22:52:07 *	NoSyK (~NolanSyKi@2606:6000:5112:df00:b7ad:cf64:9c9a:2548) has joined
+Feb 24 22:52:13 *	mohsen_ (~Mohsen@130.255.210.115) has joined
+Feb 24 22:52:25 <nnscr>	xoan, well, it doesn't even start. i see an empty splash screen, a few png errors on the console (which is normal) and nothing happens
+Feb 24 22:52:26 <Quetzal>	akaWolf: But I just encountered a strange bug so my IRC client exited. Could you repost please?
+Feb 24 22:52:32 *	watered has quit (Read error: Connection reset by peer)
+Feb 24 22:52:55 *	SopaXorzTaker has quit (Remote host closed the connection)
+Feb 24 22:53:22 *	NolanSyKinsley has quit (Ping timeout: 240 seconds)
+Feb 24 22:53:26 *	watered (~water@91.140.187.186) has joined
+Feb 24 22:54:22 *	brogon_ has quit (Ping timeout: 240 seconds)
+Feb 24 22:54:45 *	martian67 (~martian67@about/linux/regular/martian67) has joined
+Feb 24 22:54:47 <akaWolf>	Quetzal: yeah I said that there is no icon with pavucontrol-qt
+Feb 24 22:55:13 *	solenodic has quit (Ping timeout: 240 seconds)
+Feb 24 22:55:15 <raynold>	ahh it's a wonderful day
+Feb 24 22:55:29 <xoan>	it simply closes without message? promt appears in the terminal or you need to ^C ?
+Feb 24 22:55:51 <pwnart1st>	hmmm
+Feb 24 22:55:54 <nnscr>	xoan, it forks, so i can't quit with ^C, i need to kill it
+Feb 24 22:56:01 *	NoSyK has quit (Remote host closed the connection)
+Feb 24 22:56:01 <pwnart1st>	GLOBIGNORE=".git:.gitignore:.gitmodules:install"
+Feb 24 22:56:01 <pwnart1st>	files=(*)
+Feb 24 22:56:01 <pwnart1st>	echo $files
+Feb 24 22:56:02 *	datamoshr_ (~john@unaffiliated/datamoshr) has joined
+Feb 24 22:56:04 <pwnart1st>	aint working
+Feb 24 22:56:05 <xoan>	(it is a shame, but repetier host is closed-source, so the best solution is to do not use it :)
+Feb 24 22:56:06 <Quetzal>	akaWolf: Too bad. Strange because it comes from LxQt and they must have a system tray somehow.
+Feb 24 22:56:14 <nnscr>	xoan, alternatives?
+Feb 24 22:56:20 <xoan>	pronterface
+Feb 24 22:56:30 <pwnart1st>	want to have $files contain the names of all files excluding ignored
+Feb 24 22:56:38 <krarkrrrc>	i cant figure out how to exclude a folder in .gitignore, only the file matching patterns are working: https://ptpb.pw/2zdO
+Feb 24 22:56:47 <nnscr>	xoan, i'll give it a try, thanks
+Feb 24 22:57:07 <pwnart1st>	krarkrrrc, i just do like ./folder ./folder/ ./folder/*
+Feb 24 22:57:16 <pwnart1st>	dunno which but between them theyt work
+Feb 24 22:57:33 <xoan>	nnscr, aur/printrun-git
+Feb 24 22:57:43 <krarkrrrc>	pwnart1st: yea thats what i thought as well, maybe i have some config set thats stopping it from working
+Feb 24 22:57:52 <akaWolf>	Quetzal: well as is
+Feb 24 22:59:43 *	kelnoky has quit (Quit: WeeChat 1.7)
+Feb 24 22:59:46 <nnscr>	xoan, it starts, i guess thats a plus point ^^
+Feb 24 22:59:53 <Quetzal>	Gotta go! see you! :·) I'll be back!
+Feb 24 23:00:19 *	alexandre9099 has quit (Remote host closed the connection)
+Feb 24 23:00:24 <akaWolf>	Quetzal: glhf :)
+Feb 24 23:00:32 *	alexandre9099 (~alexandre@gateway/tor-sasl/alexandre9099) has joined
+Feb 24 23:00:44 *	Hammering (~SlamHamme@lillehjelper.ss.uib.no) has joined
+Feb 24 23:01:30 *	TheSilentLink (~TheSilent@unaffiliated/thesilentlink) has joined
+Feb 24 23:01:43 *	nordern has quit (Quit: Leaving)
+Feb 24 23:01:55 *	mohabaks (~mohabaks@154.122.77.219) has joined
+Feb 24 23:02:20 *	grawity (grawity@virgule.cluenet.org) has joined
+Feb 24 23:02:20 *	davorb has quit (Read error: Connection reset by peer)
+Feb 24 23:02:54 *	mongy has quit (Ping timeout: 268 seconds)
+Feb 24 23:02:59 *	Shinryuu (~gdsptuwtd@mobile-access-bcee1e-187.dhcp.inet.fi) has joined
+Feb 24 23:03:19 *	davorb (~irc@hd5b91c76.k9211.dyn.perspektivbredband.net) has joined
+Feb 24 23:03:30 <pwnart1st>	anyone able to help with th globbing?
+Feb 24 23:03:41 <pwnart1st>	it actually works in bash just not in the script
+Feb 24 23:04:05 <nnscr>	pwnart1st, your most likely missing double quotes
+Feb 24 23:04:48 <pwnart1st>	nnscr, where?
+Feb 24 23:05:11 *	Nizumzen has quit (Ping timeout: 255 seconds)
+Feb 24 23:05:41 <nnscr>	pwnart1st, around the expression that uses globbing, don't know your code
+Feb 24 23:05:44 *	patarr (~patarr@unaffiliated/patarr) has joined
+Feb 24 23:05:52 <pwnart1st>	GLOBIGNORE=".git:.gitignore:.gitmodules:install"; files=(.*)
+Feb 24 23:06:07 *	qt-x has quit (Quit: qt-x)
+Feb 24 23:06:32 *	mohabaks has quit (Ping timeout: 255 seconds)
+Feb 24 23:07:37 *	c0nch1t0 (~c0nch1t0@121.96.9.210) has joined
+Feb 24 23:07:57 *	solenodic (~solenodic@unaffiliated/solenodic) has joined
+Feb 24 23:07:58 <nnscr>	pwnart1st, that works for me
+Feb 24 23:08:01 *	modlin (~modlin@93.123.41.167) has joined
+Feb 24 23:08:41 <pwnart1st>	it gets all files?
+Feb 24 23:08:54 <nnscr>	pwnart1st, all dotfiles, yes
+Feb 24 23:09:04 <pwnart1st>	for me it seems to only get the first
+Feb 24 23:09:05 <nnscr>	in an array as excpected
+Feb 24 23:09:10 <pwnart1st>	and that is in a bash script?
+Feb 24 23:09:59 <nnscr>	pwnart1st, i just typed it into my zsh, maybe try something like echo ${files[*]}
+Feb 24 23:10:05 *	sdothum (~znc@dsl-173-206-148-241.tor.primus.ca) has joined
+Feb 24 23:10:06 *	udp_666 (~udp_666@176.120.252.23) has joined
+Feb 24 23:10:22 *	TheSilentLink has quit (Quit: ZNC 1.6.4 - http://znc.in)
+Feb 24 23:10:28 *	kuldeep_ (~kuldeepdh@unaffiliated/kuldeepdhaka) has joined
+Feb 24 23:10:32 <grawity>	zsh? wasn't pwnart1st talking abotu a bash script?
+Feb 24 23:10:43 *	patarr has quit (Ping timeout: 240 seconds)
+Feb 24 23:11:30 <nnscr>	grawity, just tested in bash, works there as well if you read the array as one should
+Feb 24 23:11:47 *	cgundersson (~christian@87.251.200.82) has joined
+Feb 24 23:12:01 *	pfrench has quit (Remote host closed the connection)
+Feb 24 23:12:11 <pwnart1st>	ah
+Feb 24 23:12:12 <pwnart1st>	yes
+Feb 24 23:12:13 <pwnart1st>	thats it
+Feb 24 23:12:15 <pwnart1st>	thankyou
+Feb 24 23:12:18 <pwnart1st>	works now
+Feb 24 23:12:22 *	Weaselweb has quit (Ping timeout: 240 seconds)
+Feb 24 23:12:22 <nnscr>	your welcome
+Feb 24 23:12:22 <Penguin>	nnscr: you're
+Feb 24 23:12:24 *	pfrench (~pfrench@static-68-235-53-86.cust.tzulo.com) has joined
+Feb 24 23:12:29 *	brogon_ (~brogon@unaffiliated/brogon) has joined
+Feb 24 23:12:42 *	kuldeep has quit (Ping timeout: 240 seconds)
+Feb 24 23:12:51 <nnscr>	oh great, now we even have grammar bots? :D
+Feb 24 23:12:57 *	watered has quit (Ping timeout: 240 seconds)

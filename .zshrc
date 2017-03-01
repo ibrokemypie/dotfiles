@@ -10,6 +10,7 @@ else
 fi
 
 #common sauce
+source ~/.zsh/aliases
 source ~/.zsh/history.zsh
 source ~/.zsh/gpg.zsh
 source ~/.zsh/fasd.zsh
@@ -22,15 +23,13 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes.zsh
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-if ISMACOS=true; then
+if [ $IS_MACOS = true ]; then
 # mac sauce
-source ~/.zsh/profileOSX
-source ~/.zsh/aliasesOSX
-source ~/.zsh/iterm2_shell_integration.zsh
+	source ~/.zsh/profileOSX
+	source ~/.zsh/iterm2_shell_integration.zsh
 else
 #non-mac sauce
-source ~/.zsh/profileUNIX
-source ~/.zsh/aliasesUNIX
+	source ~/.zsh/profileUNIX
 fi
 
 #end timer

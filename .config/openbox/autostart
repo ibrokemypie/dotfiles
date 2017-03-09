@@ -18,7 +18,9 @@
 
 thunar --daemon &
 xfdesktop &
-yabar &
+urxvtd &
 plank &
 albert &
 x11vnc -xkb -noxrecord -noxfixes -noxdamage -usepw -display :0 -forever -bg -o /var/log/x11vnc.log -rfbport 5900
+yabar &
+sxhkd &

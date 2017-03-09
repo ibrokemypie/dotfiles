@@ -27,7 +27,7 @@ if [ $IS_MACOS = true ]; then
 # mac sauce
 	source ~/.zsh/profileOSX
 	source ~/.zsh/iterm2_shell_integration.zsh
-#else
+else
 #non-mac sauce
 	source ~/.zsh/profileUNIX
 fi

@@ -5,7 +5,7 @@
 ############################
 
 
-git submodule init 
+git submodule init
 git submodule update
 
 if [[ $(printf "${PWD##*/}") != "dotfiles" ]]; then
@@ -19,7 +19,7 @@ fi
 ############################
 #if $(printf $0) != "-zsh"; then
 #        which zsh &>/dev/null
-#        [ $? -eq 0 ] || printf "Install zsh before this script continues" && exit 
+#        [ $? -eq 0 ] || printf "Install zsh before this script continues" && exit
 #    printf "Please set zsh as your default shell to zsh with chsh /bin/zsh before running this script" && exit
 #fi
 
@@ -56,21 +56,21 @@ fi
 
 
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for f in ${files[*]}; do
     if [ -f "$HOME/$f" ] || [ -d "$HOME/$f" ]; then
     	echo "file exists"
     	if [ ! -L "$HOME/$f" ]; then
-    		echo "not a symlink"
+    		echo "$f is not a symlink"
     		printf "\n Moving $HOME/$f to $olddir/$f\n"
- 			mv --backup "$HOME/$f" "$HOME/dotfiles_old/$f"
+ 			mv -b "$HOME/$f" "$HOME/dotfiles_old/$f"
  			printf "\n Linking $HOME/$f to $(pwd)/$f\n"
     		ln -s "$(pwd)/$f" "$HOME/$f"
  		else
- 			echo  "is a symlink"
+ 			echo  "$f is a symlink"
  		fi
     else
-    	echo "dopesnt exsit"
+    	echo "$f doesnt exist"
     	printf "\n Linking $HOME/$f to $(pwd)/$f\n"
     	ln -s "$(pwd)/$f" "$HOME/$f"
     fi

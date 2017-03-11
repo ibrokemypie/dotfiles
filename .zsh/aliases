@@ -6,6 +6,7 @@ function cherrypick() {
 git fetch $1 && git cherry-pick $2
 }
 
+alias nano=micro
 
 #OSX
 alias cask="brew cask"
@@ -19,5 +20,5 @@ su hey -c "pacaur $*";
 alias ll="ls -aF"
 alias aurd="aur -Syua --devel --noedit --noconfirm"
 function paste() {
-$* | curl -F c=@- https://ptpb.pw 
+$* | curl -F c=@- https://ptpb.pw
 }

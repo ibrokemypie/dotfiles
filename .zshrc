@@ -17,7 +17,7 @@ source ~/.zsh/fasd.zsh
 source ~/.zsh/theme-and-appearance.zsh
 source ~/.zsh/git.zsh
 source ~/.zsh/bullet-train.zsh
-source ~/.zsh/set-title-tab.zsh
+#source ~/.zsh/set-title-tab.zsh
 source ~/.zsh/zsh-256color/zsh-256color.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes.zsh

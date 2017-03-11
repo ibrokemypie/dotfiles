@@ -2,31 +2,31 @@
 4.10.3+=true
 
 [/root/Desktop/SpeedRunners.desktop]
-row=1
-col=1
-
-[/root/Desktop/Stardew Valley.desktop]
-row=2
-col=1
-
-[/root/Desktop/FTL Faster Than Light.desktop]
-row=9
-col=0
-
-[/root/Desktop/steam.desktop]
 row=8
 col=0
 
-[EE7CF4B37CF47823]
-row=2
+[/root/Desktop/Stardew Valley.desktop]
+row=9
+col=0
+
+[/root/Desktop/FTL Faster Than Light.desktop]
+row=7
+col=0
+
+[/root/Desktop/steam.desktop]
+row=6
 col=0
 
 [AC4CF3894CF34C98]
-row=4
+row=0
 col=0
 
 [4E906F9A906F8775]
 row=1
+col=0
+
+[EE7CF4B37CF47823]
+row=2
 col=0
 
 [Trash]
@@ -34,10 +34,10 @@ row=3
 col=0
 
 [/]
-row=5
+row=4
 col=0
 
 [/root]
-row=6
+row=5
 col=0
 

@@ -1,6 +1,5 @@
 #EXPORTS
 export EDITOR=micro
-export VISUAL=micro
 export GIT_EDITOR=micro
 export LANG="en_AU.UTF-8"
 export LC_ALL="en_AU.UTF-8"

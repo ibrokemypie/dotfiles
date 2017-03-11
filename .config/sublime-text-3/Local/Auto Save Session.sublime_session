@@ -302,7 +302,7 @@
 					"file": "/root/.xsession-errors",
 					"settings":
 					{
-						"buffer_size": 56399,
+						"buffer_size": 35314,
 						"line_ending": "Unix"
 					}
 				},
@@ -318,7 +318,7 @@
 					"file": "/etc/default/grub",
 					"settings":
 					{
-						"buffer_size": 1689,
+						"buffer_size": 1690,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -331,7 +331,6 @@
 					"settings":
 					{
 						"buffer_size": 1557,
-						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
@@ -347,7 +346,25 @@
 					"file": "/etc/grub.d/31_hold_shift",
 					"settings":
 					{
-						"buffer_size": 1557,
+						"buffer_size": 1317,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/boot/grub/grub.cfg",
+					"settings":
+					{
+						"buffer_size": 13321,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/etc/grub.d/20_windows",
+					"settings":
+					{
+						"buffer_size": 576,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
@@ -480,6 +497,7 @@
 			},
 			"file_history":
 			[
+				"/boot/grub/grub.cfg.new",
 				"/home/root/.Xdefaults",
 				"/home/root/.Xresources_Bak",
 				"/root/.Xresources",
@@ -587,7 +605,7 @@
 			"groups":
 			[
 				{
-					"selected": 10,
+					"selected": 9,
 					"sheets":
 					[
 						{
@@ -615,7 +633,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 21,
+							"stack_index": 23,
 							"type": "text"
 						},
 						{
@@ -643,7 +661,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 20,
+							"stack_index": 22,
 							"type": "text"
 						},
 						{
@@ -671,7 +689,7 @@
 								"translation.y": 945.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 15,
+							"stack_index": 17,
 							"type": "text"
 						},
 						{
@@ -699,7 +717,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 19,
+							"stack_index": 21,
 							"type": "text"
 						},
 						{
@@ -729,7 +747,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 16,
+							"stack_index": 18,
 							"type": "text"
 						},
 						{
@@ -757,7 +775,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 18,
+							"stack_index": 20,
 							"type": "text"
 						},
 						{
@@ -785,7 +803,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 17,
+							"stack_index": 19,
 							"type": "text"
 						},
 						{
@@ -794,7 +812,7 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 56399,
+								"buffer_size": 35314,
 								"regions":
 								{
 								},
@@ -813,7 +831,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 14,
+							"stack_index": 16,
 							"type": "text"
 						},
 						{
@@ -841,7 +859,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
+							"stack_index": 6,
 							"type": "text"
 						},
 						{
@@ -850,15 +868,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1689,
+								"buffer_size": 1690,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1660,
-										1660
+										303,
+										303
 									]
 								],
 								"settings":
@@ -866,10 +884,10 @@
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 332.0,
+								"translation.y": 47.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
@@ -897,7 +915,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 4,
 							"type": "text"
 						},
 						{
@@ -926,7 +944,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 2,
+							"stack_index": 5,
 							"type": "text"
 						},
 						{
@@ -935,15 +953,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1557,
+								"buffer_size": 1317,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										1317,
+										1317
 									]
 								],
 								"settings":
@@ -956,11 +974,70 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 13,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
 							"buffer": 13,
+							"file": "/boot/grub/grub.cfg",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 13321,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 14,
+							"file": "/etc/grub.d/20_windows",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 576,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										213,
+										213
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 15,
 							"file": "/etc/grub.d/40_custom",
 							"semi_transient": false,
 							"settings":
@@ -984,11 +1061,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 12,
+							"stack_index": 15,
 							"type": "text"
 						},
 						{
-							"buffer": 14,
+							"buffer": 16,
 							"file": "/etc/grub.d/41_custom",
 							"semi_transient": false,
 							"settings":
@@ -1012,11 +1089,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 11,
+							"stack_index": 14,
 							"type": "text"
 						},
 						{
-							"buffer": 15,
+							"buffer": 17,
 							"file": "/etc/grub.d/51_header",
 							"semi_transient": false,
 							"settings":
@@ -1042,11 +1119,11 @@
 								"translation.y": 3637.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 10,
+							"stack_index": 13,
 							"type": "text"
 						},
 						{
-							"buffer": 16,
+							"buffer": 18,
 							"file": "/etc/grub.d/00_header",
 							"semi_transient": false,
 							"settings":
@@ -1072,11 +1149,11 @@
 								"translation.y": 4551.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 9,
+							"stack_index": 12,
 							"type": "text"
 						},
 						{
-							"buffer": 17,
+							"buffer": 19,
 							"file": "/etc/grub.d/52_grub-customizer_menu_color_helper",
 							"semi_transient": false,
 							"settings":
@@ -1101,11 +1178,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 8,
+							"stack_index": 11,
 							"type": "text"
 						},
 						{
-							"buffer": 18,
+							"buffer": 20,
 							"file": "/etc/grub.d/53_os-prober",
 							"semi_transient": false,
 							"settings":
@@ -1131,11 +1208,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 7,
+							"stack_index": 10,
 							"type": "text"
 						},
 						{
-							"buffer": 19,
+							"buffer": 21,
 							"file": "/etc/grub.d/30_os-prober",
 							"semi_transient": false,
 							"settings":
@@ -1161,11 +1238,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 6,
+							"stack_index": 9,
 							"type": "text"
 						},
 						{
-							"buffer": 20,
+							"buffer": 22,
 							"file": "/etc/grub.d/55_linux_proxy",
 							"semi_transient": false,
 							"settings":
@@ -1189,11 +1266,11 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 5,
+							"stack_index": 8,
 							"type": "text"
 						},
 						{
-							"buffer": 21,
+							"buffer": 23,
 							"file": "/etc/grub.d/proxifiedScripts/custom",
 							"semi_transient": false,
 							"settings":
@@ -1218,7 +1295,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 4,
+							"stack_index": 7,
 							"type": "text"
 						}
 					]
@@ -1264,7 +1341,7 @@
 				"height": 100.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,208,48,979,1069,3520,1200",
+			"position": "0,0,0,0,0,208,20,979,1041,3520,1200",
 			"project": "",
 			"replace":
 			{

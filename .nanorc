@@ -1,6 +1,16 @@
 set mouse
+set suspend
+set backup 
 #set autoindent
 #set tabstospaces
+set cut
+set historylog
+set smooth
+set nowrap
+set softwrap
 
-#include ~/.nano/syntax/ALL.nanorc
 
+#include "/usr/share/nano/*.nanorc"
+#hide errors due to osx regex
+set quiet
+include ~/.nano/syntax/ALL.nanorc

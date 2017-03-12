@@ -1,1 +1,1 @@
-/Users/Conor/.weechat/python/wee_slack.py
+../wee_slack.py

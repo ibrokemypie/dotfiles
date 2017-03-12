@@ -40,7 +40,7 @@ fi
 #dir="$HOME/dotfiles"                    # dotfiles directory
 olddir="$HOME/dotfiles_old"             # old dotfiles backup directory
 
-GLOBIGNORE=".git:.gitignore:.gitmodules:install"; files=(.*)
+GLOBIGNORE=".git:.gitignore:.gitmodules:install:.DS_Store"; files=(.*)
 
 
 ##########
@@ -59,15 +59,15 @@ fi
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for f in ${files[*]}; do
     if [ -f "$HOME/$f" ] || [ -d "$HOME/$f" ]; then
-    	echo "file exists"
+    	# echo "file exists"
     	if [ ! -L "$HOME/$f" ]; then
     		echo "$f is not a symlink"
     		printf "\n Moving $HOME/$f to $olddir/$f\n"
  			mv -b "$HOME/$f" "$HOME/dotfiles_old/$f"
  			printf "\n Linking $HOME/$f to $(pwd)/$f\n"
     		ln -s "$(pwd)/$f" "$HOME/$f"
- 		else
- 			echo  "$f is a symlink"
+ 		#else
+ 			#echo  "$f is a symlink"
  		fi
     else
     	echo "$f doesnt exist"
@@ -75,3 +75,4 @@ for f in ${files[*]}; do
     	ln -s "$(pwd)/$f" "$HOME/$f"
     fi
 done
+echo Done!

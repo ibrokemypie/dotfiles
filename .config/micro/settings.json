@@ -14,7 +14,9 @@
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
     ],
-    "pluginrepos": [],
+    "pluginrepos": [
+    	"https://raw.githubusercontent.com/samdmarshall/micro-natural-navigation-plugin/master/repo.json"
+    ],
     "rmtrailingws": true,
     "ruler": true,
     "savecursor": false,

@@ -1,6 +1,6 @@
 {
-    "Up":             "CursorUp",
-    "Down":           "CursorDown",
+    "Up": "UnbindKey,natural_navigation.NavigateUp",
+    "Down": "UnbindKey,natural_navigation.NavigateDown",
     "Right":          "CursorRight",
     "Left":           "CursorLeft",
     "ShiftUp":        "SelectUp",

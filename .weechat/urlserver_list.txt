@@ -1,5 +1,4 @@
 {
-  36121: ('11/03/17 21:42:56', '', 'irc.irc_raw', 'https://joshuacasey.net', '--> freenode\t:verne.freenode.net 354 ibrokemypie #weechat Joshua elitebnc/staff/joshuaacasey hobana.freenode.net JoshuaACasey H 0 Jacnoc :https://joshuacasey.net'),
   36122: ('11/03/17 21:42:57', '', 'irc.irc_raw', 'https://yui.cat/', '--> freenode\t:verne.freenode.net 354 ibrokemypie #weechat ~jordan tor-relay-dallas.yui.cat weber.freenode.net jmsx H 0 jmsx :https://yui.cat/'),
   36123: ('11/03/17 21:42:59', '', 'irc.irc_raw', 'http://hellekin.dyne.org', '--> freenode\t:verne.freenode.net 354 ibrokemypie #weechat ~how unaffiliated/hellekin rajaniemi.freenode.net hellekin H 0 hellekin :http://hellekin.dyne.org'),
   36124: ('11/03/17 21:43:05', '', 'irc.irc_raw', 'https://chrisdown.name', '--> freenode\t:verne.freenode.net 354 ibrokemypie #archlinux ~cdown 199.201.66.3 moon.freenode.net cdown H 0 cdown :Chris Down <https://chrisdown.name>'),
@@ -99,4 +98,5 @@
   36218: ('13/03/17 01:03:53', 'luisitox22', 'python.team-nebula-project.slack.com.#random', 'https://team-nebula-project.slack.com/files/luisitox22/F4HRBT5FY/pasted_image_at_2017_03_12_10_00_am.png', '\xe2\x80\x9c\xe2\x80\x9d\tluisitox22 uploaded a file: https://team-nebula-project.slack.com/files/luisitox22/F4HRBT5FY/pasted_image_at_2017_03_12_10_00_am.png (Pasted image at 2017-03-12, 10:00 AM)'),
   36219: ('13/03/17 01:15:51', 'dukat0s', 'python.team-nebula-project.slack.com.#general', 'https://goo.gl/search/Darth+VaderDarth', '\thttps://goo.gl/search/Darth+VaderDarth Vader (Star Wars character).'),
   36220: ('13/03/17 01:15:53', 'dukat0s', 'python.team-nebula-project.slack.com.#general', 'https://goo.gl/search/Darth+Vader', '\thttps://goo.gl/search/Darth+Vader'),
+  36221: ('15/03/17 14:36:26', '', 'python.twitter', 'https://api.twitter.com/oauth/authorize?oauth_token=r_CRkwAAAAAAQJ1PAAABWtAJx1Y', '\t Please go here to get your PIN: https://api.twitter.com/oauth/authorize?oauth_token=r_CRkwAAAAAAQJ1PAAABWtAJx1Y'),
 }

@@ -204,6 +204,9 @@ def read_config():
     for item in ["auth_complete","print_id","alt_rt_style","home_replies","tweet_nicks"]:
         #Convert to bool
         script_options[item] = weechat.config_string_to_boolean(script_options[item])
+    for item in ["oauth_token","oauth_secret"]:
+        #Convert potentially encrypted tokens
+        script_options[item] = weechat.string_eval_expression(script_options[item], {}, {}, {})
 
 def config_cb(data, option, value):
     """Callback called when a script option is changed."""
@@ -1250,4 +1253,3 @@ elif import_ok:
         print(get_twitter_data(sys.argv))
 else:
     print("Can't load twitter python lib >= " + required_twitter_version )
-

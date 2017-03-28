@@ -28,14 +28,7 @@
     "select": true,
     "reflect databases": false
   },
-  /* "reflector": { */
-    /* "args.unused": [ */
-      /* "--protocol", */
-      /* "http", */
-      /* "--latest", */
-      /* "50" */
-    /* ] */
-  /* }, */
+
   "rsync": {
     "args": [
       "--no-motd",

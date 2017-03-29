@@ -16,8 +16,8 @@
 #
 #xfce-mcs-manager &
 
-thunar --daemon &
 xfdesktop &
+thunar --daemon &
 urxvtd &
 plank &
 albert &

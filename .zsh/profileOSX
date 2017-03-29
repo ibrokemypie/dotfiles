@@ -34,3 +34,5 @@ bindkey '^X^e' edit-command-line
 bindkey -e
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+alias whois='/usr/local/bin/whois'

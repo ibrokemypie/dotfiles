@@ -10,7 +10,7 @@ alias nano=micro
 
 #OSX
 alias cask="brew cask"
-alias whois='/usr/local/bin/whois'
+
 
 
 #LINUX

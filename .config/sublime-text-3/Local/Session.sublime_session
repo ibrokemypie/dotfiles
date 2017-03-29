@@ -236,32 +236,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/etc/grub.d/20_windows",
-					"settings":
-					{
-						"buffer_size": 552,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/boot/grub/grub.cfg",
-					"settings":
-					{
-						"buffer_size": 13115,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/boot/grub/grubenv",
-					"settings":
-					{
-						"buffer_size": 1024,
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -303,20 +277,40 @@
 			},
 			"file_history":
 			[
-				"/usr/share/applications/termite.desktop",
-				"/root/.config/sxhkd/sxhkdrc",
+				"/root/.xsession-errors",
+				"/root/.xinitrc",
 				"/root/.Xdefaults",
+				"/root/.config/openbox/autostart",
+				"/root/.config/openbox/environment",
+				"/root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml",
+				"/root/.config/xfce4/helpers.rc",
+				"/root/.config/autostart/cmst-autostart.desktop",
+				"/root/.config/mimeapps.list",
+				"/root/.lesshst",
+				"/opt/vivaldi/vivaldi",
+				"/root/.config/sxhkd/sxhkdrc",
+				"/root/.config/openbox/rc.xml",
+				"/root/.config/yabar/yabar.conf",
+				"/opt/chrome-linux/chrome.1",
+				"/opt/chrome-linux/chromium",
+				"/opt/chrome-linux/xdg-settings",
+				"/opt/chrome-linux/xdg-mime",
+				"/opt/chrome-linux/vivaldi",
+				"/opt/chrome-linux/chrome",
+				"/root/.profile",
+				"/root/.termc",
+				"/boot/grub/grubenv",
+				"/boot/grub/grub.cfg",
+				"/boot/grub/grub.cfg.new",
+				"/etc/grub.d/20_windows",
+				"/usr/share/applications/termite.desktop",
 				"/root/.themes/TissueBox-Wolf/openbox-3/themerc",
 				"/root/.vnc/xstartup.turbovnc",
-				"/root/.config/yabar/yabar.conf",
-				"/root/.config/openbox/autostart",
-				"/root/.xsession-errors",
 				"/etc/grub.d/README",
 				"/etc/default/grub",
 				"/etc/grub.d/31_holdshift",
 				"/boot/grub/themes/arch-silence/theme.txt",
 				"/etc/grub.d/31_hold_shift",
-				"/boot/grub/grub.cfg",
 				"/etc/grub.d/10_linux",
 				"/etc/grub.d/40_custom",
 				"/etc/grub.d/41_custom",
@@ -328,13 +322,11 @@
 				"/etc/grub.d/55_linux_proxy",
 				"/etc/grub.d/20_linux_xen",
 				"/etc/grub.d/proxifiedScripts/custom",
-				"/boot/grub/grub.cfg.new",
 				"/home/root/.Xdefaults",
 				"/home/root/.Xresources_Bak",
 				"/root/.Xresources",
 				"/usr/share/applications/kitty.desktop",
 				"/root/.zshrc",
-				"/root/.config/openbox/rc.xml",
 				"/root/.zsh/aliasesUNIX",
 				"/etc/lightdm/users.conf",
 				"/etc/lightdm/Xsession",
@@ -355,8 +347,6 @@
 				"/root/17499-00659000-0065a000.dump",
 				"/root/.config/lxsession/LXDE/desktop.conf",
 				"/root/.bashrc",
-				"/root/.profile",
-				"/root/.termc",
 				"/root/android/system/.repo/local_manifests/roomservice.xml",
 				"/root/Desktop/tesata",
 				"/root/.onedrive/ignore_v2.ini",
@@ -371,7 +361,6 @@
 				"/home/hey/.cache/pacaur/ncurses5-compat-libs/PKGBUILD",
 				"/root/android/system/.repo/manifest.xml",
 				"/root/.Xauthority",
-				"/root/.config/openbox/environment",
 				"/root/.config/termite/config",
 				"/root/dotfiles/i",
 				"/root/.install",
@@ -383,7 +372,7 @@
 			],
 			"find":
 			{
-				"height": 23.0
+				"height": 34.0
 			},
 			"find_in_files":
 			{
@@ -397,6 +386,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"256color",
+					"VIVALDI",
 					"overw",
 					"overwr",
 					"extglob",
@@ -415,6 +406,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"chrome-linux",
 					"printf",
 					"platform/pre",
 					"",
@@ -430,100 +422,14 @@
 			"groups":
 			[
 				{
-					"selected": 0,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/etc/grub.d/20_windows",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 552,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										552,
-										552
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/boot/grub/grub.cfg",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 13115,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										13115
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-								},
-								"translation.x": 16.0,
-								"translation.y": 486.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/boot/grub/grubenv",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 1024,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						}
 					]
 				}
 			],
 			"incremental_find":
 			{
-				"height": 23.0
+				"height": 22.0
 			},
 			"input":
 			{
@@ -565,7 +471,7 @@
 			"project": "",
 			"replace":
 			{
-				"height": 42.0
+				"height": 40.0
 			},
 			"save_all_on_build": true,
 			"select_file":

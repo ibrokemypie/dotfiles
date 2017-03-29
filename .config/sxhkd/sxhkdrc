@@ -1,2 +1,2 @@
 control + grave
-    tdrop -m -h "35%" -w "100%" -a urxvt
+    tdrop -m -h "35%" -w "100%" -a urxvtc

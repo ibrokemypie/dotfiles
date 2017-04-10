@@ -1,10 +1,6 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/root/Desktop/No Time To Explain Remastered.desktop]
-row=7
-col=0
-
 [/root/Desktop/SpeedRunners.desktop]
 row=1
 col=1
@@ -21,8 +17,20 @@ col=0
 row=8
 col=0
 
-[9b6e6f0b-731f-44b8-9bff-5c3552aa4922]
+[4E906F9A906F8775]
+row=1
+col=0
+
+[EE7CF4B37CF47823]
+row=2
+col=0
+
+[AC4CF3894CF34C98]
 row=0
+col=0
+
+[Trash]
+row=3
 col=0
 
 [/]

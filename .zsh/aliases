@@ -22,3 +22,8 @@ alias aurd="aur -Syua --devel --noedit --noconfirm"
 function paste() {
 $* | curl -F c=@- https://ptpb.pw
 }
+function my_reboot_to_windows {
+    WINDOWS_TITLE=`grep -i 'windows' /boot/grub/grub.cfg|cut -d"'" -f2`
+    sudo grub-reboot "$WINDOWS_TITLE"
+    sudo reboot
+}

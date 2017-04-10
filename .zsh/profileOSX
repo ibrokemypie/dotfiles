@@ -24,6 +24,7 @@ if test "$DISABLE_COLOR" = true; then
 fi
 
 
+
 autoload -Uz compinit
 compinit
 autoload edit-command-line

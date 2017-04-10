@@ -1,5 +1,10 @@
 #! zsh
 
+#tmux
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
 #start timer
 zmodload zsh/datetime
 start=$EPOCHREALTIME

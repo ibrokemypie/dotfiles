@@ -29,11 +29,6 @@ if test "$DISABLE_COLOR" = true; then
   unset HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND
 fi
 
-#tmux
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
-
 autoload -Uz compinit
 compinit
 autoload edit-command-line

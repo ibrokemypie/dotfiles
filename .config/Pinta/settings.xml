@@ -5,4 +5,5 @@
   <setting name="toolbar-shown" type="System.Boolean">True</setting>
   <setting name="pixel-grid-shown" type="System.Boolean">False</setting>
   <setting name="last-dialog-directory" type="System.String">/root/Pictures</setting>
+  <setting name="jpg-quality" type="System.Int32">85</setting>
 </settings>

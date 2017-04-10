@@ -1,0 +1,3 @@
+<Addins host-reference="/Applications/Pinta.app/Contents/MacOS/Pinta.exe">
+  <Directory shared="false">/Applications/Pinta.app/Contents/MacOS</Directory>
+</Addins>

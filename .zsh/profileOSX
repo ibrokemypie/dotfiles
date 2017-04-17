@@ -23,8 +23,6 @@ if test "$DISABLE_COLOR" = true; then
   unset HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND
 fi
 
-
-
 autoload -Uz compinit
 compinit
 autoload edit-command-line
@@ -36,4 +34,8 @@ bindkey -e
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+#aliases
 alias whois='/usr/local/bin/whois'
+
+#tmux
+tmux set-option -g default-command 'exec reattach-to-user-namespace -l zsh'

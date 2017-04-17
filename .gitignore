@@ -10,3 +10,5 @@
 .config/micro/buffers/
 *.cache
 *.log
+.config/hub
+.config/.hub

@@ -1,0 +1,15 @@
+
+[audacious]
+slow_probe=TRUE
+
+[audgui]
+filesel_path=/Volumes/extDISK/music
+
+[qtui]
+playlist_tabs_visible=FALSE
+
+[search-tool]
+path=/Volumes/extDISK/music
+
+[statusicon-qt]
+close_to_tray=TRUE

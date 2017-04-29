@@ -1,12 +1,37 @@
 
 [audacious]
+record=FALSE
+repeat=TRUE
+shuffle=TRUE
 slow_probe=TRUE
 
 [audgui]
-filesel_path=/Volumes/extDISK/music
+filesel_path=/Users/Conor/OneDrive
+
+[bs2b]
+fcut=650
+feed=95
+
+[gtkui]
+column_widths=10,275,175,10,175,175,10,100,32,10,275,275,275,10,275
+player_height=856
+player_width=1436
+player_x=4
+player_y=22
+
+[gtkui-layout]
+item_count=0
+
+[notify]
+actions=FALSE
+resident=TRUE
 
 [qtui]
 playlist_tabs_visible=FALSE
+
+[sdlout]
+vol_left=59
+vol_right=59
 
 [search-tool]
 path=/Volumes/extDISK/music

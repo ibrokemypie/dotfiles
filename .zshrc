@@ -2,7 +2,7 @@
 
 #tmux
 if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && (tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
 fi
 
 #start timer

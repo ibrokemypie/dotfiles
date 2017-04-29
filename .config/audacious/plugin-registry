@@ -1,6 +1,6 @@
 format 11
 transport /usr/local/lib/audacious/Transport/gio.bundle
-stamp 1493124236
+stamp 1493183173
 version 48
 flags 0
 name GIO Plugin
@@ -14,7 +14,7 @@ scheme sftp
 scheme smb
 scheme mtp
 transport /usr/local/lib/audacious/Transport/neon.bundle
-stamp 1493124237
+stamp 1493183175
 version 48
 flags 0
 name Neon HTTP/HTTPS Plugin
@@ -26,7 +26,7 @@ enabled 1
 scheme http
 scheme https
 playlist /usr/local/lib/audacious/Container/asx.bundle
-stamp 1493124228
+stamp 1493183161
 version 48
 flags 0
 name ASXv1/ASXv2 Playlists
@@ -38,7 +38,7 @@ enabled 1
 ext asx
 saves 0
 playlist /usr/local/lib/audacious/Container/asx3.bundle
-stamp 1493124229
+stamp 1493183163
 version 48
 flags 0
 name ASXv3 Playlists
@@ -50,7 +50,7 @@ enabled 1
 ext asx
 saves 1
 playlist /usr/local/lib/audacious/Container/audpl.bundle
-stamp 1493124230
+stamp 1493183165
 version 48
 flags 0
 name Audacious Playlists (audpl)
@@ -62,7 +62,7 @@ enabled 1
 ext audpl
 saves 1
 playlist /usr/local/lib/audacious/Container/cue.bundle
-stamp 1493124235
+stamp 1493183171
 version 48
 flags 0
 name Cue Sheet Plugin
@@ -74,7 +74,7 @@ enabled 1
 ext cue
 saves 0
 playlist /usr/local/lib/audacious/Container/m3u.bundle
-stamp 1493124231
+stamp 1493183167
 version 48
 flags 0
 name M3U Playlists
@@ -87,7 +87,7 @@ ext m3u
 ext m3u8
 saves 1
 playlist /usr/local/lib/audacious/Container/pls.bundle
-stamp 1493124231
+stamp 1493183167
 version 48
 flags 0
 name PLS Playlists
@@ -99,7 +99,7 @@ enabled 1
 ext pls
 saves 1
 playlist /usr/local/lib/audacious/Container/xspf.bundle
-stamp 1493124233
+stamp 1493183170
 version 48
 flags 0
 name XML Shareable Playlists (XSPF)
@@ -111,7 +111,7 @@ enabled 1
 ext xspf
 saves 1
 input /usr/local/lib/audacious/Input/xsf.bundle
-stamp 1493124219
+stamp 1493183151
 version 48
 flags 0
 name 2SF Decoder
@@ -125,7 +125,7 @@ scheme mini2sf
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/aac-raw.bundle
-stamp 1493124212
+stamp 1493183143
 version 48
 flags 0
 name AAC (Raw) Decoder
@@ -138,7 +138,7 @@ scheme aac
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/adplug.bundle
-stamp 1493124248
+stamp 1493183192
 version 48
 flags 0
 name AdPlug (AdLib Player)
@@ -184,7 +184,7 @@ scheme xsm
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/amidi-plug.bundle
-stamp 1493124212
+stamp 1493183143
 version 48
 flags 0
 name AMIDI-Plug (MIDI Player)
@@ -200,7 +200,7 @@ scheme rmid
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/console.bundle
-stamp 1493124241
+stamp 1493183179
 version 48
 flags 0
 name Game Console Music Decoder
@@ -223,7 +223,7 @@ scheme vgz
 subtunes 2
 writes 0
 input /usr/local/lib/audacious/Input/madplug.bundle
-stamp 1493124211
+stamp 1493183142
 version 48
 flags 0
 name MPG123 Plugin
@@ -239,7 +239,7 @@ scheme bmu
 subtunes 0
 writes 1
 input /usr/local/lib/audacious/Input/psf2.bundle
-stamp 1493124215
+stamp 1493183145
 version 48
 flags 0
 name OpenPSF PSF1/PSF2 Decoder
@@ -257,7 +257,7 @@ scheme spx
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/metronom.bundle
-stamp 1493124209
+stamp 1493183139
 version 48
 flags 0
 name Tact Generator
@@ -270,7 +270,7 @@ mime tact
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/tonegen.bundle
-stamp 1493124209
+stamp 1493183140
 version 48
 flags 0
 name Tone Generator
@@ -283,7 +283,7 @@ mime tone
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/vtx.bundle
-stamp 1493124211
+stamp 1493183142
 version 48
 flags 0
 name VTX Decoder
@@ -296,7 +296,7 @@ scheme vtx
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/wavpack.bundle
-stamp 1493124212
+stamp 1493183143
 version 48
 flags 0
 name WavPack Decoder
@@ -309,7 +309,7 @@ scheme wv
 subtunes 0
 writes 1
 input /usr/local/lib/audacious/Input/flacng.bundle
-stamp 1493124211
+stamp 1493183141
 version 48
 flags 0
 name FLAC Decoder
@@ -323,7 +323,7 @@ scheme fla
 subtunes 0
 writes 1
 input /usr/local/lib/audacious/Input/vorbis.bundle
-stamp 1493124211
+stamp 1493183142
 version 48
 flags 0
 name Ogg Vorbis Decoder
@@ -339,7 +339,7 @@ ext application/ogg
 subtunes 0
 writes 1
 input /usr/local/lib/audacious/Input/sndfile.bundle
-stamp 1493124213
+stamp 1493183144
 version 48
 flags 0
 name Sndfile Plugin
@@ -355,7 +355,7 @@ scheme wav
 subtunes 0
 writes 0
 input /usr/local/lib/audacious/Input/ffaudio.bundle
-stamp 1493124214
+stamp 1493183145
 version 48
 flags 0
 name FFmpeg Plugin
@@ -383,11 +383,12 @@ scheme oga
 scheme opus
 scheme spx
 scheme tta
+scheme webm
 ext application/ogg
 subtunes 0
 writes 1
 effect /usr/local/lib/audacious/Effect/bs2b.bundle
-stamp 1493124218
+stamp 1493183149
 version 48
 flags 0
 name Bauer Stereophonic-to-Binaural (BS2B)
@@ -397,7 +398,7 @@ about 0
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/crystalizer.bundle
-stamp 1493124216
+stamp 1493183147
 version 48
 flags 0
 name Crystalizer
@@ -407,7 +408,7 @@ about 0
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/compressor.bundle
-stamp 1493124215
+stamp 1493183146
 version 48
 flags 0
 name Dynamic Range Compressor
@@ -417,7 +418,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/echo.bundle
-stamp 1493124218
+stamp 1493183149
 version 48
 flags 0
 name Echo
@@ -427,7 +428,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/stereo.bundle
-stamp 1493124217
+stamp 1493183148
 version 48
 flags 0
 name Extra Stereo
@@ -437,7 +438,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/silence-removal.bundle
-stamp 1493124217
+stamp 1493183148
 version 48
 flags 0
 name Silence Removal
@@ -447,7 +448,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/speed-pitch.bundle
-stamp 1493124218
+stamp 1493183149
 version 48
 flags 0
 name Speed and Pitch
@@ -457,7 +458,7 @@ about 0
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/voice_removal.bundle
-stamp 1493124217
+stamp 1493183149
 version 48
 flags 0
 name Voice Removal
@@ -467,7 +468,7 @@ about 0
 config 0
 enabled 0
 effect /usr/local/lib/audacious/Effect/mixer.bundle
-stamp 1493124217
+stamp 1493183148
 version 48
 flags 0
 name Channel Mixer
@@ -477,7 +478,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/resample.bundle
-stamp 1493124218
+stamp 1493183149
 version 48
 flags 0
 name Sample Rate Converter
@@ -487,7 +488,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/sox-resampler.bundle
-stamp 1493124218
+stamp 1493183150
 version 48
 flags 0
 name SoX Resampler
@@ -497,7 +498,7 @@ about 1
 config 1
 enabled 0
 effect /usr/local/lib/audacious/Effect/crossfade.bundle
-stamp 1493124216
+stamp 1493183146
 version 48
 flags 0
 name Crossfade
@@ -507,7 +508,7 @@ about 1
 config 1
 enabled 0
 output /usr/local/lib/audacious/Output/qtaudio.bundle
-stamp 1493124216
+stamp 1493183148
 version 48
 flags 0
 name QtMultimedia Output
@@ -517,7 +518,7 @@ about 1
 config 0
 enabled 0
 output /usr/local/lib/audacious/Output/sdlout.bundle
-stamp 1493124214
+stamp 1493183146
 version 48
 flags 0
 name SDL Output
@@ -527,7 +528,7 @@ about 1
 config 0
 enabled 1
 output /usr/local/lib/audacious/Output/filewriter.bundle
-stamp 1493124217
+stamp 1493183148
 version 48
 flags 0
 name FileWriter Plugin
@@ -537,7 +538,7 @@ about 1
 config 1
 enabled 0
 vis /usr/local/lib/audacious/Visualization/gl-spectrum-qt.bundle
-stamp 1493124221
+stamp 1493183153
 version 48
 flags 2
 name OpenGL Spectrum Analyzer
@@ -547,7 +548,7 @@ about 1
 config 0
 enabled 0
 general /usr/local/lib/audacious/General/albumart-qt.bundle
-stamp 1493124220
+stamp 1493183152
 version 48
 flags 2
 name Album Art
@@ -557,7 +558,7 @@ about 0
 config 0
 enabled 1
 general /usr/local/lib/audacious/General/delete-files.bundle
-stamp 1493124225
+stamp 1493183160
 version 48
 flags 0
 name Delete Files
@@ -567,7 +568,7 @@ about 0
 config 1
 enabled 1
 general /usr/local/lib/audacious/General/notify.bundle
-stamp 1493124227
+stamp 1493183162
 version 48
 flags 0
 name Desktop Notifications
@@ -577,7 +578,7 @@ about 1
 config 1
 enabled 1
 general /usr/local/lib/audacious/General/lyricwiki-qt.bundle
-stamp 1493124221
+stamp 1493183154
 version 48
 flags 2
 name LyricWiki Plugin
@@ -587,7 +588,7 @@ about 0
 config 0
 enabled 1
 general /usr/local/lib/audacious/General/mac-media-keys.bundle
-stamp 1493124233
+stamp 1493183167
 version 48
 flags 0
 name Mac Media Keys
@@ -597,7 +598,7 @@ about 0
 config 0
 enabled 1
 general /usr/local/lib/audacious/General/playlist-manager-qt.bundle
-stamp 1493124221
+stamp 1493183154
 version 48
 flags 2
 name Playlist Manager
@@ -607,7 +608,7 @@ about 0
 config 0
 enabled 1
 general /usr/local/lib/audacious/General/scrobbler.bundle
-stamp 1493124228
+stamp 1493183162
 version 48
 flags 0
 name Scrobbler 2.0
@@ -617,7 +618,7 @@ about 1
 config 1
 enabled 1
 general /usr/local/lib/audacious/General/search-tool-qt.bundle
-stamp 1493124223
+stamp 1493183155
 version 48
 flags 2
 name Search Tool
@@ -625,9 +626,9 @@ domain audacious-plugins
 priority 0
 about 0
 config 0
-enabled 0
+enabled 1
 general /usr/local/lib/audacious/General/song_change.bundle
-stamp 1493124225
+stamp 1493183158
 version 48
 flags 0
 name Song Change
@@ -637,7 +638,7 @@ about 0
 config 1
 enabled 0
 general /usr/local/lib/audacious/General/song-info-qt.bundle
-stamp 1493124222
+stamp 1493183155
 version 48
 flags 2
 name Song Info
@@ -647,7 +648,7 @@ about 0
 config 0
 enabled 1
 general /usr/local/lib/audacious/General/statusicon-qt.bundle
-stamp 1493124223
+stamp 1493183156
 version 48
 flags 2
 name Status Icon
@@ -657,7 +658,7 @@ about 1
 config 1
 enabled 1
 iface /usr/local/lib/audacious/General/qtui.bundle
-stamp 1493124238
+stamp 1493183179
 version 48
 flags 2
 name Qt Interface
@@ -667,7 +668,7 @@ about 0
 config 1
 enabled 1
 iface /usr/local/lib/audacious/General/skins-qt.bundle
-stamp 1493124248
+stamp 1493183192
 version 48
 flags 2
 name Winamp Classic Interface

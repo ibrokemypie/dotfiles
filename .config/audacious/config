@@ -1,12 +1,12 @@
 
 [audacious]
+advance_on_delete=TRUE
 record=FALSE
 repeat=TRUE
 shuffle=TRUE
-slow_probe=TRUE
 
 [audgui]
-filesel_path=/Users/Conor/OneDrive
+filesel_path=/Volumes/media_music/Albums/Artists/You Me At Six
 
 [bs2b]
 fcut=650
@@ -30,8 +30,8 @@ resident=TRUE
 playlist_tabs_visible=FALSE
 
 [sdlout]
-vol_left=59
-vol_right=59
+vol_left=68
+vol_right=68
 
 [search-tool]
 path=/Volumes/extDISK/music

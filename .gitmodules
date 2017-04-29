@@ -10,3 +10,6 @@
 [submodule ".zsh/zsh-syntax-highlighting-filetypes"]
 	path = .zsh/zsh-syntax-highlighting-filetypes
 	url = https://github.com/trapd00r/zsh-syntax-highlighting-filetypes
+[submodule "Color-Scripts"]
+	path = .config/Color-Scripts
+	url = https://github.com/stark/Color-Scripts

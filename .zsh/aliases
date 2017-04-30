@@ -10,8 +10,14 @@ alias nano=micro
 #OSX
 alias cask="brew cask"
 
+function mus() {
 
+if ! [ $(pgrep -x mpd) ]; then mpd ~/.config/mpd/mpd.conf; fi
 
+if ! [ $(pgrep -x mpdscribble) ]; then mpdscribble --conf ~/.config/mpdscribble/mpdscribble.conf; fi
+
+ncmpcpp
+}
 #LINUX
 function aur() {
 su hey -c "pacaur $*";

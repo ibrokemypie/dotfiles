@@ -6,7 +6,7 @@ repeat=TRUE
 shuffle=TRUE
 
 [audgui]
-filesel_path=/Volumes/media_music/Albums/Artists/You Me At Six
+filesel_path=/Volumes/media_music/Albums/Artists/Twenty One Pilots/No Phun Intended
 
 [bs2b]
 fcut=650
@@ -27,6 +27,7 @@ actions=FALSE
 resident=TRUE
 
 [qtui]
+column_widths=25,25,313,175,50,175,175,75,100,25,75,275,275,275,75,275
 playlist_tabs_visible=FALSE
 
 [sdlout]

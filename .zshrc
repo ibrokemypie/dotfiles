@@ -4,7 +4,7 @@
   if [ -z $SSH_TTY ]; then
   	[ -z $TMUX ] && (tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
   else
-  	(tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
+  	tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux
   fi
 
 #start timer
@@ -36,6 +36,8 @@ scripts=(
     $HOME/.zsh/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes.zsh
     $HOME/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 )
+
+export PATH=$PATH:~/.config/Color-Scripts/color-scripts
 
 #sauce me up
 for s in "${scripts[@]}"; do

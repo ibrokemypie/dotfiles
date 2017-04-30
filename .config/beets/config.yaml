@@ -1,0 +1,16 @@
+plugins: chroma acousticbrainz absubmit embedart fetchart lyrics replaygain mbsync copyartifacts info missing edit mpdstats mpdupdate
+
+directory: /Volumes/extDISK/music/
+library: /Volumes/extDISK/musiclibrary.blb
+import:
+    move: yes
+chroma:
+    auto: yes
+acoustid:
+    apikey: iVzJogWyXE
+acousticbrainz:
+    auto: yes
+absubmit:
+    auto: yes
+copyartifacts:
+    extensions: .mood

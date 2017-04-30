@@ -1,12 +1,12 @@
 
 [audacious]
+advance_on_delete=TRUE
 record=FALSE
 repeat=TRUE
 shuffle=TRUE
-slow_probe=TRUE
 
 [audgui]
-filesel_path=/Users/Conor/OneDrive
+filesel_path=/Volumes/media_music/Albums/Artists/Twenty One Pilots/No Phun Intended
 
 [bs2b]
 fcut=650
@@ -27,11 +27,12 @@ actions=FALSE
 resident=TRUE
 
 [qtui]
+column_widths=25,25,313,175,50,175,175,75,100,25,75,275,275,275,75,275
 playlist_tabs_visible=FALSE
 
 [sdlout]
-vol_left=59
-vol_right=59
+vol_left=68
+vol_right=68
 
 [search-tool]
 path=/Volumes/extDISK/music

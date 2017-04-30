@@ -4,7 +4,7 @@
   if [ -z $SSH_TTY ]; then
   	[ -z $TMUX ] && (tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
   else
-  	tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux
+  	(tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
   fi
 
 #start timer

@@ -4697,3 +4697,4 @@ May 02 15:32 : exception: nested: Failed to open /volumes/extdisk/music/iamsleep
 May 02 15:32 : exception: Failed to decode /volumes/extdisk/music/iamsleepless/Silhouettes/08 Sojourn.mp3
 May 02 15:32 : exception: nested: Failed to open /volumes/extdisk/music/iamsleepless/Silhouettes/08 Sojourn.mp3: No such file or directory
 May 02 15:32 : player: played "iamsleepless/the old tunes (2010 - 2012)/15 the promise i made over this blue sky.mp3"
+May 02 23:19 : client: [3] closed

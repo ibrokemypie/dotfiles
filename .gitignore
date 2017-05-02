@@ -12,3 +12,4 @@
 *.log
 .config/hub
 .config/.hub
+.config/mpdscribble/lastfm.journal

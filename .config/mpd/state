@@ -1,33 +1,23 @@
 sw_volume: 100
+audio_device_state:0:My HTTP Stream
 audio_device_state:1:My OS X Device
 audio_device_state:1:my_fifo
-state: play
-current: 1
-time: 3.993000
+state: stop
+current: 4
 random: 1
 repeat: 1
-single: 0
-consume: 0
+single: 1
+consume: 1
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Tyler Joseph/No Phun Intended/01 Blasphemy.flac
-1:Tyler Joseph/No Phun Intended/02 Drown.flac
-2:Tyler Joseph/No Phun Intended/03 Hole In The Ground.flac
-3:Tyler Joseph/No Phun Intended/04 Save.flac
-4:Tyler Joseph/No Phun Intended/05 Taken By Sleep.flac
-5:Tyler Joseph/No Phun Intended/06 I Want To Know.flac
-6:Tyler Joseph/No Phun Intended/07 Just Like Yesterday.flac
-7:Tyler Joseph/No Phun Intended/08 Never Change.flac
-8:Tyler Joseph/No Phun Intended/09 Prove Me Wrong.flac
-9:Tyler Joseph/No Phun Intended/10 Realize That It's Gone.flac
-10:Tyler Joseph/No Phun Intended/11 Tonight.flac
-11:Tyler Joseph/No Phun Intended/12 Falling Too.flac
-12:Tyler Joseph/No Phun Intended/13 Whisper.flac
-13:Tyler Joseph/No Phun Intended/14 TB Saga.flac
-14:Tyler Joseph/No Phun Intended/16 Trees.flac
-15:Tyler Joseph/No Phun Intended/17 Where Did We Go.flac
-16:Tyler Joseph/No Phun Intended/19 Hear Me Now.flac
-17:Paramore/RIOT!/08 crushcrushcrush.ogg
+0:iamsleepless/Hollow Man/03 Hollow Man.mp3
+1:iamsleepless/Silhouettes/08 Sojourn.mp3
+2:Non-Album/iamsleepless/Your Princess is in Another Castle.mp3
+3:iamsleepless/the old tunes (2010 - 2012)/08 a drug that makes you dream.mp3
+4:iamsleepless/the old tunes (2010 - 2012)/15 the promise i made over this blue sky.mp3
+5:iamsleepless/the old tunes (2010 - 2012)/16 miles apart.mp3
+6:iamsleepless/the old tunes (2010 - 2012)/17 beyond the winding road.mp3
+7:iamsleepless/the old tunes (2010 - 2012)/18 dawn of a golden sun.mp3
 playlist_end

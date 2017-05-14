@@ -37,7 +37,8 @@ scripts=(
     $HOME/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 )
 
-export PATH=$PATH:~/.config/Color-Scripts/color-scripts
+export PATH=$HOME/thingo/go/bin:$PATH:~/.config/Color-Scripts/color-scripts
+export GOPATH=$HOME/thingo/go
 
 #sauce me up
 for s in "${scripts[@]}"; do

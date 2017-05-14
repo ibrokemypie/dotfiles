@@ -2,7 +2,7 @@ set nocompatible
 colo Despacio
 syntax on
 filetype indent plugin on
-set hidden
+filetype plugin on
 set wildmenu
 set showcmd
 set ignorecase

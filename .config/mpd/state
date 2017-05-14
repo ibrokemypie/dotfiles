@@ -1,23 +1,44 @@
 sw_volume: 100
-audio_device_state:0:My HTTP Stream
-audio_device_state:1:My OS X Device
-audio_device_state:1:my_fifo
-state: stop
-current: 4
-random: 1
+audio_device_state:1:My HTTP Stream
+audio_device_state:1:Background Music
+audio_device_state:0:Chromecast
+audio_device_state:0:River
+audio_device_state:0:my_fifo
+state: pause
+current: 3
+time: 135.395000
+random: 0
 repeat: 1
-single: 1
-consume: 1
-crossfade: 0
+single: 0
+consume: 0
+crossfade: 3
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:iamsleepless/Hollow Man/03 Hollow Man.mp3
-1:iamsleepless/Silhouettes/08 Sojourn.mp3
-2:Non-Album/iamsleepless/Your Princess is in Another Castle.mp3
-3:iamsleepless/the old tunes (2010 - 2012)/08 a drug that makes you dream.mp3
-4:iamsleepless/the old tunes (2010 - 2012)/15 the promise i made over this blue sky.mp3
-5:iamsleepless/the old tunes (2010 - 2012)/16 miles apart.mp3
-6:iamsleepless/the old tunes (2010 - 2012)/17 beyond the winding road.mp3
-7:iamsleepless/the old tunes (2010 - 2012)/18 dawn of a golden sun.mp3
+0:Bring Me the Horizon/The Chill Out Sessions/01 Crucify Me.mp3
+1:Bring Me the Horizon/The Chill Out Sessions/02 It Never Ends.mp3
+2:Bring Me the Horizon/The Chill Out Sessions/03 Fuck.mp3
+3:Bring Me the Horizon/The Chill Out Sessions/04 Don't Go.mp3
+4:Bring Me the Horizon/The Chill Out Sessions/05 Memorial_Blessed With a Curse.mp3
+5:Bring Me the Horizon/The Chill Out Sessions/06 Blessed With a Curse [Instrumental].mp3
+6:Asking Alexandria/From Death to Destiny/13 The Death of Me (Rock mix).mp3
+7:Asking Alexandria/From Death to Destiny/15 Someone, Somewhere (Ben Bruce acoustic).mp3
+8:Tyler Joseph/No Phun Intended 100/01 Blasphemy.m4a
+9:Tyler Joseph/No Phun Intended/01 Blasphemy.flac
+10:Tyler Joseph/No Phun Intended/02 Drown.flac
+11:Tyler Joseph/No Phun Intended/03 Hole In The Ground.flac
+12:Tyler Joseph/No Phun Intended/04 Save.flac
+13:Tyler Joseph/No Phun Intended/05 Taken By Sleep.flac
+14:Tyler Joseph/No Phun Intended/06 I Want To Know.flac
+15:Tyler Joseph/No Phun Intended/07 Just Like Yesterday.flac
+16:Tyler Joseph/No Phun Intended/08 Never Change.flac
+17:Tyler Joseph/No Phun Intended/10 Realize That It's Gone.flac
+18:Tyler Joseph/No Phun Intended/09 Prove Me Wrong.flac
+19:Tyler Joseph/No Phun Intended/11 Tonight.flac
+20:Tyler Joseph/No Phun Intended/12 Falling Too.flac
+21:Tyler Joseph/No Phun Intended/13 Whisper.flac
+22:Tyler Joseph/No Phun Intended/14 TB Saga.flac
+23:Tyler Joseph/No Phun Intended/16 Trees.flac
+24:Tyler Joseph/No Phun Intended/19 Hear Me Now.flac
+25:Tyler Joseph/No Phun Intended/17 Where Did We Go.flac
 playlist_end

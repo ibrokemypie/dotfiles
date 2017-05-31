@@ -3,7 +3,7 @@
     "autoindent": true,
     "autosave": false,
     "colorcolumn": 0,
-    "colorscheme": "default",
+    "colorscheme": "zenburn",
     "cursorline": true,
     "eofnewline": true,
     "ftoptions": true,
@@ -16,9 +16,6 @@
     "linter": true,
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
-    ],
-    "pluginrepos": [
-        "https://raw.githubusercontent.com/samdmarshall/micro-natural-navigation-plugin/master/repo.json"
     ],
     "rmtrailingws": true,
     "ruler": true,

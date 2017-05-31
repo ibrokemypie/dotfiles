@@ -5,11 +5,15 @@
 .config/StardewValley/
 .config/StardewValley/*
 .config/vivaldi/
+.config/onedrive/
 .config/vivaldi/*
 .config/micro/buffers
 .config/micro/buffers/
+.config/filezilla/
 *.cache
 *.log
 .config/hub
+.config/mpd/
 .config/.hub
+.gnupg/
 .config/mpdscribble/lastfm.journal

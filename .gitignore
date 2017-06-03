@@ -17,3 +17,12 @@
 .config/.hub
 .gnupg/
 .config/mpdscribble/lastfm.journal
+.config/mpd/
+.config/ncmpcpp/
+.config/ncmpcpp/*
+.config/mpd/*
+.config/menus
+.config/pulse
+.config/autostart
+.config/google-*
+.gnupg

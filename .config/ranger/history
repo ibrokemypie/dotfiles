@@ -1,0 +1,16 @@
+cut
+shell sudo rm -rf
+find 
+delete
+show-hidden
+hidden
+help
+set show_hidden true
+open_with 
+rename
+rename launcher.exe.bak
+cp 
+copy
+paste Launcher.exe
+paste
+rename Launcher.exe

@@ -1,5 +1,5 @@
 [global]
-    font = Sans Serif 8
+    font = monofur 14
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -37,7 +37,7 @@
     # window allows bounces back and forth.
     # This option conflicts with "word_wrap".
     # Set to 0 to disable.
-    bounce_freq = 0
+    bounce_freq = 5
 
     # Show age of message if message is older than show_age_threshold
     # seconds.
@@ -46,7 +46,7 @@
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
-    word_wrap = yes
+    word_wrap = no
 
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
@@ -64,11 +64,11 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-0+20"
+    geometry = "0x4-25+25"
 
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
-    shrink = no
+    shrink = yes
 
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing windowmanager is
@@ -114,13 +114,13 @@
     # Draw a line of "separatpr_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 2
+    separator_height = 1
 
     # Padding between text and separator.
     padding = 8
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 10
 
     # Define a color for the separator.
     # possible values are:
@@ -128,7 +128,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = frame
+    separator_color = #454947
 
     # Print a notification on startup.
     # This is mainly for error detection, since dbus (re-)starts dunst
@@ -145,11 +145,11 @@
     icon_position = left
 
     # Paths to default icons.
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_folders = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
 [frame]
-    width = 3
-    color = "#aaaaaa"
+    width = 2
+    color = "#5f6b5f"
 
 [shortcuts]
 
@@ -167,26 +167,27 @@
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    history = ctrl+grave
+    history = ctrl+shift+grave
 
     # Context menu.
     context = ctrl+shift+period
 
+
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#2f2f38"
+    foreground = "#cfd2cf"
     timeout = 10
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#2f2f38"
+    foreground = "#cfd2cf"
     timeout = 10
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
+    background = "#2f2f38"
+    foreground = "#cfd2cf"
     timeout = 0
 
 
@@ -208,6 +209,24 @@
 # to "".
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
+
+[irc]
+        appname = weechat
+        timeout = 0
+        background = "#2f2f38"
+        foreground = "#cfd2cf"
+#
+[weechat hl]
+     appname = weechat
+     category = weechat.HL
+     background = "#2f2f38"
+     foreground = "#cfd2cf"
+
+[weechat pn]
+     appname = weechat
+     category = weechat.PM
+     background = "#2f2f38"
+     foreground = "#cfd2cf"
 
 #[espeak]
 #    summary = "*"

@@ -19,16 +19,9 @@ if ! [ $(pgrep -x mpdscribble) ]; then mpdscribble --conf ~/.config/mpdscribble/
 ncmpcpp
 }
 #LINUX
-function aur() {
-su hey -c "pacaur $*";
-}
-alias ll="ls -aF"
-alias aurd="aur -Syua --devel --noedit --noconfirm"
 function paste() {
 $* | curl -F c=@- https://ptpb.pw
 }
-function my_reboot_to_windows {
-    WINDOWS_TITLE=`grep -i 'windows' /boot/grub/grub.cfg|cut -d"'" -f2`
-    sudo grub-reboot "$WINDOWS_TITLE"
-    sudo reboot
-}
+alias sv="sudo sv"
+alias xbps-install="sudo xbps-install"
+alias xbps-remove="sudo xbps-remove"

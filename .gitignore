@@ -26,3 +26,7 @@
 .config/autostart
 .config/google-*
 .gnupg
+.config/weechat
+.config/chromium
+.config/MusicBrainz
+.config/sublime-text-3

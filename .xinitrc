@@ -30,20 +30,16 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
- xbindkeys -p
- ~/lock.sh &
-# ~/.screenlayout/layout.sh &
-# nitrogen --restore &
- plank &
-# obmenu-generator -p &
-# thunar --daemon &
-# polybar top &
-# nm-applet &
-# sxhkd &
- keepassxc &
- compton &
-# albert &
-# #steam &
-# telegram-desktop &
-# exec openbox-session
+#mpd &
+~/xiate/xiate &
+mpDris2 &
+dunst &
+~/.config/i3/lock.sh &
+compton &
+xrandr --output HDMI3 --primary --left-of HDMI1 &
+~/.config/i3/wallswitch.sh &
+keepassxc &
+aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true &
+x0vncserver -display :0 -passwordfile ~/.vnc/passwd &
+export QT_QPA_PLATFORMTHEME=qt5ct
 exec i3

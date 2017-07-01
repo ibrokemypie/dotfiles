@@ -13,3 +13,9 @@
 [submodule "Color-Scripts"]
 	path = .config/Color-Scripts
 	url = https://github.com/stark/Color-Scripts
+[submodule "xiate"]
+	path = xiate
+	url = git@github.com:ibrokemypie/xiate
+[submodule ".xiate"]
+	path = .xiate
+	url = git@github.com:ibrokemypie/xiate

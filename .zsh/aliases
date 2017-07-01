@@ -20,7 +20,7 @@ ncmpcpp
 }
 #LINUX
 function paste() {
-$* | curl -F c=@- https://ptpb.pw
+curl --progress-bar -F "c=@${1:--}" -F p=1 https://ptpb.pw | tee
 }
 alias sv="sudo sv"
 alias xbps-install="sudo xbps-install"

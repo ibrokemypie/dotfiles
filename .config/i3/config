@@ -7,6 +7,8 @@ set $mod Mod4
 new_window 1pixel 	# no border for windows
 gaps outer 10		# outer gaps
 gaps inner 20		# inner gaps
+font pango:DejaVu Sans Book 10
+
 
 set $ws1 "1: Web"
 set $ws2 "2: Shell"
@@ -19,14 +21,14 @@ assign [class="Steam"] 3
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec --no-startup-id ~/dotfiles/.xiate/xiatec
+# xiatecart a terminal
+bindsym $mod+Return exec --no-startup-id xiatec
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-exec --no-startup-id rofi -modi "run,drun,window" -i
+# xiatecart dmenu (a program launcher)
+#exec --no-startup-id rofi -modi "run,drun,window" -i
 
 bindsym $mod+space exec --no-startup-id rofi -i -show drun
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu'
@@ -55,7 +57,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+s layout xiatecacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -133,17 +135,18 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-bindsym Control+grave exec --no-startup-id tdrop -a -s dropdown ~/dotfiles/.xiate/xiatec
+bindsym Control+grave exec ~/tdrop/tdrop -a -m xiatec
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	font pango:DevaVu Sans Book 10
 	font pango:Fira Mono for Powerline 10
 	font pango:FontAwesome 10
-	tray_output HDMI3
-	tray_output HDMI1
+	#tray_output HDMI3
+	#tray_output HDMI1
 	position top
-	status_command ~/bumblebee-status/bumblebee-status\
+	status_command bumblebee-status\
 	 -m mpd traffic disk:root cpu sensors memory datetime pasink\
 	 -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" \
 	 -t gruvbox-powerline

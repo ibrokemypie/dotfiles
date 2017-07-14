@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE oor:component-data SYSTEM "../../../../component-update.dtd">
+<oor:component-data oor:name="OptionsDialog" oor:package="org.openoffice.Office" xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <node oor:name="Nodes">
+        <node oor:name="LanguageSettings" oor:op="fuse">
+            <prop oor:name="Label">
+                <value xml:lang="en-US">Language Settings</value>
+            	<value xml:lang="de">Spracheinstellungen</value>
+            	<value xml:lang="es">Configuración de idiomas</value>
+            	<value xml:lang="fr">Paramètres linguistiques</value>
+            	<value xml:lang="it">Impostazioni della lingua</value>
+            	<value xml:lang="pl">Ustawienia językowe</value>
+            	<value xml:lang="pt">Definições de idioma</value>
+            </prop>
+            <node oor:name="Leaves">
+                <node oor:name="org.openoffice.lightproof.en" oor:op="fuse">
+                    <prop oor:name="Id">
+                        <value>org.openoffice.en.hunspell.dictionaries</value>
+                    </prop>
+                    <prop oor:name="Label">
+                        <value xml:lang="en-US">English sentence checking</value>
+                    	<value xml:lang="de">Englische Satzkontrolle</value>
+                    	<value xml:lang="es">Corrección de oraciones en inglés</value>
+                    	<value xml:lang="fr">Vérification de la phrase en anglais</value>
+                    	<value xml:lang="it">Analisi della frase inglese</value>
+                    	<value xml:lang="pl">Sprawdzanie zdań w języku angielskim</value>
+                    	<value xml:lang="pt">Análise de frases em inglês</value>
+                    </prop>
+                    <prop oor:name="OptionsPage">
+                        <value>vnd.sun.star.expand:$BUNDLED_EXTENSIONS/dict-en/dialog/en.xdl</value>
+                    </prop>
+                    <prop oor:name="EventHandlerService">
+                        <value>org.libreoffice.comp.pyuno.LightproofOptionsEventHandler.en</value>
+                    </prop>
+                </node>
+            </node>
+        </node>
+    </node>
+</oor:component-data>

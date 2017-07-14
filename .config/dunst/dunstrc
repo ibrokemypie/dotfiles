@@ -136,7 +136,7 @@
     startup_notification = false
 
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/rofi --dmenu -p dunst:
 
     # Browser for opening urls in context menu.
     browser = xdg-open
@@ -146,6 +146,8 @@
 
     # Paths to default icons.
     icon_folders = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+
+	 max_icon_size = 32
 
 [frame]
     width = 2

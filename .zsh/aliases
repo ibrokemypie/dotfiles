@@ -18,6 +18,7 @@ if ! [ $(pgrep -x mpdscribble) ]; then mpdscribble --conf ~/.config/mpdscribble/
 
 ncmpcpp
 }
+
 #LINUX
 function paste() {
 curl --progress-bar -F "c=@${1:--}" -F p=1 https://ptpb.pw | tee

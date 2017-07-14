@@ -1,0 +1,6 @@
+LanguageTool - language checker.
+An Open Source language checker for English, French, German, Polish, Dutch, Romanian, Russian and other languages. This is a rule-based language checker that will find errors for which a rule is defined in its XML configuration files. Rules for more complicated errors can be written in Java. You can think of LanguageTool as a tool to detect errors that a simple spell checker cannot detect, e.g. mixing up there/their, no/now etc. It can also detect some grammar mistakes. It does not include spell checking.
+LanguageTool will only find errors for which a rule is defined in its XML configuration files. Rules for more complicated errors can be written in Java.
+Requires Java 6.0_04 or later. This version only works with OpenOffice.org 3.0.1 or later and you need to restart OpenOffice.org after installation of this extension.
+You can select required grammar rules in Tools -> LanguageTool -> Configuration menu.
+

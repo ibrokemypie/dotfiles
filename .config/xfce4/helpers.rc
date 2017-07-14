@@ -1,3 +1,4 @@
-TerminalEmulator=urxvtc
-WebBrowser=vivaldi-stable
+TerminalEmulator=custom-TerminalEmulator
+WebBrowser=google-chrome-unstable
+FileManager=Thunar
 

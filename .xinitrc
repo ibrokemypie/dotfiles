@@ -33,18 +33,28 @@ fi
 export QT_QPA_PLATFORMTHEME=gtk2
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE=gtk2
+
+#init
+xrandr --output HDMI3 --primary --right-of HDMI1
 compton &
-mpDris2 &
 numlockx &
-~/.config/i3/lock.sh &
-xrandr --output HDMI3 --primary --left-of HDMI1 &
+
+#lock screen
+i3lock-next &
+
+#daemons
 ~/.config/i3/wallswitch.sh &
-keepassxc &
+~/.config/i3/lock.sh &
 aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --log-level=info -d ~/downloads &
-x0vncserver -display :0 -forever -passwordfile ~/.vnc/passwd &
-#export PATH=$PATH:/extra/home/dotfiles/.xiate/
+x11vnc -display :0 -forever -usepw -ncache 10 -noxdamage &
 xiate &
+mpDris2 &
+
+#programs
+keepassxc &
 telegram-desktop &
 lsi-steam &
+
+#xorg
 exec i3
 xkill -all

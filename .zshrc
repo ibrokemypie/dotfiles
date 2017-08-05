@@ -1,16 +1,16 @@
 #! zsh
 
 #tmux
-case $(tty) in /dev/tty[0-9]*)
-	if [ $SSH_TTY ]; then
-		tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux
-	fi
-esac
-if [ -z $SSH_TTY ]; then
-	case $(tty) in /dev/tty[0-9]*)
-		[ -z $TMUX ] && (tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
-	esac
-fi
+# case $(tty) in /dev/tty[0-9]*)
+	# if [ $SSH_TTY ]; then
+		# tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux
+	# fi
+# esac
+# if [ -z $SSH_TTY ]; then
+	# case $(tty) in /dev/tty[0-9]*)
+		# [ -z $TMUX ] && (tmux attach -t $(tmux ls | grep -v attached | head -1 | cut -f1 -d:) || tmux)
+	# esac
+# fi
 
 #start timer
 zmodload zsh/datetime

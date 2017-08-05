@@ -147,7 +147,7 @@
     # Paths to default icons.
     icon_folders = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
-	 max_icon_size = 32
+    max_icon_size = 50
 
 [frame]
     width = 2

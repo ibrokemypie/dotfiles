@@ -10,14 +10,11 @@ export LC_ALL="en_AU.UTF-8"
 export GPG_TTY=$(tty)
 
 #PATHS
-PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 fpath=(/usr/local/share/zsh-completions $fpath)
-export PATH=$PATH:/root/android/system/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-UTC-4.9/bin:/root/android/system/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-UTC-4.9/aarch64-linux-android/bin
 
 #ZSH STLES
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:]}={[:upper:]}' 'l:|=* r:|=*'
-zstyle :compinstall filename '/Users/Conor/.zshrc'
 zstyle ':completion:*' menu select
 
 if test "$CASE_SENSITIVE" = true; then
@@ -39,3 +36,7 @@ bindkey '^X^e' edit-command-line
 bindkey -e
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+if [ -z "$DISPLAY" ] && [[ $TTY == "/dev/tty7" ]] ; then
+  exec startx
+fi

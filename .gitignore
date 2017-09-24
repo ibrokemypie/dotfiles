@@ -17,7 +17,6 @@
 .config/.hub
 .gnupg/
 .config/mpdscribble/lastfm.journal
-<<<<<<< HEAD
 .config/mpd/
 .config/ncmpcpp/
 .config/ncmpcpp/*
@@ -33,11 +32,11 @@
 .config/sublime-text-3
 .gitconfig
 .config/steam_categorizer.json
-
-=======
 .weechat/buflist.conf
 .config/menus/
 .config/QtProject/
 .config/configstore/
 .config/qBittorrent/
->>>>>>> a4030f5... some changes
+**.save
+**.save*
+**~

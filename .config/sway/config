@@ -1,201 +1,171 @@
-# Default config for sway
+# i3 config file (v4)
 #
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-### Variables
-#
-# Logo key. Use Mod1 for Alt.
 set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-# Your preferred terminal emulator
-set $term qterminal
-# Your preferred application launcher
-set $menu rofi -show run
 
-### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/sway/)
-output * bg /usr/share/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-output HDMI-A-3 resolution 1920x1080 position 0,0
-output HDMI-A-1 resolution 1600x1200 position 1920,0
-workspace 1 output HDMI-A-3
-workspace 2 output HDMI-A-1
+new_window 1pixel 	# no border for windows
+gaps outer 10		# outer gaps
+gaps inner 20		# inner gaps
+font pango:DejaVu Sans Book 10
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
 
-### Key bindings
-#
-# Basics:
-#
-    # start a terminal
-    bindsym $mod+t exec $term
+set $ws1 "1: Web"
+set $ws2 "2: Shell"
+set $ws3 "3: Games"
 
-    # kill focused window
-    bindsym $mod+Shift+q kill
+assign [class="xiatec"] 1
+assign [class="google-chrome-stable"] 2
+assign [class="Steam"] 3
 
-    # start your launcher
-    bindsym $mod+space exec $menu
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    floating_modifier $mod normal
+# xiatecart a terminal
+bindsym $mod+Return exec --no-startup-id ~/.config/i3/i3-shell.sh xiatec
 
-    # reload the configuration file
-    bindsym $mod+Shift+c reload
+# kill focused window
+bindsym $mod+Shift+q kill
 
-    # exit sway (logs you out of your wayland session)
-    bindsym $mod+Shift+x exit
-#
-# Moving around:
-#
-    # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
-    # or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+# start dmenu (a program launcher)
+#exec --no-startup-id rofi -modi "run,drun,window" -i
 
-    # _move_ the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
-    # ditto, with arrow keys
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
-#
-# Workspaces:
-#
-    # switch to workspace
-    bindsym $mod+1 workspace 1
-    bindsym $mod+2 workspace 2
-    bindsym $mod+3 workspace 3
-    bindsym $mod+4 workspace 4
-    bindsym $mod+5 workspace 5
-    bindsym $mod+6 workspace 6
-    bindsym $mod+7 workspace 7
-    bindsym $mod+8 workspace 8
-    bindsym $mod+9 workspace 9
-    bindsym $mod+0 workspace 10
-    # move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace 1
-    bindsym $mod+Shift+2 move container to workspace 2
-    bindsym $mod+Shift+3 move container to workspace 3
-    bindsym $mod+Shift+4 move container to workspace 4
-    bindsym $mod+Shift+5 move container to workspace 5
-    bindsym $mod+Shift+6 move container to workspace 6
-    bindsym $mod+Shift+7 move container to workspace 7
-    bindsym $mod+Shift+8 move container to workspace 8
-    bindsym $mod+Shift+9 move container to workspace 9
-    bindsym $mod+Shift+0 move container to workspace 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
-#
-# Layout stuff:
-#
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+bindsym $mod+space exec "rofi -i -modi drun,run,window -show drun"
+bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
+bindsym mod1+Tab exec rofi -show window
+bindsym $mod+m exec clerk
 
-    # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-    # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+# split in horizontal orientation
+bindsym $mod+h split h
 
-    # Swap focus between the tiling area and the floating area
-    #bindsym $mod+space focus mode_toggle
+# split in vertical orientation
+bindsym $mod+v split v
 
-    # move focus to the parent container
-    bindsym $mod+a focus parent
-#
-# Scratchpad:
-#
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
 
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
-#
-# Resizing containers:
-#
-mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
-    bindsym $left resize shrink width 10 px or 10 ppt
-    bindsym $down resize grow height 10 px or 10 ppt
-    bindsym $up resize shrink height 10 px or 10 ppt
-    bindsym $right resize grow width 10 px or 10 ppt
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
 
-    # ditto, with arrow keys
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+# change focus between tiling / floating windows
+bindsym $mod+Tab focus mode_toggle
 
-    # return to default mode
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+set $power_control "[l]ock log[o]ut [r]eboot [p]oweroff"
+mode  $power_control {
+    bindsym l exec i3lock-next; mode "default"
+    bindsym o exec i3-msg exit; mode "default"
+    bindsym r exec reboot; mode "default"
+    bindsym p exec poweroff; mode "default"
+
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+shift+e mode $power_control
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
 }
 
-include /etc/sway/config.d/*
+bindsym $mod+r mode "resize"
+
+bindsym Print exec --no-startup-id ~/.config/i3/screenshot.sh
+bindsym Control+Print exec --no-startup-id ~/.config/i3/screenshot.sh -c
+bindsym shift+Print exec --no-startup-id ~/.config/i3/screenshot.sh -s
+bindsym Control+shift+Print exec --no-startup-id ~/.config/i3/screenshot.sh -sc
+
+bindsym Control+Mod1+Left workspace prev
+bindsym Control+Mod1+Right workspace next
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioStop exec playerctl stop
+
+bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -a -m xiatec
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+	font pango:DejaVu Sans Book 10
+	font pango:FontAwesome 10
+	font pango:Fira for Powerline 10
+	tray_output HDMI3
+	#tray_output HDMI1
+	position bottom
+	status_command bumblebee-status\
+	 -m mpd traffic disk:root cpu sensors memory datetime pasink\
+	 -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" mpd.host=192.168.1.27 \
+	 -t gruvbox-powerline
+}
+bar {
+  position top
+  status_command /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/yagb
+  #status_command sh /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/bar.sh
+  #status_command go run /extra/home/thingo/go/src/github.com/davidscholberg/goblocks/goblocks.go
+}

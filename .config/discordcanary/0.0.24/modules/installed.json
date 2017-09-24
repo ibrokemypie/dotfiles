@@ -1,0 +1,17 @@
+{
+  "discord_rpc": {
+    "installedVersion": 17
+  },
+  "discord_toaster": {
+    "installedVersion": 17
+  },
+  "discord_utils": {
+    "installedVersion": 17
+  },
+  "discord_voice": {
+    "installedVersion": 18
+  },
+  "discord_contact_import": {
+    "installedVersion": 17
+  }
+}

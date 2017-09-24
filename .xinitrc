@@ -33,10 +33,12 @@ fi
 export QT_QPA_PLATFORMTHEME=gtk2
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE=gtk2
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 #init
 xrandr --output HDMI3 --primary --right-of HDMI1
-compton &
+compton -bc &
 numlockx &
 
 #lock screen
@@ -45,15 +47,17 @@ i3lock-next &
 #daemons
 ~/.config/i3/wallswitch.sh &
 ~/.config/i3/lock.sh &
-aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --log-level=info -d ~/downloads &
-x11vnc -display :0 -forever -usepw -ncache 10 -noxdamage &
+aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log -quiet &
+x11vnc -quiet -display :0 -forever -usepw &
 xiate &
-mpDris2 &
+export TERMINAL=xiatec &
+mpDris2  &
 
 #programs
 keepassxc &
 telegram-desktop &
 lsi-steam &
+dropbox &
 
 #xorg
 exec i3

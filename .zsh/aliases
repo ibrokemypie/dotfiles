@@ -1,6 +1,5 @@
 #shared
 alias ll="ls -alFG"
-alias proxy="autossh -M 20000 -f -N -p22 -D 9999 root@searx.space"
 alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1 | tail -n 1)) && eval $TF_CMD ; test -n "$TF_CMD" && print -s $TF_CMD'
 cherrypick() {git fetch $1 && git cherry-pick $2}
 topus() {ffmpeg -i "$1" -vn -acodec libopus -compression_level 10 -vbr on -b:a 256k "${1%%.[! ]*}.ogg"}
@@ -10,20 +9,8 @@ alias nano=micro
 #OSX
 alias cask="brew cask"
 
-function mus() {
-
-if ! [ $(pgrep -x mpd) ]; then mpd ~/.config/mpd/mpd.conf; fi
-
-if ! [ $(pgrep -x mpdscribble) ]; then mpdscribble --conf ~/.config/mpdscribble/mpdscribble.conf; fi
-
-ncmpcpp
-}
-
 #LINUX
 function paste() {
 curl --progress-bar -F "c=@${1:--}" -F p=1 https://ptpb.pw | tee
 }
 alias picker="maim -st 0 | convert - -resize 1x1\! -format '%[pixel:p{0,0}]' info:-"
-alias sv="sudo sv"
-alias xbps-install="sudo xbps-install"
-alias xbps-remove="sudo xbps-remove"

@@ -33,11 +33,11 @@ fi
 export QT_QPA_PLATFORMTHEME=gtk2
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE=gtk2
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-export SSH_AUTH_SOCK
+#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+#export SSH_AUTH_SOCK
 
 #init
-xrandr --output HDMI3 --primary --right-of HDMI1
+xrandr --output HDMI3 --primary --right-of HDMI1 &
 compton -bc &
 numlockx &
 
@@ -51,7 +51,7 @@ aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.lo
 x11vnc -quiet -display :0 -forever -usepw &
 xiate &
 export TERMINAL=xiatec &
-mpDris2  &
+MPD_HOST=/extra/home/.config/mpd/socket mpDris2  &
 
 #programs
 keepassxc &

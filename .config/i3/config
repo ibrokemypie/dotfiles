@@ -145,7 +145,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioStop exec MPD_HOST=localhost playerctl stop
 
 bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -a -m xiatec
 
@@ -160,7 +160,7 @@ bar {
 	position bottom
 	status_command bumblebee-status\
 	 -m mpd traffic disk:root cpu sensors memory datetime pasink\
-	 -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" mpd.host=192.168.1.27 \
+	 -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" mpd.host=/extra/home/.config/mpd/socket \
 	 -t gruvbox-powerline
 }
 bar {

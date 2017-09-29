@@ -1,6 +1,21 @@
 # ibrokemypie's dotfiles
 
-use ./install from within $DOTFILES to 
+
+| Need	| Filler	| Comment
+| ------------- |:-------------:|-------------|
+| OS	| Artix	| Easier than arch without systemd
+| WM	| i3-gaps	| -next
+| Shell	| zsh	| no framework, took only bits I want
+| Terminal	| xiate	| Simple but extensive, does what I need
+| Editor	| micro	| Like sublime cross nano
+| Bar	| bumblebee-status	| Looks good, does what I want, though working on replacing with my own
+| Browser	| chrome-dev	| bleh
+| Launcher	| rofi	| awesome
+| IRC	| weechat	|
+| Mail	| thunderbird	| still waiting for an alternative...
+
+
+use ./install from within $DOTFILES to
 * check existance of each file in  $DOTFILES in ~/
 * check whether each existing file is symlink
 * if not symlink, move to new directory dotfiles_old, renaming duplicates
@@ -8,8 +23,8 @@ use ./install from within $DOTFILES to
 
 to add any dotfiles,
 
-1.  move the file into $DOTFILES 
-2.  run ./install (or just ln -s ~/.file $DOTFILES/.file) 
+1.  move the file into $DOTFILES
+2.  run ./install (or just ln -s ~/.file $DOTFILES/.file)
 3.  git add .
 4.  git pull
 5.  git commit -a -m "message here"

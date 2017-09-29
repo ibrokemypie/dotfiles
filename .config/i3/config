@@ -105,8 +105,8 @@ set $power_control "[l]ock log[o]ut [r]eboot [p]oweroff"
 mode  $power_control {
     bindsym l exec i3lock-next; mode "default"
     bindsym o exec i3-msg exit; mode "default"
-    bindsym r exec reboot; mode "default"
-    bindsym p exec poweroff; mode "default"
+    bindsym r exec sudo reboot; mode "default"
+    bindsym p exec sudo poweroff; mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

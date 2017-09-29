@@ -33,8 +33,8 @@ fi
 export QT_QPA_PLATFORMTHEME=gtk2
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE=gtk2
-#eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-#export SSH_AUTH_SOCK
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 #init
 xrandr --output HDMI3 --primary --right-of HDMI1 &

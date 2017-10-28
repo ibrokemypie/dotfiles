@@ -41,3 +41,7 @@
 **.save*
 **~
 .config/Nylas Mail
+.config/Mailspring
+.config/Mailspring-dev
+.config/spotify
+.config/spotifyd

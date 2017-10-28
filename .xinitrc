@@ -42,7 +42,8 @@ compton -bc &
 numlockx &
 
 #lock screen
-i3lock-next &
+# i3lock-next &
+polybar rome &
 
 #daemons
 ~/.config/i3/wallswitch.sh &
@@ -51,11 +52,14 @@ aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.lo
 x11vnc -quiet -display :0 -forever -usepw &
 xiate &
 export TERMINAL=xiatec &
-MPD_HOST=/extra/home/.config/mpd/socket mpDris2  &
+#urxvtd &
+#MPD_HOST=/extra/home/.config/mpd/socket mpDris2  &
+thunar --daemon &
 
 #programs
+cmst &
 keepassxc &
-telegram-desktop &
+#telegram-desktop &
 lsi-steam &
 dropbox &
 

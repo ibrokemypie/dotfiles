@@ -9,20 +9,38 @@ gaps outer 10		# outer gaps
 gaps inner 20		# inner gaps
 font pango:DejaVu Sans Book 10
 
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
 
 set $ws1 "1: Web"
 set $ws2 "2: Shell"
 set $ws3 "3: Games"
 
+for_window [class="URxvt"] border pixel 0
+
 assign [class="xiatec"] 1
-assign [class="google-chrome-stable"] 2
+assign [class="google-chrome-unstable"] 2
 assign [class="Steam"] 3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# xiatecart a terminal
-bindsym $mod+Return exec --no-startup-id ~/.config/i3/i3-shell.sh xiatec
+# start a terminal
+bindsym $mod+Return exec --no-startup-id ~/.config/i3/i3-shell.sh
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -34,6 +52,8 @@ bindsym $mod+space exec "rofi -i -modi drun,run,window -show drun"
 bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym mod1+Tab exec rofi -show window
 bindsym $mod+m exec clerk
+bindsym $mod+Shift+Return exec google-chrome-unstable
+bindsym $mod+mod1+Return exec thunar
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -84,6 +104,18 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+
+# switch to workspace
+bindsym Control+Mod1+1 workspace 1
+bindsym Control+Mod1+2 workspace 2
+bindsym Control+Mod1+3 workspace 3
+bindsym Control+Mod1+4 workspace 4
+bindsym Control+Mod1+5 workspace 5
+bindsym Control+Mod1+6 workspace 6
+bindsym Control+Mod1+7 workspace 7
+bindsym Control+Mod1+8 workspace 8
+bindsym Control+Mod1+9 workspace 9
+bindsym Control+Mod1+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -151,21 +183,22 @@ bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -a -m xiatec
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-	font pango:DejaVu Sans Book 10
-	font pango:FontAwesome 10
-	font pango:Fira for Powerline 10
-	tray_output HDMI3
-	#tray_output HDMI1
-	position bottom
-	status_command bumblebee-status\
-	 -m mpd traffic disk:root cpu sensors memory datetime pasink\
-	 -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" mpd.host=/extra/home/.config/mpd/socket \
-	 -t gruvbox-powerline
-}
-bar {
-  position top
-  status_command /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/yagb
-  #status_command sh /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/bar.sh
-  #status_command go run /extra/home/thingo/go/src/github.com/davidscholberg/goblocks/goblocks.go
-}
+# bar {
+	# font pango:DejaVu Sans Book 10
+	# font pango:FontAwesome 10
+	# font pango:Fira for Powerline 10
+	# tray_output HDMI3
+	# #tray_output HDMI1
+	# position bottom
+	# status_command bumblebee-status\
+	 # -m mpd traffic disk:root cpu sensors memory datetime pasink\
+	 # -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" mpd.host=127.0.0.1 \
+	 # -t gruvbox-powerline
+# }
+# bar {
+  # position top
+  # status_command /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/yagb
+  # #status_command sh /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/bar.sh
+  # #status_command go run /extra/home/thingo/go/src/github.com/davidscholberg/goblocks/goblocks.go
+# }
+#

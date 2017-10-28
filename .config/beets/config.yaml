@@ -1,4 +1,4 @@
-plugins: chroma acousticbrainz absubmit embedart fetchart lyrics replaygain mbsync copyartifacts info missing edit mpdstats mpdupdate
+plugins: chroma acousticbrainz absubmit embedart fetchart lyrics replaygain mbsync info missing edit mpdstats mpdupdate
 
 directory: /extra/home/Music/
 library: /extra/home/Music/musiclibrary.blb
@@ -12,5 +12,3 @@ acousticbrainz:
     auto: yes
 absubmit:
     auto: yes
-copyartifacts:
-    extensions: .mood

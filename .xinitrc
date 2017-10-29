@@ -35,34 +35,33 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE=gtk2
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
+export TERMINAL=xiatec &
+
 
 #init
-xrandr --output HDMI3 --primary --right-of HDMI1 &
-compton -bc &
-numlockx &
-
-#lock screen
-# i3lock-next &
-polybar rome &
+#xrandr --output HDMI3 --primary --right-of HDMI1 &
+#compton -bc &
+#numlockx &
 
 #daemons
-~/.config/i3/wallswitch.sh &
-~/.config/i3/lock.sh &
-aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log -quiet &
-x11vnc -quiet -display :0 -forever -usepw &
-xiate &
-export TERMINAL=xiatec &
-#urxvtd &
-#MPD_HOST=/extra/home/.config/mpd/socket mpDris2  &
-thunar --daemon &
+# ~/.config/i3/wallswitch.sh
+# ~/.config/i3/lock.sh &
+# aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet &
+# x11vnc -quiet -display :0 -forever -usepw &
+# xiate &
+# export TERMINAL=xiatec &
+# #urxvtd &
+# #MPD_HOST=/extra/home/.config/mpd/socket mpDris2  &
+# thunar --daemon &
 
 #programs
-cmst &
-keepassxc &
+#cmst &
+#keepassxc &
 #telegram-desktop &
-lsi-steam &
-dropbox &
+#lsi-steam &
+#dropbox &
 
 #xorg
+#(sleep 1 ; polybar -r rome) &
 exec i3
 xkill -all

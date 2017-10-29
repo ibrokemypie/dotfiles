@@ -22,7 +22,7 @@
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
     ],
     "pluginrepos": [],
-    "rmtrailingws": true,
+    "rmtrailingws": false,
     "ruler": true,
     "savecursor": true,
     "saveundo": true,
@@ -40,5 +40,5 @@
     "tabsize": 4,
     "tabstospaces": false,
     "termtitle": true,
-    "useprimary": true
+    "useprimary": false
 }

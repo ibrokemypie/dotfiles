@@ -2,6 +2,23 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#start apps
+exec compton -bc
+exec numlockx
+
+exec --no-startup-id ~/.config/i3/wallswitch.sh
+exec --no-startup-id ~/.config/i3/lock.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+exec aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet 
+exec x11vnc -quiet -display :0 -forever -usepw 
+exec xiate
+exec thunar --daemon 
+
+exec lsi-steam
+exec dropbox
+exec keepassxc
+
 set $mod Mod4
 
 new_window 1pixel 	# no border for windows

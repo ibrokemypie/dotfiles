@@ -116,7 +116,7 @@ tray-background = ${colors.xcolor7}
 ;----------------------------------------------------------
 
 modules-left = RightArrow2 i3 RightArrow3 powermenu RightArrow2 mpd RightArrow1
-modules-center = arrow1 xwindow RightArrow1
+modules-center = arrow4 xwindow RightArrow4
 modules-right = arrow1 volume arrow2 cpu arrow3 memory arrow2 filesystem arrow3 temperature arrow2 date
 
 ;----------------------------------------------------------
@@ -163,10 +163,10 @@ label-urgent-font = 3
 [module/xwindow]
 type = internal/xwindow
 
-format-foreground = ${colors.xcolor7}
-format-background = ${colors.xcolor1}
+format-foreground = ${colors.xcolor1}
+format-background = ${colors.xcolor7}
 
-label = "%title:0:22:...%"
+label = "%title:0:64:...%"
 
 ;----------------------------------------------------------
 ;		   F I L E S Y S T E M
@@ -207,7 +207,7 @@ format-online = <label-song> <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon
 format-online-foreground = ${colors.xcolor7}
 format-online-background = ${colors.xcolor1}
 
-label-song-maxlen = 30
+label-song-maxlen = 64
 label-song-ellipsis = true
 
 icon-prev = 
@@ -348,7 +348,7 @@ speaker-soundcard = default
 headphone-soundcard = default
 mapping = true
 
-format-volume = <ramp-volume><label-volume>
+format-volume = %{A3:pavucontrol &:}%{A1:amixer -q -D pulse sset Master toggle:}<ramp-volume><label-volume>
 ;     
 
 label-volume = %percentage%
@@ -497,6 +497,12 @@ content = " "
 content-foreground = ${colors.xcolor1}
 content-background = ${colors.xcolor7}
 
+[module/arrow4]
+type = custom/text
+content = " "
+content-foreground = ${colors.xcolor7}
+content-background = ${colors.xcolor0}
+
 [module/RightStripe]
 type = custom/text
 content = ""
@@ -520,6 +526,12 @@ type = custom/text
 content = ""
 content-foreground = ${colors.xcolor1}
 content-background = ${colors.xcolor7}
+
+[module/RightArrow4]
+type = custom/text
+content = ""
+content-foreground = ${colors.xcolor7}
+content-background = ${colors.xcolor0}
 
 [module/MiddleArrowLeft]
 type = custom/text

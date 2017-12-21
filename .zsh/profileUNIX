@@ -9,8 +9,6 @@ export LANG="en_AU.UTF-8"
 export LC_ALL="en_AU.UTF-8"
 export GPG_TTY=$(tty)
 
-(wal -r &)
-
 #PATHS
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -39,6 +37,4 @@ bindkey -e
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-if [ -z "$DISPLAY" ] && [[ $TTY == "/dev/tty7" ]] ; then
-  exec startx
-fi
+/extra/home/.config/mopidy/mpd & disown

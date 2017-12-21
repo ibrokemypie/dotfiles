@@ -3,7 +3,7 @@
     "autoindent": true,
     "autosave": false,
     "colorcolumn": 0,
-    "colorscheme": "nano",
+    "colorscheme": "default",
     "cursorline": true,
     "eofnewline": true,
     "fastdirty": true,
@@ -17,6 +17,7 @@
     "keepautoindent": false,
     "keymenu": false,
     "linter": true,
+    "literate": true,
     "mouse": true,
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
@@ -25,7 +26,9 @@
     "rmtrailingws": false,
     "ruler": true,
     "savecursor": true,
+    "savehistory": true,
     "saveundo": true,
+    "scrollbar": false,
     "scrollmargin": 3,
     "scrollspeed": 2,
     "softwrap": false,

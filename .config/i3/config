@@ -6,9 +6,9 @@
 exec compton -bc
 exec numlockx
 
-exec --no-startup-id ~/.config/i3/wallswitch.sh
-exec --no-startup-id ~/.config/i3/lock.sh
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec ~/.config/i3/wallswitch.sh
+exec bash ~/.config/i3/lock.sh
+exec bash ~/.config/polybar/launch.sh
 
 exec aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet 
 exec x11vnc -quiet -display :0 -forever -usepw 
@@ -21,7 +21,7 @@ exec keepassxc
 
 set $mod Mod4
 
-new_window 1pixel 	# no border for windows
+new_window none
 gaps outer 10		# outer gaps
 gaps inner 20		# inner gaps
 font pango:DejaVu Sans Book 10
@@ -43,14 +43,9 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
 
-set $ws1 "1: Web"
-set $ws2 "2: Shell"
-set $ws3 "3: Games"
-
-for_window [class="URxvt"] border pixel 0
-
 assign [class="xiatec"] 1
 assign [class="google-chrome-unstable"] 2
+assign [class="firefox-nightly"] 2
 assign [class="Steam"] 3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -69,7 +64,7 @@ bindsym $mod+space exec "rofi -i -modi drun,run,window -show drun"
 bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym mod1+Tab exec rofi -show window
 bindsym $mod+m exec clerk
-bindsym $mod+Shift+Return exec google-chrome-unstable
+bindsym $mod+Shift+Return exec firefox-nightly
 bindsym $mod+mod1+Return exec thunar
 
 # alternatively, you can use the cursor keys:
@@ -177,10 +172,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym Print exec --no-startup-id ~/.config/i3/screenshot.sh
-bindsym Control+Print exec --no-startup-id ~/.config/i3/screenshot.sh -c
-bindsym shift+Print exec --no-startup-id ~/.config/i3/screenshot.sh -s
-bindsym Control+shift+Print exec --no-startup-id ~/.config/i3/screenshot.sh -sc
+# Full screen
+bindsym mod1+Shift+3 exec --no-startup-id maim ~/Pictures/Screenshots/$(date +%s).png
+bindsym Control+mod1+Shift+3 exec --no-startup-id maim | xclip -selection clipboard -t image/png
+
+# Select
+bindsym mod1+Shift+4 exec --no-startup-id maim -s --noopengl ~/Pictures/Screenshots/$(date +%s).png
+bindsym Control+mod1+Shift+4 exec --no-startup-id maim -s --noopengl | xclip -selection clipboard -t image/png
 
 bindsym Control+Mod1+Left workspace prev
 bindsym Control+Mod1+Right workspace next
@@ -196,7 +194,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec MPD_HOST=localhost playerctl stop
 
-bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -a -m xiatec
+bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -y 20 -x 0 -w 1600 -a -m xiatec
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

@@ -35,8 +35,8 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_STYLE_OVERRIDE=gtk2
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
-export TERMINAL=xiatec &
-
+export TERMINAL=xiatec
+#/extra/home/.config/mopidy/mpd &
 
 #init
 #xrandr --output HDMI3 --primary --right-of HDMI1 &
@@ -63,5 +63,9 @@ export TERMINAL=xiatec &
 
 #xorg
 #(sleep 1 ; polybar -r rome) &
+~/.config/i3/wallswitch.sh
+/usr/lib/xfce-polkit/xfce-polkit &
+udiskie -2 -s &
+#~/xsleep.sh
 exec i3
-xkill -all
+

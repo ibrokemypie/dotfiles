@@ -117,7 +117,7 @@ tray-background = ${colors.xcolor7}
 
 modules-left = RightArrow2 i3 RightArrow3 powermenu RightArrow2 mpd RightArrow1
 modules-center = arrow4 xwindow RightArrow4
-modules-right = arrow1 volume arrow2 cpu arrow3 memory arrow2 filesystem arrow3 temperature arrow2 date
+modules-right = arrow1 pavolume arrow2 eth arrow3 memory arrow2 filesystem arrow3 cpu temperature arrow2 date
 
 ;----------------------------------------------------------
 ;	   				i 3   M O D U L E
@@ -203,6 +203,10 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 
+format-offline = No Music Playing...
+format-offline-foreground = ${colors.xcolor7}
+format-offline-background = ${colors.xcolor1}
+
 format-online = <label-song> <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>
 format-online-foreground = ${colors.xcolor7}
 format-online-background = ${colors.xcolor1}
@@ -236,8 +240,8 @@ interval = 1.0
 format = <label>
 ;format = <ramp-coreload><label>
 format-prefix = " "
-format-foreground = ${colors.xcolor1}
-format-background = ${colors.xcolor7}
+format-foreground = ${colors.xcolor7}
+format-background = ${colors.xcolor1}
 
 label = %percentage:3%%
 ;   
@@ -276,7 +280,7 @@ label = %percentage_used%%
 [module/network]
 type = internal/network
 ; To test interface: $ ls -1 /sys/class/net/
-interface = wls1
+interface = enp0s25
 interval = 0.3
 
 format-connected = <label-connected>
@@ -307,10 +311,10 @@ ramp-signal-7 = █
 [module/eth]
 type = internal/network
 ; To test interface: $ ls -1 /sys/class/net/
-interface = ens5f5
+interface = enp0s25
 interval = 0.5
 
-label-connected = "   %local_ip% %downspeed:8%  %upspeed:8%  "
+label-connected = " %downspeed:8%  %upspeed:8%"
 label-connected-foreground = ${colors.xcolor1}
 label-connected-background = ${colors.xcolor7}
 label-disconnected = "  %ifname% "
@@ -335,6 +339,22 @@ date = " %d/%m/%y"
 time = " %H:%M"
 label = " %time% %date%  "
 
+;----------------------------------------------------------
+;	        P U L S E V O L U M E
+;----------------------------------------------------------
+
+[module/pavolume]
+type = custom/script
+tail = true
+label = %output%
+exec = ~/.config/polybar/pavolume.sh --listen
+click-right = exec pavucontrol
+click-left = ~/.config/polybar/pavolume.sh --togmute
+scroll-up = ~/.config/polybar/pavolume.sh --up
+scroll-down = ~/.config/polybar/pavolume.sh --down
+
+label-foreground = ${colors.xcolor7}
+label-background = ${colors.xcolor1}
 
 ;----------------------------------------------------------
 ;			V O L U M E

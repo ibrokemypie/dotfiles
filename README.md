@@ -8,8 +8,8 @@
 | Shell	| zsh	| no framework, took only bits I want
 | Terminal	| xiate	| Simple but extensive, does what I need
 | Editor	| micro	| Like sublime cross nano
-| Bar	| bumblebee-status	| Looks good, does what I want, though working on replacing with my own
-| Browser	| chrome-dev	| bleh
+| Bar	| polybar	| meh, gonna redo at some point
+| Browser	| firefox-nightly	| pretty good
 | Launcher	| rofi	| awesome
 | IRC	| weechat	|
 | Mail	| thunderbird	| still waiting for an alternative...

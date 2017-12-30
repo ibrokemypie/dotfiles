@@ -7,7 +7,7 @@
 	"tarbin": "/usr/bin/bsdtar",
 	"requestsplitn": 150,
 	"sortmode": 0,
-	"timeupdate": true,
+	"timeupdate": false,
 	"noconfirm": false,
 	"devel": true,
 	"cleanAfter": false

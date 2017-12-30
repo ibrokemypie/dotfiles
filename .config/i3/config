@@ -4,16 +4,19 @@
 
 #start apps
 exec compton -bc
-exec numlockx
-
-#exec ~/.config/i3/wallswitch.sh
-exec bash ~/.config/i3/lock.sh
+#exec numlockx
+exec cmst
+exec --no-startup-id xinput set-button-map 23 1 0 3 4 5 6 7
+exec --no-startup-id ~/.config/i3/wallswitch.sh
+#exec bash ~/.config/i3/lock.sh
 exec bash ~/.config/polybar/launch.sh
 
+exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
+exec udiskie -s -s
 exec aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet 
 exec x11vnc -quiet -display :0 -forever -usepw 
 exec xiate
-exec thunar --daemon 
+#exec thunar --daemon 
 
 exec lsi-steam
 exec dropbox
@@ -45,7 +48,7 @@ client.background       $bg
 
 assign [class="xiatec"] 1
 assign [class="google-chrome-unstable"] 2
-assign [class="firefox-nightly"] 2
+assign [class="firefox"] 2
 assign [class="Steam"] 3
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -64,7 +67,7 @@ bindsym $mod+space exec "rofi -i -modi drun,run,window -show drun"
 bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym mod1+Tab exec rofi -show window
 bindsym $mod+m exec clerk
-bindsym $mod+Shift+Return exec firefox-nightly
+bindsym $mod+Shift+Return exec firefox
 bindsym $mod+mod1+Return exec thunar
 
 # alternatively, you can use the cursor keys:
@@ -193,6 +196,9 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec MPD_HOST=localhost playerctl stop
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -y 20 -x 0 -w 1600 -a -m xiatec
 

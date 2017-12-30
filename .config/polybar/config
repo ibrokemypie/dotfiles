@@ -117,7 +117,7 @@ tray-background = ${colors.xcolor7}
 
 modules-left = RightArrow2 i3 RightArrow3 powermenu RightArrow2 mpd RightArrow1
 modules-center = arrow4 xwindow RightArrow4
-modules-right = arrow1 pavolume arrow2 eth arrow3 memory arrow2 filesystem arrow3 cpu temperature arrow2 date
+modules-right = arrow1 pavolume arrow2 eth arrow3 memory arrow2 filesystem arrow3 cpu temperature arrow2 battery date
 
 ;----------------------------------------------------------
 ;	   				i 3   M O D U L E
@@ -155,6 +155,33 @@ label-urgent-foreground = ${colors.xcolor1}
 label-urgent-background = ${colors.xcolor4}
 label-urgent-padding = 2
 label-urgent-font = 3
+
+
+;----------------------------------------------------------
+;	   	B A T T E R Y   M O D U L E
+;----------------------------------------------------------
+
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 99
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = ADP1
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
 
 ;----------------------------------------------------------
 ;		       X W I N D O W
@@ -280,7 +307,7 @@ label = %percentage_used%%
 [module/network]
 type = internal/network
 ; To test interface: $ ls -1 /sys/class/net/
-interface = enp0s25
+interface = wlp2s0
 interval = 0.3
 
 format-connected = <label-connected>
@@ -311,7 +338,7 @@ ramp-signal-7 = █
 [module/eth]
 type = internal/network
 ; To test interface: $ ls -1 /sys/class/net/
-interface = enp0s25
+interface = wlp2s0
 interval = 0.5
 
 label-connected = " %downspeed:8%  %upspeed:8%"
@@ -411,7 +438,7 @@ bar-volume-empty = ─
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
+thermal-zone = 2
 warn-temperature = 65
 interval = 2
 

@@ -37,4 +37,6 @@ bindkey -e
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-/extra/home/.config/mopidy/mpd & disown
+(cat ~/.cache/wal/sequences &)
+
+/home/conor/.config/mopidy/mpd & disown

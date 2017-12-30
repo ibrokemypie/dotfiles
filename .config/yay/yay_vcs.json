@@ -3,5 +3,180 @@
 		"pkgname": "betterdiscord",
 		"url": "https://api.github.com/repos/Jiiks/BetterDiscordApp/branches",
 		"sha": "4a377d964871a480dc663d921f1680ff7aeff4b3"
+	},
+	{
+		"pkgname": "dkms-sorted",
+		"url": "https://api.github.com/repos/dell/dkms/branches",
+		"sha": "cb3458acddd321901301f2666cfb31dd903fe8b7"
+	},
+	{
+		"pkgname": "ds4drv-git",
+		"url": "https://api.github.com/repos/chrippa/ds4drv/branches",
+		"sha": "c5b6661de93c38869034b392cc299b89c7fa20da"
+	},
+	{
+		"pkgname": "way-cooler",
+		"url": "https://api.github.com/repos/way-cooler/way-cooler/branches",
+		"sha": "3142a279daae9885f3e5b23feb7c5cde57686cef"
+	},
+	{
+		"pkgname": "way-cooler-git",
+		"url": "https://api.github.com/repos/Immington-Industries/way-cooler/branches",
+		"sha": "3142a279daae9885f3e5b23feb7c5cde57686cef"
+	},
+	{
+		"pkgname": "bumblebee-status-git",
+		"url": "https://api.github.com/repos/tobi-wan-kenobi/bumblebee-status/branches",
+		"sha": "10df79ce9a215de1290766a72d557c75b7dfb49f"
+	},
+	{
+		"pkgname": "cli-visualizer-git",
+		"url": "https://api.github.com/repos/dpayne/cli-visualizer/branches",
+		"sha": "026fbd55a5570a8a548a0b1e10de67960a44aa16"
+	},
+	{
+		"pkgname": "dolphin-emu-git",
+		"url": "https://api.github.com/repos/dolphin-emu/dolphin/branches",
+		"sha": "c9b78e23a20b3bab7af132ca870b4df8440c2145"
+	},
+	{
+		"pkgname": "dolphin-emu-ishiiruka-cli-git",
+		"url": "https://api.github.com/repos/Tinob/Ishiiruka/branches",
+		"sha": "bb31135041d587f68baa2f3517c7f43dc25eed75"
+	},
+	{
+		"pkgname": "dolphin-emu-ishiiruka-git",
+		"url": "https://api.github.com/repos/Tinob/Ishiiruka/branches",
+		"sha": "bb31135041d587f68baa2f3517c7f43dc25eed75"
+	},
+	{
+		"pkgname": "dolphin-emu-qt-git",
+		"url": "https://api.github.com/repos/dolphin-emu/dolphin/branches",
+		"sha": "c9b78e23a20b3bab7af132ca870b4df8440c2145"
+	},
+	{
+		"pkgname": "fontview-git",
+		"url": "https://api.github.com/repos/khaledhosny/fontview/branches",
+		"sha": "a696bfdd660b0eb3083edc350f69c435281168b5"
+	},
+	{
+		"pkgname": "i3lock-next-git",
+		"url": "https://api.github.com/repos/owenthewizard/i3lock-next/branches",
+		"sha": "c7634f47183ff3aef26d0df20c8d3c49e16dff01"
+	},
+	{
+		"pkgname": "jstest-gtk-git",
+		"url": "https://api.github.com/repos/Grumbel/jstest-gtk/branches",
+		"sha": "3d8af5d682aed215823bac1b2f07ace058556fe5"
+	},
+	{
+		"pkgname": "lib32-sni-qt-patched-git",
+		"url": "https://api.github.com/repos/bil-elmoussaoui/sni-qt/branches",
+		"sha": "c6a0fa1642ad107f2d6c84136a199d9816b2e6b6"
+	},
+	{
+		"pkgname": "linux-steam-integration-git",
+		"url": "https://api.github.com/repos/ikeydoherty/libnica/branches",
+		"sha": "a669a09a3085aa652d051bd57cdf15c15cc2f88b"
+	},
+	{
+		"pkgname": "mopidy-git",
+		"url": "https://api.github.com/repos/mopidy/mopidy/branches",
+		"sha": "1a94183f00cf32390f74cd041ef753aa43850720"
+	},
+	{
+		"pkgname": "mopidy-notifier-git",
+		"url": "https://api.github.com/repos/sauberfred/mopidy-notifier/branches",
+		"sha": "f9ae2ab6fe0dd8b9dbdfee8734baf3c5a3e68815"
+	},
+	{
+		"pkgname": "paper-gtk-theme-git",
+		"url": "https://api.github.com/repos/snwh/paper-gtk-theme/branches",
+		"sha": "770aba45a6441f9af4d02e04c0acc237533d341f"
+	},
+	{
+		"pkgname": "papirus-icon-theme-git",
+		"url": "https://api.github.com/repos/PapirusDevelopmentTeam/papirus-icon-theme/branches",
+		"sha": "7468d7a958f3fb00ff899a03f997ba685c0e8e62"
+	},
+	{
+		"pkgname": "polybar",
+		"url": "https://api.github.com/repos/jaagr/polybar/branches",
+		"sha": "e3c44983ce97d448bb7c82a2120408161fec5a04"
+	},
+	{
+		"pkgname": "python-pywal-git",
+		"url": "https://api.github.com/repos/dylanaraps/pywal/branches",
+		"sha": "b39df715ff2365d8d1c9fa670d8e571d69373c87"
+	},
+	{
+		"pkgname": "python-wal-steam-git",
+		"url": "https://api.github.com/repos/kotajacob/wal_steam/branches",
+		"sha": "b377cf27cd3a0fb961ef497bab6c83cb515e820f"
+	},
+	{
+		"pkgname": "sni-qt-patched-git",
+		"url": "https://api.github.com/repos/bil-elmoussaoui/sni-qt/branches",
+		"sha": "c6a0fa1642ad107f2d6c84136a199d9816b2e6b6"
+	},
+	{
+		"pkgname": "spl-dkms",
+		"url": "https://api.github.com/repos/zfsonlinux/spl/branches",
+		"sha": "c9821f1ccc647dfbd506f381b736c664d862d126"
+	},
+	{
+		"pkgname": "spl-utils",
+		"url": "https://api.github.com/repos/zfsonlinux/spl/branches",
+		"sha": "c9821f1ccc647dfbd506f381b736c664d862d126"
+	},
+	{
+		"pkgname": "spoticord",
+		"url": "https://api.github.com/repos/nations/spoticord/branches",
+		"sha": "f77621bd3f48fdf6c96392023b6a40f38ea5c555"
+	},
+	{
+		"pkgname": "spotify-ripper-git",
+		"url": "https://api.github.com/repos/hbashton/spotify-ripper/branches",
+		"sha": "d0464193dead7bd3ac7580e98bde86a0f323acae"
+	},
+	{
+		"pkgname": "sway-git",
+		"url": "https://api.github.com/repos/SirCmpwn/sway/branches",
+		"sha": "7c3b0ffc324d913dd1c58b2497c9c36c74580ded"
+	},
+	{
+		"pkgname": "ttf-monofur-powerline-git",
+		"url": "https://api.github.com/repos/powerline/fonts/branches",
+		"sha": "ec0522ec5425d162c1b732804d1a05aa29594b4b"
+	},
+	{
+		"pkgname": "way-cooler-bg",
+		"url": "https://api.github.com/repos/Immington-Industries/way-cooler-bg/branches",
+		"sha": "9dde66b52f4f113ce8721a5b6ad4dd8e42049f1d"
+	},
+	{
+		"pkgname": "wayland-wall-git",
+		"url": "https://api.github.com/repos/wayland-wall/wayland-wall/branches",
+		"sha": "39400eaa90247f122ee0f1496ff8a5cd6d5a25b0"
+	},
+	{
+		"pkgname": "wlc-git",
+		"url": "https://api.github.com/repos/Cloudef/chck/branches",
+		"sha": "0400fb5e9cf8fd84f7ad5f59822fa2c9d48e1267"
+	},
+	{
+		"pkgname": "wlc-wall-injector-git",
+		"url": "https://api.github.com/repos/wayland-wall/orbment-wall/branches",
+		"sha": "389c741e6cf4624f3b85375c93c36d21b4a9108d"
+	},
+	{
+		"pkgname": "zfs-dkms",
+		"url": "https://api.github.com/repos/zfsonlinux/zfs/branches",
+		"sha": "823d48bfb182137c53b9432498f1f0564eaa8bfc"
+	},
+	{
+		"pkgname": "zfs-utils",
+		"url": "https://api.github.com/repos/zfsonlinux/zfs/branches",
+		"sha": "823d48bfb182137c53b9432498f1f0564eaa8bfc"
 	}
 ]

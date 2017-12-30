@@ -47,7 +47,7 @@ export TERMINAL=xiatec
 # ~/.config/i3/wallswitch.sh
 # ~/.config/i3/lock.sh &
 # aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet &
-# x11vnc -quiet -display :0 -forever -usepw &
+x11vnc -quiet -display :0 -forever -usepw &
 # xiate &
 # export TERMINAL=xiatec &
 # #urxvtd &

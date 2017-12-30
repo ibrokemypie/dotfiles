@@ -39,4 +39,8 @@ bindkey '^[[B' history-substring-search-down
 
 (cat ~/.cache/wal/sequences &)
 
-/home/conor/.config/mopidy/mpd & disown
+~/.config/mopidy/mpd &2>1 /dev/null & disown
+
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 7 ]; then
+	exec startx
+fi

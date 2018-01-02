@@ -4,22 +4,20 @@
 
 #start apps
 exec compton -bc
-#exec numlockx
-exec cmst
+exec touchegg
 exec --no-startup-id xinput set-button-map 23 1 0 3 4 5 6 7
 exec --no-startup-id ~/.config/i3/wallswitch.sh
-#exec bash ~/.config/i3/lock.sh
+exec bash ~/.config/i3/lock.sh
 exec bash ~/.config/polybar/launch.sh
-
-exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
-exec udiskie -s -s
+exec dex -ae i3
+#exec udiskie -s -s
 exec aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet 
-exec x11vnc -quiet -display :0 -forever -usepw 
+#exec x11vnc -quiet -display :0 -forever -usepw 
 exec xiate
-#exec thunar --daemon 
-
+exec thunar --daemon 
+#exec spacefm -d
+exec nylas-mail-lives --background
 exec lsi-steam
-exec dropbox
 exec keepassxc
 
 set $mod Mod4
@@ -192,15 +190,15 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioStop exec MPD_HOST=localhost playerctl stop
+bindsym XF86AudioPlay exec ~/.config/i3/playerctl.sh playpause
+bindsym XF86AudioNext exec ~/.config/i3/playerctl.sh next
+bindsym XF86AudioPrev exec ~/.config/i3/playerctl.sh prev
+bindsym XF86AudioStop exec ~/.config/i3/playerctl.sh stop
 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
-bindsym Control+grave exec --no-startup-id ~/tdrop/tdrop -y 20 -x 0 -w 1600 -a -m xiatec
+bindsym Control+grave exec --no-startup-id tdrop -y 20 -x 0 -w 100% -a -m xiatec
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

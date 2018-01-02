@@ -5,7 +5,7 @@ cmd(){
 	#        kill -9 $pid
 	#    fi 
 	#done
-	wal -i ~/Pictures/Desktop -t -o ~/.config/i3/dunstc.sh
+	wal -i ~/Pictures/Desktop/ -t -o ~/.config/i3/dunstc.sh
 }
 
 rotate(){

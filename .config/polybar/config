@@ -86,6 +86,7 @@ scroll-down = i3wm-wsprev
 font-0 = PowerlineSymbols:size=15;3
 font-1 = Terminus:size=10;1
 font-2 = FontAwesome:size=10;2
+#font-2 = "Font Awesome 5 Free:size=10;2"
 font-3 = Terminus:size=18;0
 font-4 = Monospace:size=28;3
 font-5 = FontAwesome:size=26;7
@@ -115,7 +116,7 @@ tray-background = ${colors.xcolor7}
 ;  	    M O D U L E    L A Y O U T S
 ;----------------------------------------------------------
 
-modules-left = RightArrow2 i3 RightArrow3 powermenu RightArrow2 mpd RightArrow1
+modules-left = RightArrow2 i3 RightArrow3 powermenu RightArrow2 music RightArrow1
 modules-center = arrow4 xwindow RightArrow4
 modules-right = arrow1 pavolume arrow2 eth arrow3 memory arrow2 filesystem arrow3 cpu temperature arrow2 battery date
 
@@ -183,6 +184,84 @@ adapter = ADP1
 ; Default: 5
 poll-interval = 5
 
+; see "man date" for details on how to format the time string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+; Default: %H:%M:%S
+time-format = %H:%M
+
+; Available tags:
+;   <label-charging> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;   <animation-charging>
+format-charging = <animation-charging><label-charging>
+
+; Available tags:
+;   <label-discharging> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+format-discharging = <ramp-capacity><label-discharging>
+
+; Available tags:
+;   <label-full> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;format-full = <ramp-capacity> <label-full>
+
+; Available tokens:
+;   %percentage% (default)
+;   %time%
+;   %consumption% (shows current charge rate in watts)
+label-charging = " %time% %percentage%%"
+
+; Available tokens:
+;   %percentage% (default)
+;   %time%
+;   %consumption% (shows current discharge rate in watts)
+label-discharging = " %time% %percentage%%"
+
+; Available tokens:
+;   %percentage% (default)
+label-full = Fully charged
+
+; Only applies if <ramp-capacity> is used
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+; Only applies if <bar-capacity> is used
+bar-capacity-width = 10
+
+; Only applies if <animation-charging> is used
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+; Framerate in milliseconds
+animation-charging-framerate = 750
+
+format-foreground = ${colors.xcolor1}
+format-background = ${colors.xcolor7}
+
+label-full-foreground = ${colors.xcolor1}
+label-full-background = ${colors.xcolor7}
+
+label-charging-foreground = ${colors.xcolor1}
+label-charging-background = ${colors.xcolor7}
+
+label-discharging-foreground = ${colors.xcolor1}
+label-discharging-background = ${colors.xcolor7}
+
+ramp-capacity-foreground = ${colors.xcolor1}
+ramp-capacity-background = ${colors.xcolor7}
+
+animation-charging-foreground = ${colors.xcolor1}
+animation-charging-background = ${colors.xcolor7}
+
+
 ;----------------------------------------------------------
 ;		       X W I N D O W
 ;----------------------------------------------------------
@@ -220,6 +299,15 @@ label-unmounted =   %mountpoint%
 label-unmounted-foreground = ${colors.xcolor1}
 label-unmounted-background = ${colors.xcolor7}
 
+[module/music]
+type = custom/script
+interval = 2
+
+label = %output:0:45:...%
+exec = ~/.config/polybar/mpris.sh
+click-left = playerctl previous
+click-middle = playerctl play-pause
+click-right = playerctl next
 
 ;----------------------------------------------------------
 ;			    M P D
@@ -393,9 +481,9 @@ type = internal/volume
 master-soundcard = default
 speaker-soundcard = default
 headphone-soundcard = default
-mapping = true
+mapped = true
 
-format-volume = %{A3:pavucontrol &:}%{A1:amixer -q -D pulse sset Master toggle:}<ramp-volume><label-volume>
+format-volume = %{A3:pavucontrol-qt &:}%{A1:amixer -q -D pulse sset Master toggle:}<ramp-volume><label-volume>
 ;     
 
 label-volume = %percentage%

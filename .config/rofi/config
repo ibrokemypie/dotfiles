@@ -1,5 +1,5 @@
 ! "Enabled modi" Set from: Default
-rofi.modi:                           drun,run,window
+rofi.modi:                           combi,drun,run,window,find:~/git/rofi-scripts/rofi-finder/finder.sh
 ! "Window width" Set from: Default
 ! rofi.width:                          50
 ! "Number of lines" Set from: Default
@@ -47,7 +47,7 @@ rofi.sort:                           true
 ! "Set case-sensitivity" Set from: Default
 ! rofi.case-sensitive:                 false
 ! "Cycle through the results list" Set from: Default
-! rofi.cycle:                          true
+rofi.cycle:                          false
 ! "Enable sidebar-mode" Set from: Default
 ! rofi.sidebar-mode:                   false
 ! "Row height (in chars)" Set from: Default
@@ -59,7 +59,7 @@ rofi.parse-hosts:                    true
 ! "Parse known_hosts file for ssh mode" Set from: Default
 ! rofi.parse-known-hosts:              true
 ! "Set the modi to combine in combi mode" Set from: Default
-! rofi.combi-modi:                     window,run
+rofi.combi-modi:                     drun,find
 ! "Set the matching algorithm. (normal, regex, glob, fuzzy)" Set from: Default
 rofi.matching:                       fuzzy
 ! "Tokenize input string" Set from: Default
@@ -97,7 +97,7 @@ rofi.matching:                       fuzzy
 ! "Indicate how it match by underlining it." Set from: Default
 ! rofi.show-match:                     true
 ! "New style theme file" Set from: Default
-! rofi.theme:
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 ! "Color scheme for normal row" Set from: Default
 ! rofi.color-normal:
 ! "Color scheme for urgent row" Set from: Default

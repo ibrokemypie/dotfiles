@@ -19,6 +19,7 @@ exec thunar --daemon
 exec nylas-mail-lives --background
 exec lsi-steam
 exec keepassxc
+exec /usr/lib/xfce-polkit/xfce-polkit 
 
 set $mod Mod4
 
@@ -46,8 +47,10 @@ client.background       $bg
 
 assign [class="xiatec"] 1
 assign [class="google-chrome-unstable"] 2
-assign [class="firefox"] 2
+assign [class="firefo*"] 2
 assign [class="Steam"] 3
+
+for_window [class="(?i)lorence"] floating enable; resize set 30 30
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -61,11 +64,11 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 #exec --no-startup-id rofi -modi "run,drun,window" -i
 
-bindsym $mod+space exec "rofi -i -modi drun,run,window -show drun"
+bindsym $mod+space exec "rofi -i -show"
 bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym mod1+Tab exec rofi -show window
 bindsym $mod+m exec clerk
-bindsym $mod+Shift+Return exec firefox
+bindsym $mod+Shift+Return exec firefox-nightly
 bindsym $mod+mod1+Return exec thunar
 
 # alternatively, you can use the cursor keys:
@@ -171,15 +174,16 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+bindsym Mod3+0x69 exec --no-startup-id xiatec
 bindsym $mod+r mode "resize"
 
 # Full screen
-bindsym mod1+Shift+3 exec --no-startup-id maim ~/Pictures/Screenshots/$(date +%s).png
-bindsym Control+mod1+Shift+3 exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Mod1+Shift+3 exec --no-startup-id maim ~/Pictures/Screenshots/$(date +%s).png
+bindsym Control+Mod1+Shift+3 exec --no-startup-id maim | xclip -selection clipboard -t image/png
 
 # Select
-bindsym mod1+Shift+4 exec --no-startup-id maim -s --noopengl ~/Pictures/Screenshots/$(date +%s).png
-bindsym Control+mod1+Shift+4 exec --no-startup-id maim -s --noopengl | xclip -selection clipboard -t image/png
+bindsym Mod1+Shift+4 exec --no-startup-id maim -s --noopengl ~/Pictures/Screenshots/$(date +%s).png
+bindsym Control+Mod1+Shift+4 exec --no-startup-id maim -s --noopengl | xclip -selection clipboard -t image/png
 
 bindsym Control+Mod1+Left workspace prev
 bindsym Control+Mod1+Right workspace next
@@ -195,8 +199,8 @@ bindsym XF86AudioNext exec ~/.config/i3/playerctl.sh next
 bindsym XF86AudioPrev exec ~/.config/i3/playerctl.sh prev
 bindsym XF86AudioStop exec ~/.config/i3/playerctl.sh stop
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec ~/.config/i3/brightness.py -inc
+bindsym XF86MonBrightnessDown exec ~/.config/i3/brightness.py -dec
 
 bindsym Control+grave exec --no-startup-id tdrop -y 20 -x 0 -w 100% -a -m xiatec
 
@@ -221,3 +225,9 @@ bindsym Control+grave exec --no-startup-id tdrop -y 20 -x 0 -w 100% -a -m xiatec
   # #status_command go run /extra/home/thingo/go/src/github.com/davidscholberg/goblocks/goblocks.go
 # }
 #
+
+# input "2:7:SynPS/2_Synaptics_TouchPad" {
+    # tap enabled
+    # natural_scroll enabled
+    # dwt disabled
+# }

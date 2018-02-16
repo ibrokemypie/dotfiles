@@ -104,7 +104,7 @@ tray-transparent = false
 tray-maxsize=24
 ;tray-offset-x = 21%
 tray-foreground = ${colors.xcolor1}
-tray-background = ${colors.xcolor7}
+tray-background = ${colors.xcolor0}
 
 ;wm-restack = i3
 ;override-redirect = true
@@ -116,7 +116,7 @@ tray-background = ${colors.xcolor7}
 ;  	    M O D U L E    L A Y O U T S
 ;----------------------------------------------------------
 
-modules-left = RightArrow2 i3 RightArrow3 powermenu RightArrow2 music RightArrow1
+modules-left = RightArrow5 i3 RightArrow3 powermenu RightArrow4
 modules-center = arrow4 xwindow RightArrow4
 modules-right = arrow1 pavolume arrow2 eth arrow3 memory arrow2 filesystem arrow3 cpu temperature arrow2 battery date
 
@@ -283,8 +283,8 @@ type = internal/fs
 interval = 25
 fixed-values = true
 
-mount-0 = /
-;mount-1 = /home
+mount-0 = /home
+#mount-1 = /home
 
 format-mounted = <label-mounted>
 format-mounted-foreground = ${colors.xcolor1}
@@ -451,7 +451,7 @@ format-background = ${colors.xcolor7}
 date = " %d/%m/%y"
 ;date = ""
 ;time-alt = ""
-time = " %H:%M"
+time = " %I:%M"
 label = " %time% %date%  "
 
 ;----------------------------------------------------------

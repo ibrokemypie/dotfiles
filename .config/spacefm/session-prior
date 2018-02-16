@@ -8,13 +8,13 @@
 show_thumbnail=1
 
 [Window]
-width=1860
-height=489
+width=920
+height=999
 maximized=0
 
 [Desktop]
 bg1=4656,4125,12014
-bg2=5422,1862,32674
+bg2=58670,2128,32640
 text=65535,65535,65535
 shadow=0,0,0
 
@@ -60,13 +60,13 @@ move_dlg_confirm_create-b=1
 status_info-b=1
 main_new_window-key=110
 main_new_window-keymod=4
-main_terminal-s=xiatec
+main_terminal-s=xterm
 main_terminal-key=65473
 main_terminal-b=2
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/conor
+panel1_show-s=////home/conor/Downloads
 panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4
@@ -144,6 +144,8 @@ arc_def_ex-b=1
 arc_def_parent-b=1
 arc_def_write-b=1
 arc_conf2-s=hand_arc_+7z hand_arc_+rar hand_arc_+tar hand_arc_+tar_bz2 hand_arc_+tar_gz hand_arc_+tar_xz hand_arc_+zip hand_arc_+gz hand_arc_+xz
+arc_conf2-x=539
+arc_conf2-y=444
 new_file-key=70
 new_file-keymod=5
 new_folder-key=102

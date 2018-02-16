@@ -8,8 +8,8 @@
 show_thumbnail=1
 
 [Window]
-width=920
-height=999
+width=1860
+height=489
 maximized=0
 
 [Desktop]
@@ -66,7 +66,7 @@ main_terminal-b=2
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/conor/Downloads
+panel1_show-s=////home/conor/Pictures
 panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4

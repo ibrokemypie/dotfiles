@@ -50,3 +50,6 @@
 .config/freerdp/known_hosts2
 .config/discord/Cookies
 .config/discord/GPUCache
+.config/libreoffice
+.config/discord
+.config/wine

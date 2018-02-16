@@ -6,6 +6,7 @@ cmd(){
 	#    fi 
 	#done
 	wal -i ~/Pictures/Desktop/ -t -o ~/.config/i3/dunstc.sh
+	#wallsplash -r
 }
 
 rotate(){

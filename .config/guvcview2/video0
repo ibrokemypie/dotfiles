@@ -5,7 +5,7 @@ width=1920
 #video input height
 height=1080
 #video input format
-v4l2_format=859981650
+v4l2_format=1196444237
 #video input capture method
 capture=mmap
 #audio api
@@ -41,7 +41,7 @@ fps_denom=25
 #audio device index (-1 - api default)
 audio_device=0
 #video fx mask 
-video_fx=0x0
+video_fx=0x1
 #audio fx mask 
 audio_fx=0x0
 #OSD mask 

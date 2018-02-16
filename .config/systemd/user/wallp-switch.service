@@ -1,7 +1,0 @@
-[Unit]
-Description=Run wallpaper rotaion script
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/sh -c '/extra/home/.config/wallswitch.sh'
-

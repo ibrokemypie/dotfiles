@@ -1,6 +1,0 @@
-[Unit]
-Description=Wallpaper rotation timer
-
-[Timer]
-OnCalendar=*:0/15
-Persistent=true

@@ -1,5 +1,5 @@
 {
-	"buildDir": "/extra/home/.cache/yay/",
+	"buildDir": "/home/conor/.cache/yay/",
 	"editor": "micro",
 	"makepkgbin": "/usr/bin/makepkg",
 	"pacmanbin": "/usr/bin/pacman",

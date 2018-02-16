@@ -1,0 +1,33 @@
+[Default Applications]
+x-scheme-handler/nylas=nylas.desktop
+x-scheme-handler/mailto=nylas.desktop
+text/plain=sublime_text_3.desktop
+x-scheme-handler/http=userapp-Basilisk-SSHVEZ.desktop
+x-scheme-handler/https=userapp-Basilisk-SSHVEZ.desktop
+x-scheme-handler/ftp=userapp-Basilisk-SSHVEZ.desktop
+x-scheme-handler/chrome=userapp-Basilisk-SSHVEZ.desktop
+text/html=userapp-Basilisk-SSHVEZ.desktop
+application/x-extension-htm=userapp-Basilisk-SSHVEZ.desktop
+application/x-extension-html=userapp-Basilisk-SSHVEZ.desktop
+application/x-extension-shtml=userapp-Basilisk-SSHVEZ.desktop
+application/xhtml+xml=userapp-Basilisk-SSHVEZ.desktop
+application/x-extension-xhtml=userapp-Basilisk-SSHVEZ.desktop
+application/x-extension-xht=userapp-Basilisk-SSHVEZ.desktop
+x-scheme-handler/tg=telegramdesktop.desktop
+x-scheme-handler/discord-381948295830044683=discord-381948295830044683.desktop
+x-scheme-handler/discord-382303152327753739=discord-382303152327753739.desktop
+
+[Added Associations]
+text/plain=userapp-micro-8Q6Q9Y.desktop;wine-extension-txt.desktop;sublime_text_3.desktop;
+x-scheme-handler/http=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+x-scheme-handler/https=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+x-scheme-handler/ftp=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+x-scheme-handler/chrome=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+text/html=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/x-extension-htm=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/x-extension-html=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/x-extension-shtml=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/xhtml+xml=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/x-extension-xhtml=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/x-extension-xht=firefox.desktop;userapp-Nightly-4UTJ4Y.desktop;userapp-Basilisk-SSHVEZ.desktop;
+application/x-compressed-tar=xarchiver.desktop;

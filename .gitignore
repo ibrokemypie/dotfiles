@@ -60,3 +60,6 @@
 .config/Thunar
 .config/dconf
 .config/unity3d
+.config/libreoffice
+.config/discord
+.config/wine

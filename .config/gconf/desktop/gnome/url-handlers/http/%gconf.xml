@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="needs_terminal" mtime="1518769394" type="bool" value="false"/>
+	<entry name="enabled" mtime="1518769394" type="bool" value="true"/>
+	<entry name="command" mtime="1518769394" type="string">
+		<stringvalue>/usr/lib/basilisk-55.0.0/basilisk %s</stringvalue>
+	</entry>
+</gconf>

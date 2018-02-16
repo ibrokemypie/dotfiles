@@ -30,11 +30,11 @@ scripts=(
     ${scripts[@]}
     $HOME/.zsh/aliases
     $HOME/.zsh/history.zsh
-    $HOME/.zsh/gpg.zsh
+    #$HOME/.zsh/gpg.zsh
     $HOME/.zsh/fasd.zsh
-    $HOME/.zsh/theme-and-appearance.zsh
-    $HOME/.zsh/git.zsh
-    $HOME/.zsh/bullet-train.zsh
+    #$HOME/.zsh/theme-and-appearance.zsh
+    #$HOME/.zsh/git.zsh
+    #$HOME/.zsh/bullet-train.zsh
     #source $HOME/.zsh/set-title-tab.zsh
     $HOME/.zsh/zsh-256color/zsh-256color.plugin.zsh
     $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -44,6 +44,11 @@ scripts=(
 
 export PATH=$PATH:~/.config/Color-Scripts/color-scripts:~/thingo/go/bin
 export GOPATH=$HOME/thingo/go
+
+prompt() {
+    PS1="$(powerline-rs --modules time,host,user,cwd,perms,git,gitstage --shell zsh $?)"
+}
+precmd_functions+=(prompt)
 
 #sauce me up
 for s in "${scripts[@]}"; do

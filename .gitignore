@@ -50,6 +50,16 @@
 .config/freerdp/known_hosts2
 .config/discord/Cookies
 .config/discord/GPUCache
+.config/mimeapps.list
+.config/pavucontrol.ini
+.config/xfce4/xfconf/xfce-perchannel-xml
+.config/gconf
+.config/keepassxc
+.config/cmst
+.config/gtk-2.0/gtkfilechooser.ini
+.config/Thunar
+.config/dconf
+.config/unity3d
 .config/libreoffice
 .config/discord
 .config/wine

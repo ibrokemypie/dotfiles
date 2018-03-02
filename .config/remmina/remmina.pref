@@ -51,7 +51,7 @@ shortcutkey_toolbar=116
 vte_font=
 vte_allow_bold_text=true
 vte_lines=512
-recent_VNC=decimator,192.168.1.23
+recent_VNC=decimator
 rdp_use_client_keymap=0
 rdp_quality_0=6F
 rdp_quality_1=7
@@ -60,8 +60,6 @@ rdp_quality_9=80
 rdp_deviceScaleFactor=0
 rdp_desktopScaleFactor=0
 rdp_desktopOrientation=0
-recent_RDP=192.168.100.217
-fullscreen_on_auto=true
 
 [ssh_colors]
 background=rgb(213,204,186)

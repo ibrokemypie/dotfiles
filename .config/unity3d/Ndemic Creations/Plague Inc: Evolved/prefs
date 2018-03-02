@@ -61,36 +61,9 @@
 	<pref name="8A" type="int">0</pref>
 	<pref name="9A" type="int">0</pref>
 	<pref name="CGSDifficulty-last" type="int">1</pref>
-	<pref name="CGSDisease-last" type="string">TkVDUk9B</pref>
-	<pref name="CGSGene-BACTERIA-dna" type="string">Ym9udXNfZG5h</pref>
-	<pref name="CGSGene-BACTERIA-environmental" type="string">aHVtaWRfYm9udXM=</pref>
-	<pref name="CGSGene-BACTERIA-evolve" type="string">ZGV2b2x2ZXI=</pref>
-	<pref name="CGSGene-BACTERIA-travel" type="string">bGFuZF9ib251cw==</pref>
-	<pref name="CGSGene-FUNGUS-environmental" type="string">YXJpZF9ib251cw==</pref>
-	<pref name="CGSGene-FUNGUS-evolve" type="string">ZGV2b2x2ZXI=</pref>
-	<pref name="CGSGene-NECROA-dna" type="string">b3JhbmdlX2RuYQ==</pref>
-	<pref name="CGSGene-NECROA-environmental" type="string">cnVyYWxfYm9udXM=</pref>
-	<pref name="CGSGene-NECROA-mutation" type="string">bXV0YXRpb25fYm9udXM=</pref>
-	<pref name="CGSGene-NECROA-travel" type="string">bGFuZF9ib251cw==</pref>
-	<pref name="CGSGene-NEURAX-dna" type="string">b3JhbmdlX2RuYQ==</pref>
-	<pref name="CGSGene-NEURAX-environmental" type="string">aHVtaWRfYm9udXM=</pref>
-	<pref name="CGSGene-NEURAX-evolve" type="string">ZGV2b2x2ZXI=</pref>
-	<pref name="CGSGene-NEURAX-travel" type="string">bGFuZF9ib251cw==</pref>
-	<pref name="CGSGene-PARASITE-dna" type="string">b3JhbmdlX2RuYQ==</pref>
-	<pref name="CGSGene-PARASITE-environmental" type="string">YXJpZF9ib251cw==</pref>
-	<pref name="CGSGene-PARASITE-evolve" type="string">ZGV2b2x2ZXI=</pref>
-	<pref name="CGSGene-PARASITE-travel" type="string">bGFuZF9ib251cw==</pref>
-	<pref name="CGSGene-PRION-dna" type="string">b3JhbmdlX2RuYQ==</pref>
-	<pref name="CGSGene-PRION-environmental" type="string">cnVyYWxfYm9udXM=</pref>
-	<pref name="CGSGene-PRION-evolve" type="string">ZGV2b2x2ZXI=</pref>
-	<pref name="CGSGene-PRION-travel" type="string">bGFuZF9ib251cw==</pref>
+	<pref name="CGSDisease-last" type="string">VklSVVM=</pref>
 	<pref name="CGSGene-VIRUS-evolve" type="string">ZGV2b2x2ZXI=</pref>
 	<pref name="CGSName-lastBACTERIA" type="string">UEFYLTEy</pref>
-	<pref name="CGSName-lastFUNGUS" type="string">UEFYLTEy</pref>
-	<pref name="CGSName-lastNEURAX" type="string">UEFYLTEy</pref>
-	<pref name="CGSName-lastPARASITE" type="string">UEFYLTEy</pref>
-	<pref name="CGSName-lastPRION" type="string">UEFYLTEy</pref>
-	<pref name="CGSName-lastVIRUS" type="string">UEFYLTEy</pref>
 	<pref name="INPUT_ABILITY1_0" type="string">Wg==</pref>
 	<pref name="INPUT_ABILITY1_1" type="string">Tm9uZQ==</pref>
 	<pref name="INPUT_ABILITY2_0" type="string">WA==</pref>
@@ -143,7 +116,7 @@
 	<pref name="INPUT_UP_1" type="string">VXBBcnJvdw==</pref>
 	<pref name="INPUT_WORLD_0" type="string">RQ==</pref>
 	<pref name="INPUT_WORLD_1" type="string">Tm9uZQ==</pref>
-	<pref name="Pity_Mode_Popup_Status" type="string">QkFDVEVSSUFfMg==</pref>
+	<pref name="Pity_Mode_Popup_Status" type="string">QkFDVEVSSUFfLTE=</pref>
 	<pref name="Pref_Accessability_Language" type="string">RW5nbGlzaA==</pref>
 	<pref name="Pref_Accessability_Language_Initialise" type="int">1</pref>
 	<pref name="Pref_Audio_MasterVolume" type="float">1</pref>
@@ -158,14 +131,14 @@
 	<pref name="Pref_General_PityMode" type="int">0</pref>
 	<pref name="Pref_General_PlayVideo" type="string">T24=</pref>
 	<pref name="Pref_General_Tooltip" type="string">T24=</pref>
-	<pref name="Pref_Video_AA" type="string">QUFfMg==</pref>
+	<pref name="Pref_Video_AA" type="string">QUFfOA==</pref>
 	<pref name="Pref_Video_Anisotropic" type="string">RW5hYmxl</pref>
 	<pref name="Pref_Video_Dynamics" type="string">T24=</pref>
 	<pref name="Pref_Video_FPS" type="string">RlBTXzYw</pref>
 	<pref name="Pref_Video_Particles" type="string">T24=</pref>
 	<pref name="Pref_Video_ResolutionH" type="int">1080</pref>
 	<pref name="Pref_Video_ResolutionW" type="int">1920</pref>
-	<pref name="Pref_Video_VSync" type="string">VlN5bmNfMQ==</pref>
+	<pref name="Pref_Video_VSync" type="string">VlN5bmNfMA==</pref>
 	<pref name="Pref_Video_WindowMode" type="string">RnVsbHNjcmVlbg==</pref>
 	<pref name="SC_INPUT_AA_DOWN_0" type="string">Tm9uZQ==</pref>
 	<pref name="SC_INPUT_AA_DOWN_1" type="string">Tm9uZQ==</pref>
@@ -202,24 +175,11 @@
 	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
 	<pref name="TutorialActive" type="int">1</pref>
 	<pref name="UnitySelectMonitor" type="int">-1</pref>
-	<pref name="UnlockPopupGeneShown-arid_bonus" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-bonus_dna" type="int">1</pref>
 	<pref name="UnlockPopupGeneShown-devolver" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-humid_bonus" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-land_bonus" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-mutation_bonus" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-orange_dna" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-rural_bonus" type="int">1</pref>
-	<pref name="UnlockPopupGeneShown-static_devolve" type="int">1</pref>
-	<pref name="UnlockPopupShown-FUNGUS" type="int">1</pref>
-	<pref name="UnlockPopupShown-NECROA" type="int">1</pref>
-	<pref name="UnlockPopupShown-NEURAX" type="int">1</pref>
-	<pref name="UnlockPopupShown-PARASITE" type="int">1</pref>
-	<pref name="UnlockPopupShown-PRION" type="int">1</pref>
 	<pref name="UnlockPopupShown-SIMIAN_FLU" type="int">1</pref>
 	<pref name="UnlockPopupShown-VAMPIRE" type="int">1</pref>
 	<pref name="UnlockPopupShown-VIRUS" type="int">1</pref>
-	<pref name="Version_Number" type="string">MS4xNS4x</pref>
+	<pref name="Version_Number" type="string">MS4xMy4z</pref>
 	<pref name="isRunInBG" type="int">0</pref>
-	<pref name="lastDynamicNewsen" type="string">bmV3czoKIGRuMzI6CiAgcmVmOjMyCiAgdGl0bGU6VGVycnkgUHJhdGNoZXR0IHZvdGVkIGJlc3QgYXV0aG9yIGV2ZXIhCiAgY29udGVudDoKICBwb3B1cDowCiAgaWNvbjoKICBwcmlvcml0eTo0CiAgZ3JvdXA6CiAgbW9yZWluZm86CiBkbjQ3OgogIHJlZjo0NwogIHRpdGxlOlBsYWd1ZSBJbmM6IFRoZSBCb2FyZCBHYW1lIG91dCBub3cgb24gQW1hem9uIQogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgogZG41NDoKICByZWY6NTQKICB0aXRsZTpDaGlsZCBzYXZlcyBjbG93biBmcm9tIHNld2VyLiBQb2xpY2UgY2FuJ3QgYmVsaWV2ZSBJdAogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgogZG41NToKICByZWY6NTUKICB0aXRsZTpNaWxsaW9ucyBnbyBvdXRzaWRlIHRvIHdhdGNoIHNvbGFyIGVjbGlwc2Ugb24gY2VsbHBob25lcwogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgogZG41NjoKICByZWY6NTYKICB0aXRsZTpBc3BpcmluZyB0aGllZiBlbnRlcnMgdGhlYXRlci4gU3RlYWxzIHNwb3RsaWdodAogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgogZG41NzoKICByZWY6NTcKICB0aXRsZTpDYXJ0b29uaXN0IGZvdW5kIGRlYWQgYXQgaG9tZS4gRGV0YWlscyBhcmUgc2tldGNoeQogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgogZG41ODoKICByZWY6NTgKICB0aXRsZTonUG9yZ3Mgbm90IGNvb2wnIHNheXMgRXdvawogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgo=</pref>
+	<pref name="lastDynamicNewsen" type="string">bmV3czoKIGRuMzI6CiAgcmVmOjMyCiAgdGl0bGU6VGVycnkgUHJhdGNoZXR0IHZvdGVkIGJlc3QgYXV0aG9yIGV2ZXIhCiAgY29udGVudDoKICBwb3B1cDowCiAgaWNvbjoKICBwcmlvcml0eTo0CiAgZ3JvdXA6CiAgbW9yZWluZm86CiBkbjQ3OgogIHJlZjo0NwogIHRpdGxlOlBsYWd1ZSBJbmM6IFRoZSBCb2FyZCBHYW1lIG91dCBub3cgb24gQW1hem9uIQogIGNvbnRlbnQ6CiAgcG9wdXA6MAogIGljb246CiAgcHJpb3JpdHk6NAogIGdyb3VwOgogIG1vcmVpbmZvOgogZG40ODoKICByZWY6NDgKICB0aXRsZTonTm8gb25lIHByZWRpY3RlZCB0aGlzJyBzYXlzIG1hbiB3aG8gZGVzdHJveWVkIEVhcnRoCiAgY29udGVudDoKICBwb3B1cDowCiAgaWNvbjoKICBwcmlvcml0eToxCiAgZ3JvdXA6CiAgbW9yZWluZm86CiBkbjUzOgogIHJlZjo1MwogIHRpdGxlOkNoYW9zIGFzIHRpY2sgZXNjYXBlcyBmcm9tIGNvbmZlcmVuY2Ugb24gdGlja3MKICBjb250ZW50OgogIHBvcHVwOjAKICBpY29uOgogIHByaW9yaXR5OjQKICBncm91cDoKICBtb3JlaW5mbzoKIGRuNTQ6CiAgcmVmOjU0CiAgdGl0bGU6Q2hpbGQgc2F2ZXMgY2xvd24gZnJvbSBzZXdlci4gUG9saWNlIGNhbid0IGJlbGlldmUgSXQKICBjb250ZW50OgogIHBvcHVwOjAKICBpY29uOgogIHByaW9yaXR5OjQKICBncm91cDoKICBtb3JlaW5mbzoKIGRuNTU6CiAgcmVmOjU1CiAgdGl0bGU6TWlsbGlvbnMgZ28gb3V0c2lkZSB0byB3YXRjaCBzb2xhciBlY2xpcHNlIG9uIGNlbGxwaG9uZXMKICBjb250ZW50OgogIHBvcHVwOjAKICBpY29uOgogIHByaW9yaXR5OjQKICBncm91cDoKICBtb3JlaW5mbzoKIGRuNTY6CiAgcmVmOjU2CiAgdGl0bGU6QXNwaXJpbmcgdGhpZWYgZW50ZXJzIHRoZWF0ZXIuIFN0ZWFscyBzcG90bGlnaHQKICBjb250ZW50OgogIHBvcHVwOjAKICBpY29uOgogIHByaW9yaXR5OjQKICBncm91cDoKICBtb3JlaW5mbzoKIGRuNTc6CiAgcmVmOjU3CiAgdGl0bGU6Q2FydG9vbmlzdCBmb3VuZCBkZWFkIGF0IGhvbWUuIERldGFpbHMgYXJlIHNrZXRjaHkKICBjb250ZW50OgogIHBvcHVwOjAKICBpY29uOgogIHByaW9yaXR5OjQKICBncm91cDoKICBtb3JlaW5mbzoKIGRuNTg6CiAgcmVmOjU4CiAgdGl0bGU6J1BvcmdzIG5vdCBjb29sJyBzYXlzIEV3b2sKICBjb250ZW50OgogIHBvcHVwOjAKICBpY29uOgogIHByaW9yaXR5OjQKICBncm91cDoKICBtb3JlaW5mbzoK</pref>
 </unity_prefs>

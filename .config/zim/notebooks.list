@@ -1,9 +1,9 @@
 [NotebookList]
-Default=
+Default=~/Notebooks/Notes
 1=~/Notebooks/Notes
 
 [Notebook 1]
 uri=~/Notebooks/Notes
-name=Notes
+name=Year 12
 interwiki=None
 icon=None

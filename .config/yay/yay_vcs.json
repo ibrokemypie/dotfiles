@@ -11,8 +11,8 @@
 	},
 	{
 		"pkgname": "polybar",
-		"url": "https://api.github.com/repos/jaagr/polybar/branches",
-		"sha": "031f58c52261acef9f90c4a18923646123987303"
+		"url": "https://api.github.com/repos/jaagr/polybar",
+		"sha": "2f62a6fbadd72d78b68db1cd1209f7feb4d43858"
 	},
 	{
 		"pkgname": "wlc-wall-injector-git",
@@ -40,9 +40,9 @@
 		"sha": "f29ac60bb5856412ff0ff5c2b7887c7ce432f0b7"
 	},
 	{
-		"pkgname": "sway-git",
-		"url": "https://api.github.com/repos/SirCmpwn/sway/branches",
-		"sha": "7c3b0ffc324d913dd1c58b2497c9c36c74580ded"
+		"pkgname": "betterdiscord-rauenzi-git",
+		"url": "https://api.github.com/repos/rauenzi/BetterDiscordApp/branches",
+		"sha": "8533d76aa83af442bad3256be6c9837e66d33d7e"
 	},
 	{
 		"pkgname": "spotify-ripper-git",
@@ -91,13 +91,13 @@
 	},
 	{
 		"pkgname": "trizen-git",
-		"url": "https://api.github.com/repos/trizen/trizen/branches",
-		"sha": "26c7dafc8eca3fef06e0698cb5d18e32258b9742"
+		"url": "https://api.github.com/repos/trizen/trizen",
+		"sha": "b7ba450ef01dbe57aea6e31e91b56c1d70dd79f5"
 	},
 	{
 		"pkgname": "pinta-git",
-		"url": "https://api.github.com/repos/PintaProject/Pinta/branches",
-		"sha": "bebb4793ea1d42d539b457ba2467e431aac3447f"
+		"url": "https://api.github.com/repos/PintaProject/Pinta",
+		"sha": "c6ac090832db72db74bf6b301f57952f8a70ecdf"
 	},
 	{
 		"pkgname": "anbox-git",
@@ -132,11 +132,41 @@
 	{
 		"pkgname": "ion-git",
 		"url": "https://api.github.com/repos/redox-os/ion/branches",
-		"sha": "22b3efc6eb29020b452c44ad057c394951f6b982"
+		"sha": "18b6f5eb4a9a10ca404c9fbd302ab5b216c2f45a"
 	},
 	{
 		"pkgname": "php-box",
-		"url": "https://api.github.com/repos/box-project/box2/branches",
-		"sha": "51366abf2eb5895c6d8a4ceb10fa15682e8eaa4b"
+		"url": "https://api.github.com/repos/box-project/box2",
+		"sha": "740f8ce7742f523056e38cb2cb077f2edb32e5af"
+	},
+	{
+		"pkgname": "betterdiscordctl-git",
+		"url": "https://api.github.com/repos/bb010g/betterdiscordctl/branches",
+		"sha": "de0b0eafdbd7a84b196b68d6e98cc13ccbb8bfad"
+	},
+	{
+		"pkgname": "osu-lazer-git",
+		"url": "https://api.github.com/repos/ppy/osu-resources",
+		"sha": "92ec3d10b12c5e9bfc1d3b05d3db174a506efd6d"
+	},
+	{
+		"pkgname": "phoenix-git",
+		"url": "https://api.github.com/repos/team-phoenix/Phoenix",
+		"sha": "c8158177cc56cda56ef5407d7dffb2e6c3c2c01b"
+	},
+	{
+		"pkgname": "libretro-dolphin-git",
+		"url": "https://api.github.com/repos/libretro/dolphin",
+		"sha": "cda77d5d96e68e31a30e7800d6aa6b5732367917"
+	},
+	{
+		"pkgname": "libretro-database-git",
+		"url": "https://api.github.com/repos/libretro/libretro-database",
+		"sha": "a80f0f08ca392f83af5155892b3ddb427aa3957a"
+	},
+	{
+		"pkgname": "libretro-mame-git",
+		"url": "https://api.github.com/repos/libretro/mame",
+		"sha": "bee25da1dca97bc294fc77889a3c0e9eb6554f64"
 	}
 ]

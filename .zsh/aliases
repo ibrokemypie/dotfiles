@@ -20,3 +20,4 @@ function paste() {
 alias picker="maim -st 0 | convert - -resize 1x1\! -format '%[pixel:p{0,0}]' info:-"
 alias cp="cp --reflink=auto"
 alias pacaur="yay"
+alias ls="exa"

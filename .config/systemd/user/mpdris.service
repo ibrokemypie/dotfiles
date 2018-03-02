@@ -1,0 +1,16 @@
+[Unit]
+Description=Mopidy music server
+After=avahi-daemon.service
+After=dbus.service
+After=network.target
+After=nss-lookup.target
+After=pulseaudio.service
+After=remote-fs.target
+After=sound.target
+After=mopidy.service
+
+[Service]
+ExecStart=/usr/bin/mpDris2
+
+[Install]
+WantedBy=multi-user.target

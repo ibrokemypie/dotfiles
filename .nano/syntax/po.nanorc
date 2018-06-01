@@ -1,0 +1,9 @@
+syntax "po" "\.pot?$"
+
+color brightwhite  "[[:<:]](msgid|msgstr)[[:>:]]"
+color green ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color black,cyan   "\\.?"
+color cyan "(^|[[:space:]])#([^{].*)?$"
+color ,cyan "[[:space:]]+$"
+color brightwhite,red    "	+ +| +	+"
+# +EXTRALINT

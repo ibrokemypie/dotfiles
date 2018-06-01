@@ -1,0 +1,25 @@
+#shared
+alias ll="ls -alFG"
+alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1 | tail -n 1)) && eval $TF_CMD ; test -n "$TF_CMD" && print -s $TF_CMD'
+cherrypick() {git fetch $1 && git cherry-pick $2}
+topus() {ffmpeg -i "$1" -vn -acodec libopus -compression_level 10 -vbr on -b:a 256k "${1%%.[! ]*}.ogg"}
+
+alias nano=micro
+
+#OSX
+alias cask="brew cask"
+
+#LINUX
+mkcd(){
+	mkdir -p -- "$1" &&
+	cd -P -- "$1"
+}
+function paste() {
+	curl --progress-bar -F "c=@${1:--}" -F p=1 https://ptpb.pw | tee
+}
+alias picker="maim -st 0 | convert - -resize 1x1\! -format '%[pixel:p{0,0}]' info:-"
+alias cp="cp --reflink=auto"
+alias pacaur="yay"
+alias ls="exa"
+
+alias cmus="tmux new-session -A -s cmus cmus"

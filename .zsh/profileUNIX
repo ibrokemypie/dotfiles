@@ -1,0 +1,60 @@
+#EXPORTS
+export EDITOR=micro
+export GIT_EDITOR=micro
+export WITH_SU=true
+export I_WANT_A_QUAIL_STAR=true WITHOUT_CHECK_API=true
+export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+#export JAVA_HOME=/usr/lib/jvm/java-9-openjdk
+export LANG="en_AU.UTF-8"
+export LC_ALL="en_AU.UTF-8"
+export GPG_TTY=$(tty)
+
+#PATHS
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+#ZSH STLES
+zstyle ':completion:*' completer _complete _ignored
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:]}={[:upper:]}' 'l:|=* r:|=*'
+zstyle ':completion:*' menu select
+
+if test "$CASE_SENSITIVE" = true; then
+  unset HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS
+fi
+
+if test "$DISABLE_COLOR" = true; then
+  unset HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND
+  unset HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND
+fi
+
+
+setopt AUTO_CD # No cd needed to change directories
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST # Expire duplicate entries first when trimming history.
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_IGNORE_DUPS # Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space.
+setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording entry.
+setopt HIST_SAVE_NO_DUPS # Don't write duplicate entries in the history file.
+setopt INC_APPEND_HISTORY # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY # Share history between all sessions.
+
+
+autoload -Uz compinit
+compinit
+autoload edit-command-line
+zle -N edit-command-line
+
+#KEYS
+bindkey '^X^e' edit-command-line
+bindkey -e
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+(cat ~/.cache/wal/sequences &)
+
+# ~/.config/mopidy/mpd &2>1 /dev/null & disown
+# 
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 7 ]; then
+	exec startx
+fi

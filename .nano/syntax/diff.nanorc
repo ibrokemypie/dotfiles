@@ -1,0 +1,12 @@
+syntax "diff" "\.diff$"
+
+color brightred   "^[<\-].*"
+color brightgreen "^[>+].*"
+color cyan "^ .*"
+color cyan "^[^<> +@0-9\-].*"
+color brightmagenta "@@.*@@"
+color brightmagenta "^---$"
+color brightmagenta "^[0-9].*"
+color ,cyan "[[:space:]]+$"
+color brightwhite,red    "	+ +| +	+"
+# +EXTRALINT

@@ -1,0 +1,20 @@
+# This file was automatically generated from etcgroup.nanorc by nanorc (https://github.com/YSakhno/nanorc.git)
+syntax "etcgroup" "/etc/group-?$"
+
++RESETALL
+
+# Group List
+color color color brightyellow  "^[^:]*:[^:]*:[^:]*:.*$"
+color color color color color color white     ","
+color color color yellow  "^[^:]*:[^:]*:[^:]*:"
+# Group ID
+color color color color color color white     "^[^:]*:[^:]*:[^:]*"
+color color color color color brightred    "^[^:]*:[^:]*:[0-9]+"
+color color color yellow  "^[^:]*:[^:]*:"
+# Password
+color color color color brightyellow,red   "^[^:]*:[^:]*"
+color color color yellow  "^[^:]*:"
+# Groupname
+color color color color brightwhite   "^[^:]*"
+
++LINT

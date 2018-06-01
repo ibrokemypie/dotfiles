@@ -1,0 +1,27 @@
+# This file was automatically generated from asteriskael.nanorc by nanorc (https://github.com/YSakhno/nanorc.git)
+syntax "asteriskael" "\.ael$"
+
++RESETALL
+color color color color color brightred     "[[:<:]][0-9]+[[:>:]]"
+color color color color brightgreen    "^[[:space:]]*context[[:space:]]+[^[:space:]{;]+"
+color color color color brightgreen    start="[[:<:]]includes[[:space:]]*\{" end="\}"
+color color color color color color brightmagenta      "^[[:space:]]*macro[[:space:]]+[^{/]+"
+color color color color brightwhite    "[[:<:]](abstract|break|case|catch|context|continue|else|eswitches)[[:>:]]"
+color color color color brightwhite    "[[:<:]](for|globals|goto|hint|if|ifTime|includes|jump|local)[[:>:]]"
+color color color color brightwhite    "[[:<:]](macro|pattern|random|regexten|return|switch|switches|while)[[:>:]]"
+color color color color color color color brightcyan       "^[[:space:]]*[^[:space:]:]+:"
+
+color color green  "^[[:space:]]*ignorepat[[:space:]]*=>[[:space:]]*[^[:space:];]+"
+color color green  "^[[:space:]]*[^_][^[:space:]=]*[[:space:]]*=>"
+color color color color color blue,cyan     "^[[:space:]]*_[^[:space:]=]+[[:space:]]*=>"
+color color color color brightwhite    "^[[:space:]]*ignorepat[[:space:]]*=>"
+
+color color color color color color brightmagenta      "&[^(]+\([^)]*\)"
+
+color color color yellow   "[{}]"
++WHITESPACES
+color color color yellow   "=>|[{=};,]"
+color color color color color brightcyan     ""[^"]*""
+color color color brightyellow   "\$\{[^}]+\}"
+color color color color cyan    "//.*$"
++LINT

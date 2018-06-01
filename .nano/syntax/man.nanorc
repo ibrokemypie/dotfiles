@@ -1,0 +1,10 @@
+syntax "man" "\.[1-9]x?$"
+
+color brightmagenta "\.(S|T)H.*$"
+color brightwhite "\.(BR?|I[PR]?).*$"
+color brightgreen   "\.(S|T)H|\.TP|\.(BR?|I[PR]?|PP)|\\f[BIPR]"
+color green ""(\\.|[^"])*"|'(\\.|[^'])*'"
+color green  "\.(br|DS|RS|RE|PD)"
+color ,cyan "[[:space:]]+$"
+color brightwhite,red    "	+ +| +	+"
+# +EXTRALINT

@@ -1,0 +1,4 @@
+syntax "default"
+color ,cyan "[[:space:]]+$"
+color brightwhite,red    "	+ +| +	+"
+# +EXTRALINT

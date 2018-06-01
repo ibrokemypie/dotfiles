@@ -1,0 +1,38 @@
+# This file was automatically generated from logrotate.nanorc by nanorc (https://github.com/YSakhno/nanorc.git)
+syntax "logrotate" "/etc/logrotate\.(conf|d/[^/]+)$"
+header "^[[:space:]]*(/var/log/[^[:space:]]+\.log|"/var/log/(\\"|[^"])+\.log"|'/var/log/(\\'|[^'])+\.log')"
+
++RESETALL
+color color color color brightwhite   "^[[:space:]]*(hourly|daily|weekly|monthly|yearly)[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(no)?(copy(truncate)?|create|(delay)?compress)[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(no)?(dateext|missingok|sharedscripts|shred)[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(no(mail|olddir)|mail(first|last))[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(dateyesterday|(not)?ifempty)[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*((un)?compresscmd|compress(ext|options))[[:space:]]"
+color color color color brightwhite   "^[[:space:]]*(maxage|rotate|shredcycles|start)[[:space:]]+[0-9]+[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(create|su)[[:space:]]"
+color color color color color brightred    "^[[:space:]]*(max|min)?size[[:space:]]+[0-9]+[kKmMgG]?[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(max|min)?size[[:space:]]"
+color color color color color brightred    "[[:space:]][0-9]+([[:space:]]+[0-9]+)*([[:space:]]|$)"
+
++WHITESPACES
+color color color color color color color brightblue      start="^[[:space:]]*['"]?/var/log/" end="\{[[:space:]]*$"
+color color color color color color white     "[[:space:]]*\{[[:space:]]*$"
+color color color yellow  "(\{|^[[:space:]]*\})[[:space:]]*$"
+
+color color color color color brightcyan    "^[[:space:]]*(dateformat|extension)[[:space:]]+([^'"][^[:space:]]*|"(\\"|[^"])*"|'(\\'|[^'])*')[[:space:]]*$"
+color color color color color color color brightblue      "^[[:space:]]*(include|olddir)[[:space:]]+([^'"][^[:space:]]*|"(\\"|[^"])*"|'(\\'|[^'])*')[[:space:]]*$"
+color color color color color color brightblue     "^[[:space:]]*mail[[:space:]]+([^'"<][^[:space:]]*|"(\\"|[^"])*"|'(\\'|[^'])*'|<[^>]*>)[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*(dateformat|extension|mail|olddir)[[:space:]]"
+color color color color color color brightmagenta     "^[[:space:]]*include[[:space:]]"
+color color color color color brightcyan    "^[[:space:]]*tabooext[[:space:]]+\+([[:space:]]+([^'"][^[:space:]]+|"(\\"|[^"])*"|'(\\'|[^'])*'))+[[:space:]]*$"
+color color color color color brightcyan    "^[[:space:]]*tabooext([[:space:]]+([^'"][^[:space:]]*|"(\\"|[^"])*"|'(\\'|[^'])*'))*[[:space:]]*$"
+color color color yellow  "^[[:space:]]*tabooext[[:space:]]+\+[[:space:]]+"
+color color color color brightwhite   "^[[:space:]]*tabooext([[:space:]]|$)"
+color color color color color color white     "^[[:space:]]+"
+color color color color brightgreen   start="^[[:space:]]*((post|pre)rotate|(first|last)action|preremove)[[:space:]]*$" end="^[[:space:]]*endscript[[:space:]]*$"
+color color color color brightwhite   "^[[:space:]]*((post|pre)rotate|(first|last)action|preremove|endscript)[[:space:]]*$"
+
+color color color color color black,cyan    "\\.?"
+color color color color cyan   "^[[:space:]]*#.*$"
++LINT

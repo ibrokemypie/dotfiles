@@ -1,0 +1,34 @@
+[INF][31/04/2018 23:46:19] Hooking dom-ready
+[INF][31/04/2018 23:46:19] Checking data/cache
+[INF][31/04/2018 23:46:19] Using repository: rauenzi and branch: master
+[INF][31/04/2018 23:46:19] Getting latest hash
+[INF][31/04/2018 23:46:20] Downloading Resource: api.github.com/repos/rauenzi/BetterDiscordApp/commits/master
+[INF][31/04/2018 23:46:22] Hash: 2cdaf11a12a8ad91cb8617be20dfb0375b61783b
+[INF][31/04/2018 23:46:22] Getting updater
+[INF][31/04/2018 23:46:23] Downloading Resource: raw.githubusercontent.com/rauenzi/BetterDiscordApp/2cdaf11a12a8ad91cb8617be20dfb0375b61783b/data/updater.json
+[INF][31/04/2018 23:46:23] Latest Version: 0.2.7
+[INF][31/04/2018 23:46:23] Using CDN: cdn.rawgit.com
+[INF][31/04/2018 23:46:23] Updating ext data
+[INF][31/04/2018 23:46:35] Hooked dom-ready
+[INF][31/04/2018 23:46:35] Loading
+[INF][31/04/2018 23:46:35] Hooking ipc async
+[INF][31/04/2018 23:46:35] Hooked ipc async
+[INF][31/04/2018 23:46:35] Loading Resource (jQuery)
+[INF][31/04/2018 23:46:35] Loading plugin: p_1lib_discord_internals
+[INF][31/04/2018 23:46:35] Loading plugin: Citador
+[INF][31/04/2018 23:46:35] Loading plugin: MessageUtilities
+[INF][31/04/2018 23:46:35] Loading plugin: PluginRepo
+[INF][31/04/2018 23:46:35] Loading plugin: ReadAllNotificationsButton
+[INF][31/04/2018 23:46:35] Loading plugin: RepoControls
+[INF][31/04/2018 23:46:35] Loading plugin: ReverseImageSearch
+[INF][31/04/2018 23:46:35] Loading plugin: SendLargeMessages
+[INF][31/04/2018 23:46:35] Loading plugin: ThemeRepo
+[INF][31/04/2018 23:46:35] Loading plugin: p_quoter
+[INF][31/04/2018 23:46:35] Loading theme: Beard_s_Material_theme_for_Discord
+[INF][31/04/2018 23:46:35] Loading theme: Material_Icons
+[INF][31/04/2018 23:46:35] Invalid theme detected README.md
+[INF][31/04/2018 23:46:35] Loading theme: ThemeFixer
+[INF][31/04/2018 23:46:35] Loading Resource (jQueryCookie)
+[INF][31/04/2018 23:46:35] Loading Resource (Main CSS)
+[INF][31/04/2018 23:46:35] Loading Resource (Main JS)
+[INF][31/04/2018 23:46:35] Starting Up

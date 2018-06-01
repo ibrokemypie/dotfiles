@@ -1,0 +1,6 @@
+{
+	"auto_minify_on_save": true,
+	"open_file": false,
+	//"cssminifier": "uglifycss",
+	"debug_mode": true
+}

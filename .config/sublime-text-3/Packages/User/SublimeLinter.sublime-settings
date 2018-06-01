@@ -1,0 +1,7 @@
+// SublimeLinter Settings - User
+{
+	"debug": true,
+	"paths": {
+		"linux": ["/usr/bin/"]
+	}
+}

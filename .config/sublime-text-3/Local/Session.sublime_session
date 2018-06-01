@@ -1,0 +1,1423 @@
+{
+	"folder_history":
+	[
+		"/home/conor/thingo/go/src/github.com/ibrokemypie/game",
+		"/home/conor/git/lilyandking"
+	],
+	"last_version": 3176,
+	"last_window_id": 13,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 999.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"tot",
+						"totalCost"
+					],
+					[
+						"max-",
+						"max-height"
+					],
+					[
+						"fon",
+						"font-family"
+					],
+					[
+						"file",
+						"filename"
+					],
+					[
+						"date",
+						"dateParts"
+					],
+					[
+						"event",
+						"eventjson"
+					],
+					[
+						"i",
+						"inline-block"
+					],
+					[
+						"ligh",
+						"lightgray"
+					],
+					[
+						"background-c",
+						"background-color"
+					],
+					[
+						"wi",
+						"width"
+					],
+					[
+						"pa",
+						"padding"
+					],
+					[
+						"tex",
+						"text-align"
+					],
+					[
+						"border-s",
+						"border-style"
+					],
+					[
+						"text",
+						"textarray"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 268.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"lint",
+						"SublimeLinter: Lint This View"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"packages",
+						"PackageSync: Sync Online - Enable Syncing"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 673.0
+			},
+			"console":
+			{
+				"height": 196.166671753,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/conor/.config/desmume/config",
+				"/home/conor/.config/desmume/config.cfg",
+				"/run/user/1000/gvfs/smb-share:server=mal.local,share=installs/Game Stuff/Diablo II + Lord of Destruction XP - Latest 1.12 patch/Readme & Credits.txt",
+				"/opt/lampp/htdocs/week11/form.php",
+				"/home/conor/Dropbox/Conor's Stuff/School/Software/sac part 1/pseudocode",
+				"/opt/lampp/htdocs/sac/form.php",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+				"/home/conor/dotfiles/.config/sublime-text-3/Installed Packages/SublimeLinter-contrib-php-cs-fixer.sublime-package",
+				"/home/conor/Downloads/colors.tdesktop-theme",
+				"/home/conor/Dropbox/Conor's Stuff/School/Software/Week 9/order.php",
+				"/home/conor/dotfiles/.config/itch/cave-logs/cave-295e1f90-79af-4962-ba95-8068c736f8ec.txt",
+				"/home/conor/VirtualBox VMs/Win2008R2_CDKey.txt",
+				"/home/conor/Dropbox/Conor's Stuff/School/Software/sac part 1/mockup",
+				"/home/conor/idquote.gob",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/player.go",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/tear.go",
+				"/home/conor/.local/share/osu/logs/network.log",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/game.go",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/main/common.go",
+				"/home/conor/.local/share/osu/logs/runtime.log",
+				"/home/conor/.local/share/osu/logs/performance.log",
+				"/home/conor/Downloads/sts/Slay.the.Spire.full.pc.23.02/SlayTheSpire/steamapps/common/SlayTheSpire/config.json",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/tear/tear.go",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/player/player.go",
+				"/home/conor/git/lilyandking/js/index.js",
+				"/home/conor/Notebooks/Notes/Business.txt",
+				"/home/conor/Notebooks/Notes/Business/Sac_question_1.txt",
+				"/home/conor/Notebooks/Notes/Business/Terms.txt",
+				"/home/conor/Documents/instructions for wifi linux",
+				"/home/conor/git/lilyandking/index.php",
+				"/home/conor/git/lilyandking/music.txt",
+				"/home/conor/Downloads/Welcome Email School Based.pdf",
+				"/tmp/fz3temp-2/.htaccess",
+				"/home/conor/git/lilyandking/css/index.css",
+				"/home/conor/git/lilyandking/changestuff/upload.php",
+				"/home/conor/git/lilyandking/php/ImageResize.php",
+				"/home/conor/git/lilyandking/contact.txt",
+				"/home/conor/git/lilyandking/js/jquery.fancybox.min.js",
+				"/home/conor/git/lilyandking/php/appearances.php",
+				"/home/conor/git/lilyandking/php/thumbnail.php",
+				"/home/conor/git/lilyandking/appearances.txt",
+				"/home/conor/git/lilyandking/php/gallery.php",
+				"/home/conor/Downloads/twist-tabletmode.sh",
+				"/home/conor/git/lilyandking/events.txt",
+				"/home/conor/git/lilyandking/php/events.php",
+				"/home/conor/git/lilyandking/reviews.txt",
+				"/home/conor/git/lilyandking/news.txt",
+				"/home/conor/git/lilyandking/changestuff/editor.php",
+				"/home/conor/git/lilyandking/changestuff/write.php",
+				"/home/conor/git/lilyandking/changestuff/pages.php",
+				"/home/conor/git/lilyandking/changestuff/login.php",
+				"/home/conor/git/lilyandking/changestuff/index.php",
+				"/home/conor/git/lilyandking/php/PHPMailer.php",
+				"/home/conor/git/lilyandking/php/fgcontactform.php",
+				"/home/conor/git/lilyandking/changestuff/index.js",
+				"/tmp/fz3temp-2/index.js",
+				"/tmp/fz3temp-2/editor.php",
+				"/home/conor/git/lilyandking/changestuff/pell.js",
+				"/home/conor/git/lilyandking/process.php",
+				"/home/conor/git/lilyandking/gallery.txt",
+				"/home/conor/git/lilyandking/posters.txt",
+				"/home/conor/git/lilyandking/pressphotos.txt",
+				"/home/conor/git/lilyandking/new.txt",
+				"/home/conor/git/lilyandking/press.txt",
+				"/home/conor/git/lilyandking/changestuff/index.html",
+				"/home/conor/git/lilyandking/tours.txt",
+				"/home/conor/git/lilyandking/bio.txt",
+				"/home/conor/git/lilyandking/admin/login.php",
+				"/home/conor/git/lilyandking/admin/pell.js",
+				"/home/conor/git/lilyandking/quotes.txt",
+				"/home/conor/git/lilyandking/admin/write.php",
+				"/home/conor/git/lilyandking/home.txt",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+				"/home/conor/git/lilyandking/php/posts.php",
+				"/home/conor/git/lilyandking/admin/index.php",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/PackageSync/PackageSync.sublime-settings"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"\"] ",
+					";\n",
+					" $worker["
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					" $workers[$worker]["
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 50.0
+			},
+			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter Messages":
+			{
+				"height": 144.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 64.1666666667
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 428.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 461.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 303.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 920.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"text",
+						"text-align"
+					],
+					[
+						"bak",
+						"background-color"
+					],
+					[
+						"worker",
+						"workers"
+					],
+					[
+						"tot",
+						"totalCost"
+					],
+					[
+						"max-",
+						"max-height"
+					],
+					[
+						"fon",
+						"font-family"
+					],
+					[
+						"file",
+						"filename"
+					],
+					[
+						"date",
+						"dateParts"
+					],
+					[
+						"event",
+						"eventjson"
+					],
+					[
+						"i",
+						"inline-block"
+					],
+					[
+						"ligh",
+						"lightgray"
+					],
+					[
+						"background-c",
+						"background-color"
+					],
+					[
+						"wi",
+						"width"
+					],
+					[
+						"pa",
+						"padding"
+					],
+					[
+						"tex",
+						"text-align"
+					],
+					[
+						"border-s",
+						"border-style"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/conor/test/test3.html",
+					"settings":
+					{
+						"buffer_size": 1140,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/conor/Dropbox/Conor's Stuff/Personal/Roms/Sony PlayStation/Spyro the Dragon.cue",
+					"settings":
+					{
+						"buffer_size": 71,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/conor/.config/retroarch/retroarch-core-options.cfg",
+					"settings":
+					{
+						"buffer_size": 2456,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/conor/test/test2.html",
+					"settings":
+					{
+						"buffer_size": 2122,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 268.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"lint",
+						"SublimeLinter: Lint This View"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"packages",
+						"PackageSync: Sync Online - Enable Syncing"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 673.0
+			},
+			"console":
+			{
+				"height": 196.166671753,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/usr/bin/test.html",
+				"/home/conor/test.html",
+				"/opt/lampp/htdocs/week9/order.php",
+				"/opt/lampp/htdocs/sac/data.json",
+				"/opt/lampp/htdocs/sac/form.php",
+				"/home/conor/default.gpfl",
+				"/home/conor/.config/desmume/config",
+				"/home/conor/.config/desmume/config.cfg",
+				"/run/user/1000/gvfs/smb-share:server=mal.local,share=installs/Game Stuff/Diablo II + Lord of Destruction XP - Latest 1.12 patch/Readme & Credits.txt",
+				"/opt/lampp/htdocs/week11/form.php",
+				"/home/conor/Dropbox/Conor's Stuff/School/Software/sac part 1/pseudocode",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+				"/home/conor/dotfiles/.config/sublime-text-3/Installed Packages/SublimeLinter-contrib-php-cs-fixer.sublime-package",
+				"/home/conor/Downloads/colors.tdesktop-theme",
+				"/home/conor/Dropbox/Conor's Stuff/School/Software/Week 9/order.php",
+				"/home/conor/dotfiles/.config/itch/cave-logs/cave-295e1f90-79af-4962-ba95-8068c736f8ec.txt",
+				"/home/conor/VirtualBox VMs/Win2008R2_CDKey.txt",
+				"/home/conor/Dropbox/Conor's Stuff/School/Software/sac part 1/mockup",
+				"/home/conor/idquote.gob",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/player.go",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/tear.go",
+				"/home/conor/.local/share/osu/logs/network.log",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/game.go",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/main/common.go",
+				"/home/conor/.local/share/osu/logs/runtime.log",
+				"/home/conor/.local/share/osu/logs/performance.log",
+				"/home/conor/Downloads/sts/Slay.the.Spire.full.pc.23.02/SlayTheSpire/steamapps/common/SlayTheSpire/config.json",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/tear/tear.go",
+				"/home/conor/thingo/go/src/github.com/ibrokemypie/game/characters/player/player.go",
+				"/home/conor/git/lilyandking/js/index.js",
+				"/home/conor/Notebooks/Notes/Business.txt",
+				"/home/conor/Notebooks/Notes/Business/Sac_question_1.txt",
+				"/home/conor/Notebooks/Notes/Business/Terms.txt",
+				"/home/conor/Documents/instructions for wifi linux",
+				"/home/conor/git/lilyandking/index.php",
+				"/home/conor/git/lilyandking/music.txt",
+				"/home/conor/Downloads/Welcome Email School Based.pdf",
+				"/tmp/fz3temp-2/.htaccess",
+				"/home/conor/git/lilyandking/css/index.css",
+				"/home/conor/git/lilyandking/changestuff/upload.php",
+				"/home/conor/git/lilyandking/php/ImageResize.php",
+				"/home/conor/git/lilyandking/contact.txt",
+				"/home/conor/git/lilyandking/js/jquery.fancybox.min.js",
+				"/home/conor/git/lilyandking/php/appearances.php",
+				"/home/conor/git/lilyandking/php/thumbnail.php",
+				"/home/conor/git/lilyandking/appearances.txt",
+				"/home/conor/git/lilyandking/php/gallery.php",
+				"/home/conor/Downloads/twist-tabletmode.sh",
+				"/home/conor/git/lilyandking/events.txt",
+				"/home/conor/git/lilyandking/php/events.php",
+				"/home/conor/git/lilyandking/reviews.txt",
+				"/home/conor/git/lilyandking/news.txt",
+				"/home/conor/git/lilyandking/changestuff/editor.php",
+				"/home/conor/git/lilyandking/changestuff/write.php",
+				"/home/conor/git/lilyandking/changestuff/pages.php",
+				"/home/conor/git/lilyandking/changestuff/login.php",
+				"/home/conor/git/lilyandking/changestuff/index.php",
+				"/home/conor/git/lilyandking/php/PHPMailer.php",
+				"/home/conor/git/lilyandking/php/fgcontactform.php",
+				"/home/conor/git/lilyandking/changestuff/index.js",
+				"/tmp/fz3temp-2/index.js",
+				"/tmp/fz3temp-2/editor.php",
+				"/home/conor/git/lilyandking/changestuff/pell.js",
+				"/home/conor/git/lilyandking/process.php",
+				"/home/conor/git/lilyandking/gallery.txt",
+				"/home/conor/git/lilyandking/posters.txt",
+				"/home/conor/git/lilyandking/pressphotos.txt",
+				"/home/conor/git/lilyandking/new.txt",
+				"/home/conor/git/lilyandking/press.txt",
+				"/home/conor/git/lilyandking/changestuff/index.html",
+				"/home/conor/git/lilyandking/tours.txt",
+				"/home/conor/git/lilyandking/bio.txt",
+				"/home/conor/git/lilyandking/admin/login.php",
+				"/home/conor/git/lilyandking/admin/pell.js",
+				"/home/conor/git/lilyandking/quotes.txt",
+				"/home/conor/git/lilyandking/admin/write.php",
+				"/home/conor/git/lilyandking/home.txt",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+				"/home/conor/git/lilyandking/php/posts.php",
+				"/home/conor/git/lilyandking/admin/index.php",
+				"/home/conor/dotfiles/.config/sublime-text-3/Packages/PackageSync/PackageSync.sublime-settings"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"\"] ",
+					";\n",
+					" $worker["
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					" $workers[$worker]["
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/conor/test/test3.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1140,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										358,
+										358
+									]
+								],
+								"settings":
+								{
+									"SL.13.region_keys":
+									[
+									],
+									"SL.14.region_keys":
+									[
+									],
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.clone": -1,
+									"bracket_highlighter.clone_locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												437,
+												443
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/tag.png",
+												"region.orangish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												320,
+												326
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.clone_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content"
+									],
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												437,
+												443
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/tag.png",
+												"region.orangish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												320,
+												326
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content"
+									],
+									"git_gutter_is_enabled": false,
+									"syntax": "Packages/HTML/HTML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/conor/Dropbox/Conor's Stuff/Personal/Roms/Sony PlayStation/Spyro the Dragon.cue",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 71,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										71,
+										71
+									]
+								],
+								"settings":
+								{
+									"SL.15.region_keys":
+									[
+									],
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.clone": 15,
+									"bracket_highlighter.clone_locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.clone_regions":
+									[
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content"
+									],
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content"
+									],
+									"git_gutter_is_enabled": false,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/conor/.config/retroarch/retroarch-core-options.cfg",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2456,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.clone": -1,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content"
+									],
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/conor/test/test2.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2122,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1863,
+										1863
+									]
+								],
+								"settings":
+								{
+									"SL.14.region_keys":
+									[
+									],
+									"SL.16.region_keys":
+									[
+									],
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.clone": -1,
+									"bracket_highlighter.clone_locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												1816,
+												1821
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/tag.png",
+												"region.orangish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												1816,
+												1821
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.clone_regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content"
+									],
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												1859,
+												1862
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/tag.png",
+												"region.orangish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												1589,
+												1592
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content"
+									],
+									"git_gutter_is_enabled": false,
+									"syntax": "Packages/HTML/HTML.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 660.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 50.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter Messages":
+			{
+				"height": 144.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,970,51,1890,1050,1920,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 64.1666666667
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 428.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 461.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 303.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 11,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

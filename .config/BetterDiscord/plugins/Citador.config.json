@@ -1,0 +1,7 @@
+{
+    "settings": {
+        "disabledServers": [],
+        "mentionUser": false,
+        "useFallbackCodeblock": 2
+    }
+}

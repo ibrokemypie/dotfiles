@@ -1,0 +1,9 @@
+set status_display_program=~/.cmus/test.sh
+live-filter 
+set status_display_program=~/.cmus/cmus_desktop_notify.py
+set status_display_program=/home/conor/.cmus/status_display_program.sh
+set status_display_program=/home/conor/cmusnotify.sh
+detach
+d
+q
+set mouse=true

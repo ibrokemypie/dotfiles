@@ -1,0 +1,5 @@
+{
+	"compiler":"google_closure",
+	//"css_compiler": "reducisaurus",
+	"open_on_min": false,
+}

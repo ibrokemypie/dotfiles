@@ -1,0 +1,244 @@
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+#start apps
+exec compton -bc
+#exec touchegg
+#exec --no-startup-id xinput set-button-map 23 1 0 3 4 5 6 7
+exec --no-startup-id ~/.config/i3/wallswitch.sh
+exec --no-startup-id bash ~/.config/i3/lock.sh
+exec --no-startup-id bash ~/.config/polybar/launch.sh
+exec --no-startup-id dex -ae i3
+#exec --no-startup-id twmnd
+exec udiskie -s -s
+exec --no-startup-id aria2c --enable-rpc --rpc-allow-origin-all --rpc-listen-all=true -l ~/.aria2c.log --quiet 
+#exec x11vnc -quiet -display :0 -forever -usepw 
+exec --no-startup-id thunar --daemon 
+#exec spacefm -d
+exec --no-startup-id nylas-mail-lives --background
+exec --no-startup-id lsi-steam
+exec --no-startup-id keepassxc
+exec --no-startup-id  /usr/lib/xfce-polkit/xfce-polkit 
+
+set $mod Mod4
+
+new_window none
+gaps outer 10		# outer gaps
+gaps inner 20		# inner gaps
+font pango:DejaVu Sans Book 10
+
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
+
+assign [class="xiate"] 1
+assign [class="google-chrome-unstable"] 2
+assign [class="firefox"] 2
+assign [class="Steam"] 3
+
+for_window [class="^Pavucontrol$"] floating enable
+for_window [class="^Steam$" title="^Friends$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec --no-startup-id ~/.config/i3/i3-shell.sh
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+#exec --no-startup-id rofi -modi "run,drun,window" -i
+
+bindsym $mod+space exec "rofi -i -modi drun,run,window -show drun"
+bindsym $mod+d exec i3-dmenu-desktop --dmenu='rofi -i -dmenu'
+bindsym mod1+Tab exec rofi -show window
+bindsym $mod+m exec clerk
+bindsym $mod+Shift+Return exec firefox
+bindsym $mod+mod1+Return exec thunar
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+Tab focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# switch to workspace
+bindsym Control+Mod1+1 workspace 1
+bindsym Control+Mod1+2 workspace 2
+bindsym Control+Mod1+3 workspace 3
+bindsym Control+Mod1+4 workspace 4
+bindsym Control+Mod1+5 workspace 5
+bindsym Control+Mod1+6 workspace 6
+bindsym Control+Mod1+7 workspace 7
+bindsym Control+Mod1+8 workspace 8
+bindsym Control+Mod1+9 workspace 9
+bindsym Control+Mod1+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# Make the currently focused window a scratchpad
+#bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+#bindsym $mod+minus scratchpad show
+
+# Show the sup-mail scratchpad window, if any.
+#bindsym mod4+s [title="^Sup ::"] scratchpad show
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+set $power_control "[l]ock log[o]ut [r]eboot [p]oweroff"
+mode  $power_control {
+    bindsym l exec ~/betterlockscreen; mode "default"
+    bindsym o exec i3-msg exit; mode "default"
+    bindsym r exec sudo reboot; mode "default"
+    bindsym p exec sudo poweroff; mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+shift+e mode $power_control
+
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# Full screen
+bindsym mod1+Shift+3 exec --no-startup-id maim ~/Pictures/Screenshots/$(date +%s).png
+bindsym Control+mod1+Shift+3 exec --no-startup-id maim | xclip -selection clipboard -t image/png
+
+# Select
+bindsym mod1+Shift+4 exec --no-startup-id maim -s --noopengl ~/Pictures/Screenshots/$(date +%s).png
+bindsym Control+mod1+Shift+4 exec --no-startup-id maim -s --noopengl | xclip -selection clipboard -t image/png
+
+bindsym Control+Mod1+Left workspace prev
+bindsym Control+Mod1+Right workspace next
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+
+# Media player controls
+bindsym XF86AudioPlay exec ~/.config/i3/playerctl.sh playpause
+bindsym XF86AudioNext exec ~/.config/i3/playerctl.sh next
+bindsym XF86AudioPrev exec ~/.config/i3/playerctl.sh prev
+bindsym XF86AudioStop exec ~/.config/i3/playerctl.sh stop
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
+bindsym Control+grave exec --no-startup-id tdrop -y 20 -x 0 -w 100% -a -m xiate
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+# bar {
+	# font pango:DejaVu Sans Book 10
+	# font pango:FontAwesome 10
+	# font pango:Fira for Powerline 10
+	# tray_output HDMI3
+	# #tray_output HDMI1
+	# position bottom
+	# status_command bumblebee-status\
+	 # -m mpd traffic disk:root cpu sensors memory datetime pasink\
+	 # -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" memory.usedonly=1 root.showUsed=no root.showSize=no traffic.states="up" datetime.format="%a %e/%m/%y %l:%M" mpd.host=127.0.0.1 \
+	 # -t gruvbox-powerline
+# }
+# bar {
+  # position top
+  # status_command /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/yagb
+  # #status_command sh /extra/home/thingo/go/src/github.com/ibrokemypie/yagb/bar.sh
+  # #status_command go run /extra/home/thingo/go/src/github.com/davidscholberg/goblocks/goblocks.go
+# }
+#

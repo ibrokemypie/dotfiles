@@ -1,0 +1,637 @@
+{
+    "last_run_data_local": {
+        "CodeFormatter.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/CodeFormatter.sublime-settings", 
+            "version": 1505723547.0
+        }, 
+        "Color Highlighter/icons/circle00000099.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle00000099.png", 
+            "version": 1505648138.0
+        }, 
+        "Color Highlighter/icons/circle000000FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle000000FF.png", 
+            "version": 1505986200.0
+        }, 
+        "Color Highlighter/icons/circle05050599.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle05050599.png", 
+            "version": 1505648142.0
+        }, 
+        "Color Highlighter/icons/circle111111FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle111111FF.png", 
+            "version": 1505653450.0
+        }, 
+        "Color Highlighter/icons/circle141414FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle141414FF.png", 
+            "version": 1505653445.0
+        }, 
+        "Color Highlighter/icons/circle161616FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle161616FF.png", 
+            "version": 1505653438.0
+        }, 
+        "Color Highlighter/icons/circle19FFFFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle19FFFFCC.png", 
+            "version": 1505641432.0
+        }, 
+        "Color Highlighter/icons/circle22332233.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle22332233.png", 
+            "version": 1505645024.0
+        }, 
+        "Color Highlighter/icons/circle223322FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle223322FF.png", 
+            "version": 1505645023.0
+        }, 
+        "Color Highlighter/icons/circle22772277.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle22772277.png", 
+            "version": 1505645016.0
+        }, 
+        "Color Highlighter/icons/circle227722FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle227722FF.png", 
+            "version": 1505645016.0
+        }, 
+        "Color Highlighter/icons/circle232323FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle232323FF.png", 
+            "version": 1505641766.0
+        }, 
+        "Color Highlighter/icons/circle272727FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle272727FF.png", 
+            "version": 1505645017.0
+        }, 
+        "Color Highlighter/icons/circle323232FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle323232FF.png", 
+            "version": 1505986232.0
+        }, 
+        "Color Highlighter/icons/circle33223322.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle33223322.png", 
+            "version": 1505986232.0
+        }, 
+        "Color Highlighter/icons/circle332233FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle332233FF.png", 
+            "version": 1505986232.0
+        }, 
+        "Color Highlighter/icons/circle33333333.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle33333333.png", 
+            "version": 1505652029.0
+        }, 
+        "Color Highlighter/icons/circle33333399.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle33333399.png", 
+            "version": 1505648142.0
+        }, 
+        "Color Highlighter/icons/circle333333FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle333333FF.png", 
+            "version": 1505635713.0
+        }, 
+        "Color Highlighter/icons/circle666666FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle666666FF.png", 
+            "version": 1505977948.0
+        }, 
+        "Color Highlighter/icons/circle808080FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle808080FF.png", 
+            "version": 1505634824.0
+        }, 
+        "Color Highlighter/icons/circleA9A9A9FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleA9A9A9FF.png", 
+            "version": 1505981653.0
+        }, 
+        "Color Highlighter/icons/circleB2B2B299.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleB2B2B299.png", 
+            "version": 1505653458.0
+        }, 
+        "Color Highlighter/icons/circleB2B2B2FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleB2B2B2FF.png", 
+            "version": 1505653450.0
+        }, 
+        "Color Highlighter/icons/circleCCCCCC99.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleCCCCCC99.png", 
+            "version": 1505653467.0
+        }, 
+        "Color Highlighter/icons/circleCCCCCCFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleCCCCCCFF.png", 
+            "version": 1505653445.0
+        }, 
+        "Color Highlighter/icons/circleD1D3D5FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleD1D3D5FF.png", 
+            "version": 1505653256.0
+        }, 
+        "Color Highlighter/icons/circleE119FFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE119FFCC.png", 
+            "version": 1505641431.0
+        }, 
+        "Color Highlighter/icons/circleE1E119CC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE1E119CC.png", 
+            "version": 1505641429.0
+        }, 
+        "Color Highlighter/icons/circleE1E1E1CC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE1E1E1CC.png", 
+            "version": 1505641421.0
+        }, 
+        "Color Highlighter/icons/circleE1E1FFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE1E1FFCC.png", 
+            "version": 1505641429.0
+        }, 
+        "Color Highlighter/icons/circleE1FFFFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE1FFFFCC.png", 
+            "version": 1505641431.0
+        }, 
+        "Color Highlighter/icons/circleE5E5E599.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE5E5E599.png", 
+            "version": 1505653472.0
+        }, 
+        "Color Highlighter/icons/circleE5E5E5FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleE5E5E5FF.png", 
+            "version": 1505653438.0
+        }, 
+        "Color Highlighter/icons/circleF26F70FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleF26F70FF.png", 
+            "version": 1505986183.0
+        }, 
+        "Color Highlighter/icons/circleFF6347FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleFF6347FF.png", 
+            "version": 1505987662.0
+        }, 
+        "Color Highlighter/icons/circleFFFFFF99.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleFFFFFF99.png", 
+            "version": 1505641517.0
+        }, 
+        "Color Highlighter/icons/circleFFFFFFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleFFFFFFCC.png", 
+            "version": 1505641432.0
+        }, 
+        "Color Highlighter/icons/circleFFFFFFFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleFFFFFFFF.png", 
+            "version": 1505350950.0
+        }, 
+        "Color Highlighter/icons/circle_icon_ffffffff.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circle_icon_ffffffff.png", 
+            "version": 1514684494.0
+        }, 
+        "Color Highlighter/icons/circleccddccFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleccddccFF.png", 
+            "version": 1505652140.0
+        }, 
+        "Color Highlighter/icons/circleccddccdd.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleccddccdd.png", 
+            "version": 1505652140.0
+        }, 
+        "Color Highlighter/icons/circlecdcdcdFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circlecdcdcdFF.png", 
+            "version": 1505641764.0
+        }, 
+        "Color Highlighter/icons/circleedededFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleedededFF.png", 
+            "version": 1505641768.0
+        }, 
+        "Color Highlighter/icons/circleeeeeeeFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleeeeeeeFF.png", 
+            "version": 1505635718.0
+        }, 
+        "Color Highlighter/icons/circleeeeeeeee.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleeeeeeeee.png", 
+            "version": 1505641387.0
+        }, 
+        "Color Highlighter/icons/circleeeffeeFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleeeffeeFF.png", 
+            "version": 1505652042.0
+        }, 
+        "Color Highlighter/icons/circleefefefFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circleefefefFF.png", 
+            "version": 1505652043.0
+        }, 
+        "Color Highlighter/icons/circlef46e20FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/icons/circlef46e20FF.png", 
+            "version": 1505987666.0
+        }, 
+        "Color Highlighter/themes/Red Planet (SL).tmTheme": {
+            "dir": "Color Highlighter/themes", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Color Highlighter/themes/Red Planet (SL).tmTheme", 
+            "version": 1514684493.0
+        }, 
+        "Default (OSX).sublime-keymap": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Default (OSX).sublime-keymap", 
+            "version": 1503716863.0
+        }, 
+        "HTMLPrettify.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/HTMLPrettify.sublime-settings", 
+            "version": 1507179878.0
+        }, 
+        "Minifier.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Minifier.sublime-settings", 
+            "version": 1504222169.0
+        }, 
+        "Minify.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Minify.sublime-settings", 
+            "version": 1503890063.0
+        }, 
+        "Package Control.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Package Control.sublime-settings", 
+            "version": 1514684493.0
+        }, 
+        "Preferences.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/Preferences.sublime-settings", 
+            "version": 1514684493.0
+        }, 
+        "SublimeLinter.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings", 
+            "version": 1514684493.0
+        }, 
+        "SublimeLinter/Monokai (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SublimeLinter/Monokai (SL).tmTheme", 
+            "version": 1514684445.0
+        }, 
+        "SublimeLinter/Red Planet (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SublimeLinter/Red Planet (SL).tmTheme", 
+            "version": 1503475964.0
+        }, 
+        "SublimeServer.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SublimeServer.sublime-settings", 
+            "version": 1514684354.0
+        }, 
+        "SyncSettings.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/SyncSettings.sublime-settings", 
+            "version": 1503475852.0
+        }, 
+        "phpfmt.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/dotfiles/.config/sublime-text-3/Packages/User/phpfmt.sublime-settings", 
+            "version": 1514684354.0
+        }
+    }, 
+    "last_run_data_remote": {
+        "CodeFormatter.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/CodeFormatter.sublime-settings", 
+            "version": 1505723547.0
+        }, 
+        "Color Highlighter/icons/circle00000099.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle00000099.png", 
+            "version": 1505648138.0
+        }, 
+        "Color Highlighter/icons/circle000000FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle000000FF.png", 
+            "version": 1505986200.0
+        }, 
+        "Color Highlighter/icons/circle05050599.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle05050599.png", 
+            "version": 1505648142.0
+        }, 
+        "Color Highlighter/icons/circle111111FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle111111FF.png", 
+            "version": 1505653450.0
+        }, 
+        "Color Highlighter/icons/circle141414FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle141414FF.png", 
+            "version": 1505653445.0
+        }, 
+        "Color Highlighter/icons/circle161616FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle161616FF.png", 
+            "version": 1505653438.0
+        }, 
+        "Color Highlighter/icons/circle19FFFFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle19FFFFCC.png", 
+            "version": 1505641432.0
+        }, 
+        "Color Highlighter/icons/circle22332233.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle22332233.png", 
+            "version": 1505645024.0
+        }, 
+        "Color Highlighter/icons/circle223322FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle223322FF.png", 
+            "version": 1505645023.0
+        }, 
+        "Color Highlighter/icons/circle22772277.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle22772277.png", 
+            "version": 1505645016.0
+        }, 
+        "Color Highlighter/icons/circle227722FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle227722FF.png", 
+            "version": 1505645016.0
+        }, 
+        "Color Highlighter/icons/circle232323FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle232323FF.png", 
+            "version": 1505641766.0
+        }, 
+        "Color Highlighter/icons/circle272727FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle272727FF.png", 
+            "version": 1505645017.0
+        }, 
+        "Color Highlighter/icons/circle323232FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle323232FF.png", 
+            "version": 1505986232.0
+        }, 
+        "Color Highlighter/icons/circle33223322.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle33223322.png", 
+            "version": 1505986232.0
+        }, 
+        "Color Highlighter/icons/circle332233FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle332233FF.png", 
+            "version": 1505986232.0
+        }, 
+        "Color Highlighter/icons/circle33333333.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle33333333.png", 
+            "version": 1505652029.0
+        }, 
+        "Color Highlighter/icons/circle33333399.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle33333399.png", 
+            "version": 1505648142.0
+        }, 
+        "Color Highlighter/icons/circle333333FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle333333FF.png", 
+            "version": 1505635713.0
+        }, 
+        "Color Highlighter/icons/circle666666FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle666666FF.png", 
+            "version": 1505977948.0
+        }, 
+        "Color Highlighter/icons/circle808080FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle808080FF.png", 
+            "version": 1505634824.0
+        }, 
+        "Color Highlighter/icons/circleA9A9A9FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleA9A9A9FF.png", 
+            "version": 1505981653.0
+        }, 
+        "Color Highlighter/icons/circleB2B2B299.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleB2B2B299.png", 
+            "version": 1505653458.0
+        }, 
+        "Color Highlighter/icons/circleB2B2B2FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleB2B2B2FF.png", 
+            "version": 1505653450.0
+        }, 
+        "Color Highlighter/icons/circleCCCCCC99.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleCCCCCC99.png", 
+            "version": 1505653467.0
+        }, 
+        "Color Highlighter/icons/circleCCCCCCFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleCCCCCCFF.png", 
+            "version": 1505653445.0
+        }, 
+        "Color Highlighter/icons/circleD1D3D5FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleD1D3D5FF.png", 
+            "version": 1505653256.0
+        }, 
+        "Color Highlighter/icons/circleE119FFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE119FFCC.png", 
+            "version": 1505641431.0
+        }, 
+        "Color Highlighter/icons/circleE1E119CC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE1E119CC.png", 
+            "version": 1505641429.0
+        }, 
+        "Color Highlighter/icons/circleE1E1E1CC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE1E1E1CC.png", 
+            "version": 1505641421.0
+        }, 
+        "Color Highlighter/icons/circleE1E1FFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE1E1FFCC.png", 
+            "version": 1505641429.0
+        }, 
+        "Color Highlighter/icons/circleE1FFFFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE1FFFFCC.png", 
+            "version": 1505641431.0
+        }, 
+        "Color Highlighter/icons/circleE5E5E599.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE5E5E599.png", 
+            "version": 1505653472.0
+        }, 
+        "Color Highlighter/icons/circleE5E5E5FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleE5E5E5FF.png", 
+            "version": 1505653438.0
+        }, 
+        "Color Highlighter/icons/circleF26F70FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleF26F70FF.png", 
+            "version": 1505986183.0
+        }, 
+        "Color Highlighter/icons/circleFF6347FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleFF6347FF.png", 
+            "version": 1505987662.0
+        }, 
+        "Color Highlighter/icons/circleFFFFFF99.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleFFFFFF99.png", 
+            "version": 1505641517.0
+        }, 
+        "Color Highlighter/icons/circleFFFFFFCC.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleFFFFFFCC.png", 
+            "version": 1505641432.0
+        }, 
+        "Color Highlighter/icons/circleFFFFFFFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleFFFFFFFF.png", 
+            "version": 1505350950.0
+        }, 
+        "Color Highlighter/icons/circle_icon_ffffffff.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circle_icon_ffffffff.png", 
+            "version": 1514684494.0
+        }, 
+        "Color Highlighter/icons/circleccddccFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleccddccFF.png", 
+            "version": 1505652140.0
+        }, 
+        "Color Highlighter/icons/circleccddccdd.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleccddccdd.png", 
+            "version": 1505652140.0
+        }, 
+        "Color Highlighter/icons/circlecdcdcdFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circlecdcdcdFF.png", 
+            "version": 1505641764.0
+        }, 
+        "Color Highlighter/icons/circleedededFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleedededFF.png", 
+            "version": 1505641768.0
+        }, 
+        "Color Highlighter/icons/circleeeeeeeFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleeeeeeeFF.png", 
+            "version": 1505635718.0
+        }, 
+        "Color Highlighter/icons/circleeeeeeeee.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleeeeeeeee.png", 
+            "version": 1505641387.0
+        }, 
+        "Color Highlighter/icons/circleeeffeeFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleeeffeeFF.png", 
+            "version": 1505652042.0
+        }, 
+        "Color Highlighter/icons/circleefefefFF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circleefefefFF.png", 
+            "version": 1505652043.0
+        }, 
+        "Color Highlighter/icons/circlef46e20FF.png": {
+            "dir": "Color Highlighter/icons", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/icons/circlef46e20FF.png", 
+            "version": 1505987666.0
+        }, 
+        "Color Highlighter/themes/Red Planet (SL).tmTheme": {
+            "dir": "Color Highlighter/themes", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Color Highlighter/themes/Red Planet (SL).tmTheme", 
+            "version": 1514684493.0
+        }, 
+        "Default (OSX).sublime-keymap": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Default (OSX).sublime-keymap", 
+            "version": 1503716863.0
+        }, 
+        "HTMLPrettify.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/HTMLPrettify.sublime-settings", 
+            "version": 1507179878.0
+        }, 
+        "Minifier.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Minifier.sublime-settings", 
+            "version": 1504222169.0
+        }, 
+        "Minify.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Minify.sublime-settings", 
+            "version": 1503890063.0
+        }, 
+        "Package Control.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Package Control.sublime-settings", 
+            "version": 1514684493.0
+        }, 
+        "Preferences.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/Preferences.sublime-settings", 
+            "version": 1514684493.0
+        }, 
+        "SublimeLinter.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/SublimeLinter.sublime-settings", 
+            "version": 1514684493.0
+        }, 
+        "SublimeLinter/Monokai (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/SublimeLinter/Monokai (SL).tmTheme", 
+            "version": 1514684445.0
+        }, 
+        "SublimeLinter/Red Planet (SL).tmTheme": {
+            "dir": "SublimeLinter", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/SublimeLinter/Red Planet (SL).tmTheme", 
+            "version": 1503475964.0
+        }, 
+        "SublimeServer.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/SublimeServer.sublime-settings", 
+            "version": 1514684354.0
+        }, 
+        "SyncSettings.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/SyncSettings.sublime-settings", 
+            "version": 1503475852.0
+        }, 
+        "phpfmt.sublime-settings": {
+            "dir": "", 
+            "path": "/home/conor/Dropbox/Conor's Stuff/Apps/sublime/phpfmt.sublime-settings", 
+            "version": 1514684354.0
+        }
+    }, 
+    "packages_to_remove": []
+}

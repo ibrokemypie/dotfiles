@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoSetSyntax",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"CSS3",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"Package Control",
+		"phpfmt",
+		"PHPIntel",
+		"Red Planet Color Scheme",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"SublimeLinter-phplint",
+		"Sublime​Server",
+		"Sync Settings"
+	]
+}

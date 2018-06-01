@@ -63,3 +63,15 @@
 .config/libreoffice
 .config/discord
 .config/wine
+.config/chromium-back*
+.config/runescape
+.config/BirtualBox
+.config/Thunar
+.config/darktable
+.config/UNDERTALE
+.config/FEZ
+.config/NuGet
+.config/fman
+.config/discordcanary
+.config/eidolon
+.config/etcher-electron

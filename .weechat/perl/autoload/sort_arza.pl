@@ -1,1 +1,0 @@
-../sort_arza.pl

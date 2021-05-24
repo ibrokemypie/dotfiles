@@ -6,7 +6,7 @@
     "is-glob": "3.1.0",
     "js-beautify": "1.6.14",
     "json5": "0.5.1",
-    "lodash": "4.17.4",
+    "lodash": "4.17.21",
     "map-obj": "2.0.0",
     "minimatch": "3.0.4",
     "promise-arrays": "0.1.0"

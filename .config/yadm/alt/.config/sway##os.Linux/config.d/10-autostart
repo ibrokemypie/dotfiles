@@ -1,8 +1,8 @@
 # $HOME/.config/sway/config.d/autostart
 # Startup programs not managed by systemd
 
-exec_always autotiling    
+exec autotiling    
 exec gnome-keyring-daemon --start
 exec systemd-run --user --scope --unit app-foot\\x2deserver.scope -- foot --server
-exec discord-canary --start-minimized
-exec xrandr --output XWAYLAND0 --primary
+exec $HOME/.local/bin/discord-canary --start-minimized
+exec xrandr --output XWAYLAND1 --primary

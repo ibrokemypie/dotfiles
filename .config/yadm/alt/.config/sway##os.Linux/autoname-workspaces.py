@@ -17,6 +17,7 @@ import sys
 WINDOW_ICONS = {
     "firefox": "",
     "foot": "",
+    "dropterm": "",
     "alacritty": "",
     "discord": "",
     "steam": "",
@@ -33,6 +34,7 @@ WINDOW_ICONS = {
     "io.github.quodlibet.quodlibet": "",
     "org.qbittorrent.qbittorrent": "",
     "obsidian": "",
+    "psst-gui": "",
 }
 
 DEFAULT_ICON = ""

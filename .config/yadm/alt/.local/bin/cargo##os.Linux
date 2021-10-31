@@ -1,0 +1,5 @@
+#! /bin/bash
+shopt -s extglob
+export CFLAGS=${CFLAGS//+(-fipa-pta|-fcx-limited-range|-fdevirtualize-at-ltrans)}
+export CXXFLAGS=${CXXFLAGS//+(-fipa-pta|-fcx-limited-range|-fdevirtualize-at-ltrans)}
+CC=clang CXX=clang++ /usr/bin/cargo "$@"

@@ -1,0 +1,4 @@
+#! /bin/bash
+export CGO_CXXFLAGS="${CGO_CXXFLAGS} -ffat-lto-objects"
+export CGO_CFLAGS="${CGO_CFLAGS} -ffat-lto-objects"
+/usr/bin/go "$@"

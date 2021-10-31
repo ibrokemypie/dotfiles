@@ -28,9 +28,9 @@ mode  $power_control {
 
 set $input_lock "[1]left [2]right [3]both"
 mode  $input_lock {
-    bindsym 1 exec swaymsg 'input 1133:16467:Logitech_G900 map_to_output dp-2'; mode "default"
-    bindsym 2 exec swaymsg 'input 1133:16467:Logitech_G900 map_to_output dp-1'; mode "default"
-    bindsym 3 exec swaymsg 'input 1133:16467:Logitech_G900 map_to_region 0 0 3840 1080'; mode "default"
+    bindsym 1 exec swaymsg 'input type:pointer map_to_output dp-2'; mode "default"
+    bindsym 2 exec swaymsg 'input type:pointer map_to_output dp-1'; mode "default"
+    bindsym 3 exec swaymsg 'input type:pointer map_to_region 0 0 3840 1080'; mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

@@ -43,6 +43,10 @@ window#waybar {
     background: #282828;
 }
 
+#mode {
+	background: #cc241d;
+}
+
 #custom-pulse.muted {
     background: #D79921;
 }

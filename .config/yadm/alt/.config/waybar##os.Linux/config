@@ -25,7 +25,6 @@
         "enable-bar-scroll": true
     },
     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
     },
     "sway/window": {
         "max-length": 70,
@@ -132,6 +131,7 @@
     },
     "clock": {
         "format": " {:%d/%m/%g %r}",
+        "interval":1,
         "tooltip": false
     }
 }

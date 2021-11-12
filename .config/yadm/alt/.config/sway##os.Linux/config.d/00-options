@@ -4,6 +4,7 @@
 set $mod Mod4
 set $term footclient
 set $browser firefox
+set $filemanager nemo
 set $menu_style -i -n --fn 'Hack 10' --hb '#005577' --hf '#eeeeee' --nb '#222222' --nf '#bbbbbb' --fb '#222222' --ff '#bbbbbb' --tb '#222222' --tf '#bbbbbb' -l 0
 set $menu j4-dmenu-desktop --usage-log="$HOME/.config/j4-dmenu-desktop.log" --no-generic --dmenu "bemenu -p '' $menu_style" --term footclient --term-args "" --wrapper "swaymsg exec --"
 

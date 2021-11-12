@@ -4,5 +4,5 @@
 exec autotiling    
 exec gnome-keyring-daemon --start
 exec systemd-run --user --scope --unit app-foot\\x2deserver.scope -- foot --server
-exec $HOME/.local/bin/discord-canary --start-minimized
+exec powercord --start-minimized
 exec xrandr --output XWAYLAND1 --primary

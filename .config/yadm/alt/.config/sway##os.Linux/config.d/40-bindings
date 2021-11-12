@@ -23,7 +23,7 @@ bindsym Control+Grave exec bash $HOME/.config/sway/show-dropterm.sh
 bindsym $mod+Shift+Return exec $browser
 
 # file manager
-bindsym $mod+mod1+Return exec thunar
+bindsym $mod+mod1+Return exec $filemanager
 
 # menu
 bindsym $mod+space exec $menu

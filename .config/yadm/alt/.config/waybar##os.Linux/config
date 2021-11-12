@@ -16,6 +16,7 @@
         "custom/temperature#cpu",
         "custom/temperature#gpu",
         "network",
+        "custom/batteries",
         "custom/pulse",
         "custom/timew",
         "clock",
@@ -98,6 +99,13 @@
         "format": " {bandwidthUpOctets}  {bandwidthDownOctets}",
         "tooltip": false,
         "interval": 5
+    },
+    "custom/batteries": {
+        "exec": "$HOME/.config/waybar/bluetooth-bat.sh",
+        "on-click": "$HOME/.config/waybar/bluetooth-bat.sh toggle",
+        "exec-on-event": true,
+        "interval": 10,
+        "tooltip": false
     },
     "custom/pulse": {
         "exec": "$HOME/.config/waybar/pulse.sh",

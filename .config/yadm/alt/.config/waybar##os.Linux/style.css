@@ -37,7 +37,7 @@ window#waybar {
     padding: 0;
 }
 
-#clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor, #mpd, #custom-temperature, #custom-pulse, #custom-window, #custom-timew {
+#clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor, #mpd, #custom-temperature, #custom-pulse, #custom-window, #custom-timew, #custom-batteries{
     padding: 1px 4px;
     color: #EBDBB2;
     background: #282828;

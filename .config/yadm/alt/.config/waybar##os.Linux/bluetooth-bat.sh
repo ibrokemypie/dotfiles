@@ -16,8 +16,7 @@ if [[ -f "/tmp/show_batteries" ]]; then
 
     outputString=""
 
-    for i in "${!devices[@]}"; do
-        device="${devices[i]}"
+    for device in "${devices[@]}"; do
         deviceUpowerOutput=$(upower -i "$device")
 
         grep -q "has history:\s*no" <<< "$deviceUpowerOutput" && continue
@@ -26,11 +25,11 @@ if [[ -f "/tmp/show_batteries" ]]; then
         deviceName=$(grep -oP "model:\s*\K.*" <<< "$deviceUpowerOutput")
 
         icon="${deviceName:0:5}"
-        if [[ "$deviceName" == "WH-1000XM3" ]]; then
+        if [[ "$deviceName" = *"WH-1000XM3"* ]]; then
             icon=""
-        elif [[ "$deviceName" == "Gaming Mouse G900" ]]; then
+        elif [[ "$deviceName" = *"G900"* ]]; then
             icon=""
-        elif [[ "$deviceName" == "Wireless Controller" ]]; then
+        elif [[ "$deviceName" = *"Wireless Controller"* ]]; then
             icon=""
         fi
 

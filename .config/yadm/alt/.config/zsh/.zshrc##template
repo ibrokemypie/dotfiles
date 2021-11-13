@@ -110,7 +110,7 @@ unset _comp_files
 
 ZSH_FILES=("${ZDOTDIR:-$HOME/.config/zsh}/.zshrc" "${ZDOTDIR:-$HOME/.config/zsh}/.zcompdump" \
            "${ZDOTDIR:-$HOME/.config/zsh}/.p10k.zsh" "${ZSH_PLUG_DIR}/"**/*.zsh "${ZSH_FUNC_DIR}/"^*.zwc \
-           "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh")
+           "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" "${HOME}/.zshenv")
 
 zcompare ${ZSH_FILES}
 

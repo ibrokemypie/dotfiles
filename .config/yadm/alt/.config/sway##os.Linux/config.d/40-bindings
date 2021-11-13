@@ -30,29 +30,28 @@ bindsym $mod+space exec $menu
 bindsym mod1+space exec $menu
 
 # calc
-bindsym $mod+equal exec = --dmenu=bemenu -- $menu_style
+bindsym $mod+equal exec = --dmenu=bemenu
 
 # bitwarden
 #bindsym $mod+z exec bwmenu -C
-bindsym $mod+z exec DMENU_PATH=/bin/bemenu bitwarden-dmenu --dmenu-args="-p '' $menu_style" --dmenu-pswd-args='-x $menu_style' --session-timeout 900 --clear-clipboard 60 --sync-vault-after 3600 --on-error 'xargs notify-send --urgency=low'
+bindsym $mod+z exec DMENU_PATH=/bin/bemenu bitwarden-dmenu --dmenu-args="-p ''" --dmenu-pswd-args='-x $menu_style' --session-timeout 900 --clear-clipboard 60 --sync-vault-after 3600 --on-error 'xargs notify-send --urgency=low'
 
 # network
 bindsym $mod+n exec networkmanager_dmenu
 
 # audio
-bindsym $mod+a exec $HOME/.config/sway/dmenu_pavucontrol.sh $menu_style
+bindsym $mod+a exec $HOME/.config/sway/dmenu_pavucontrol.sh
 
 # emoji
-bindsym $mod+j exec $HOME/.config/sway/emojipicker.sh $menu_style
+bindsym $mod+j exec $HOME/.config/sway/emojipicker.sh
 
 # clipman
-bindsym $mod+c exec clipman pick -t bemenu --tool-args="$menu_style -p 'clipman:'"
+bindsym $mod+c exec clipman pick -t bemenu --tool-args="-p 'clipman:'"
 
-bindsym Control+Space exec makoctl dismiss
-bindsym Control+Shift+Space exec makoctl dismiss -a
-bindsym Control+Shift+Grave exec makoctl restore
-bindsym Control+Shift+Period exec makoctl menu dmenu
-bindsym Control+Shift+r exed makoctl reload
+bindsym Control+Space exec dunstctl close
+bindsym Control+Shift+Space exec dunstctl close-all
+bindsym Control+Shift+Grave exec dunstctl history-pop
+bindsym Control+Shift+Period exec dunstctl context
 
 ############################################
 #

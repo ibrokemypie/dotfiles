@@ -1,3 +1,5 @@
+#! /bin/zsh
+
 zmodload zsh/datetime
 start=$EPOCHREALTIME
 
@@ -76,9 +78,8 @@ fpath+=("${ZSH_FUNC_DIR}")
 # Options
 #
 
-setopt sharehistory autocd extendedglob inc_append_history correct \
-	   hist_ignore_all_dups hist_verify hist_ignore_space interactive_comments \
-	   hash_cmds nullglob
+setopt share_history auto_cd correct null_glob hist_ignore_all_dups hist_verify \
+	   hist_ignore_all_dups hist_verify hist_ignore_space interactive_comments 
 
 # The following lines were added by compinstall
 zstyle ':completion:*:git-checkout:*' sort false

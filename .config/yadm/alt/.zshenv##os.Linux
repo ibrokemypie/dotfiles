@@ -1,3 +1,11 @@
 if [ -z ${ZDOTDIR+x} ]; then
-	export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
+	systemctl --user show-environment | while read -r line; do
+		IFS='=' read -r variable value <<< "$line"
+		
+		if [[ "$value" == $\'*\' ]]; then
+			value="${${value:2:-1}//\\'/}"
+		fi
+		
+		export "$variable=$value"
+	done
 fi

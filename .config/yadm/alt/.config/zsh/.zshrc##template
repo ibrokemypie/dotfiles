@@ -81,15 +81,40 @@ fpath+=("${ZSH_FUNC_DIR}")
 setopt share_history auto_cd correct null_glob hist_ignore_all_dups hist_verify \
 	   hist_ignore_all_dups hist_verify hist_ignore_space interactive_comments 
 
-# The following lines were added by compinstall
-zstyle ':completion:*:git-checkout:*' sort false
-zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'l:|=* r:|=*'
+# enable tab completions along with parameter expansions
+zstyle ':completion:*' completer _extensions _complete _expand _ignored
+# enable completion cache
+zstyle ':completion:*' use-cache on
+# fuzzy matching completions
+zstyle ':completion:*' matcher-list 'r:[[:ascii:]]||[[:ascii:]]=** r:|=* m:{a-z\-}={A-Z\_}'
+# allow completions of sudo commands
 zstyle ':completion::complete:*' gain-privileges 1
-zstyle ':completion:*' menu select
+# set descriptions format to enable group support
 zstyle ':completion:*:descriptions' format '[%d]'
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors "${(@s[:])LS_COLORS}"
+# switch completion group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+# cd directory preview
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# du preview
+zstyle ':fzf-tab:complete:du:*' fzf-preview 'du -h $realpath'
+# cat preview
+zstyle ':fzf-tab:complete:cat:*' fzf-preview 'cat $realpath'
+# bat preview
+zstyle ':fzf-tab:complete:bat:*' fzf-preview 'bat $realpath --color always'
+# nano preview
+zstyle ':fzf-tab:complete:nano:*' fzf-preview 'bat $realpath --color always'
+# micro preview
+zstyle ':fzf-tab:complete:micro:*' fzf-preview 'bat $realpath --color always'
+# systemd unit status preview
+zstyle ':fzf-tab:complete:systemctl-*:*' fzf-preview 'SYSTEMD_COLORS=1 systemctl status $word'
+# kill proccess preview
+zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,comm -w -w"
+zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-preview \
+  '[[ $group == "[process ID]" ]] && ps --pid=$word -o cmd --no-headers -w -w'
+zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-flags --preview-window=down:3:wrap
+# allow prompt updates
 zstyle ':plugin:history-search-multi-word' reset-prompt-protect 1
 
 zle -N edit-command-line
@@ -108,6 +133,7 @@ else
   compinit -i
 fi
 unset _comp_files
+_comp_options+=(globdots)
 
 ZSH_FILES=("${ZDOTDIR:-$HOME/.config/zsh}/.zshrc" "${ZDOTDIR:-$HOME/.config/zsh}/.zcompdump" \
            "${ZDOTDIR:-$HOME/.config/zsh}/.p10k.zsh" "${ZSH_PLUG_DIR}/"**/*.zsh "${ZSH_FUNC_DIR}/"^*.zwc \

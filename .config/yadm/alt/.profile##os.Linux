@@ -1,0 +1,10 @@
+while read -r line; do
+	IFS='=' read -r variable value <<< "$line"
+	
+	if [[ "$value" == $\'*\' ]]; then
+		value="${value:2:-1}"
+		value="${value//\\\'/}"
+	fi
+	
+	export "$variable=$value"
+done<<<"$(systemctl --user show-environment)"

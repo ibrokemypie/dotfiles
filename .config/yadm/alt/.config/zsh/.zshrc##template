@@ -82,7 +82,7 @@ setopt share_history auto_cd correct null_glob hist_ignore_all_dups hist_verify 
 	   hist_ignore_all_dups hist_verify hist_ignore_space interactive_comments 
 
 # enable tab completions along with parameter expansions
-zstyle ':completion:*' completer _extensions _complete _expand _ignored
+zstyle ':completion:*' completer _extensions _complete _correct _expand
 # enable completion cache
 zstyle ':completion:*' use-cache on
 # fuzzy matching completions
@@ -164,7 +164,6 @@ if [ -z ${DISPLAY+x} ] ; then
 fi
 
 {% if yadm.os == "Linux" %}
-alias cp="cp --reflink=auto"
 alias tkg="bash $HOME/git/tkg/update.sh"
 alias copy="xclip -selection c"
 alias yay="paru"

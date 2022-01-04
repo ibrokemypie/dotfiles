@@ -10,13 +10,14 @@
     ],
     // "modules-center": ["sway/window"],
     "modules-right": [
-        "custom/window",
+    	"sway/window",
         "memory",
         "cpu",
         "custom/temperature#cpu",
         "custom/temperature#gpu",
         "network",
         "custom/batteries",
+        "custom/dunst",
         "custom/pulse",
         "custom/timew",
         "clock",
@@ -29,13 +30,8 @@
     },
     "sway/window": {
         "max-length": 70,
-        "tooltip": false
-    },
-    "custom/window": {
-        "exec": "$HOME/.config/waybar/window.sh",
         "tooltip": false,
-        "exec-on-event": false,
-        "escape": true
+        "all-outputs": true
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -107,6 +103,11 @@
         "interval": 10,
         "tooltip": false
     },
+	"custom/dunst": {
+	    "exec": "~/.config/waybar/dunst.sh",
+	    "on-click": "dunstctl set-paused toggle",
+	    "restart-interval": 1,
+	},
     "custom/pulse": {
         "exec": "$HOME/.config/waybar/pulse.sh",
         "exec-on-event": false,

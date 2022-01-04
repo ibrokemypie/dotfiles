@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Hack, "Font Awesome", "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    font-family: "Iosevka", "Font Awesome", "Font Awesome 5 Free", "Font Awesome 5 Brands";
     font-size: 13px;
     min-height: 0;
 }
@@ -37,7 +37,7 @@ window#waybar {
     padding: 0;
 }
 
-#clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor, #mpd, #custom-temperature, #custom-pulse, #custom-window, #custom-timew, #custom-batteries{
+#clock, #battery, #cpu, #memory, #disk, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor, #mpd, #window, #custom-temperature, #custom-pulse, #custom-timew, #custom-batteries, #custom-dunst {
     padding: 1px 4px;
     color: #EBDBB2;
     background: #282828;

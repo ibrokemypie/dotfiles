@@ -24,7 +24,7 @@ ZSH_FUNC_DIR="${ZDOTDIR:-$HOME/.config/zsh}/func"
 ZSH_PLUGS=("powerlevel10k/powerlevel10k.zsh-theme" "zsh-lazyload/zsh-lazyload.zsh" \
 		   "fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" \
 		   "zsh-autosuggestions/zsh-autosuggestions.zsh" "zsh-tab-title/title.plugin.zsh" \
-		   "zsh-completions/zsh-completions.plugin.zsh" \
+		   "zsh-completions/zsh-completions.plugin.zsh" "zsh-edit/zsh-edit.plugin.zsh" \
 		   "history-search-multi-word/history-search-multi-word.plugin.zsh" \
 		   "zsh-history-substring-search/zsh-history-substring-search.zsh" \
 		   "fzf-tab/fzf-tab.plugin.zsh" "forgit/forgit.plugin.zsh")
@@ -211,31 +211,32 @@ keyinfo=(
 # emacs bindings
 bindkey -e
 
+
 # ^x ^e: open commandline in editor
 [[ -n "$keyinfo[Control]" ]] && \
   bindkey -- "$keyinfo[Control]X$keyinfo[Control]E" edit-command-line
-
-# up/down history search
+# 
+# # up/down history search
 [[ -n "$keyinfo[Up]" ]] && \
   bindkey -- "$keyinfo[Up]" history-substring-search-up
 [[ -n "$keyinfo[Down]" ]] && \
   bindkey -- "$keyinfo[Down]" history-substring-search-down
-
-# ^left ^right word movement
-[[ -n "$keyinfo[Control-Right]" ]] && \
-  bindkey -- "$keyinfo[Control]$keyinfo[Control-Right]" forward-word
-[[ -n "$keyinfo[Control-Left]" ]] && \
-  bindkey -- "$keyinfo[Control]$keyinfo[Control-Left]" backward-word
-
-# home and end
-[[ -n "$keyinfo[Home]" ]] && \
-  bindkey -- "$keyinfo[Home]" beginning-of-line
-[[ -n "$keyinfo[End]" ]] && \
-  bindkey -- "$keyinfo[End]" end-of-line
-    
-# delete
-[[ -n "$keyinfo[Delete]" ]] && \
-  bindkey -- "$keyinfo[Delete]" delete-char
+# 
+# # ^left ^right word movement
+# [[ -n "$keyinfo[Control-Right]" ]] && \
+  # bindkey -- "$keyinfo[Control]$keyinfo[Control-Right]" forward-word
+# [[ -n "$keyinfo[Control-Left]" ]] && \
+  # bindkey -- "$keyinfo[Control]$keyinfo[Control-Left]" backward-word
+# 
+# # home and end
+# [[ -n "$keyinfo[Home]" ]] && \
+  # bindkey -- "$keyinfo[Home]" beginning-of-line
+# [[ -n "$keyinfo[End]" ]] && \
+  # bindkey -- "$keyinfo[End]" end-of-line
+    # 
+# # delete
+# [[ -n "$keyinfo[Delete]" ]] && \
+  # bindkey -- "$keyinfo[Delete]" delete-char
 
 
 # Finally, make sure the terminal is in application mode, when zle is

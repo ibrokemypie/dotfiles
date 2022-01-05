@@ -2,70 +2,69 @@
 
 system_type="$(uname -s)"
 
-shared_progs=(aria2 exa fd fzf git pv tealdeer tmux wget yadm zsh bat ccache sccache fd ripgrep micro zoxide)
-mac_progs=(gpg git-delta bitwarden iterm2)
-arch_progs=(moar gnupg git-delta-bin sway sway-systemd geoclue2 clipman mako thunar wayvnc aria2 foot jq waybar)
+shared_progs=(aria2 exa fd fzf git pv tealdeer tmux wget yadm zsh bat ccache sccache fd ripgrep micro zoxide git-delta)
+mac_progs=(gpg bitwarden iterm2)
+arch_progs=(moar gnupg sway sway-systemd geoclue2 clipman mako thunar wayvnc aria2 foot jq waybar)
 termux_progs=(man fzf pv exa fd tmux wget yadm zsh bat ripgrep micro)
 zsh_plugs=("https://github.com/Aloxaf/fzf-tab" "https://github.com/zsh-users/zsh-autosuggestions" \
            "https://github.com/zdharma-continuum/fast-syntax-highlighting" "https://github.com/zsh-users/zsh-history-substring-search"\
            "https://github.com/romkatv/powerlevel10k" "https://github.com/g-plane/zsh-yarn-autocompletions" \
-           "https://github.com/qoomon/zsh-lazyload" "https://github.com/wfxr/forgit" "https://github.com/zsh-users/zsh-completions "\
-           "https://github.com/zdharma-continuum/history-search-multi-word" "https://github.com/trystan2k/zsh-tab-title")
+           "https://github.com/qoomon/zsh-lazyload" "https://github.com/wfxr/forgit" "https://github.com/zsh-users/zsh-completions" \
+           "https://github.com/zdharma-continuum/history-search-multi-word" "https://github.com/trystan2k/zsh-tab-title" \
+           "https://github.com/marlonrichert/zsh-edit")
 
-if [ "$1" != "zsh" ]; then
-	if [ "$system_type" = "Darwin" ]; then
+if [ "$system_type" = "Darwin" ]; then
+  # install homebrew if it's missing
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "Installing homebrew"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
 
-	  # install homebrew if it's missing
-	  if ! command -v brew >/dev/null 2>&1; then
-	    echo "Installing homebrew"
-	    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	  fi
+  brew install "${shared_progs[@]}" "${mac_progs[@]}"
+fi
 
-	  brew install ${shared_progs[@]} ${mac_progs[@]}
+
+if [ "$system_type" = "Linux" ]; then
+	if command -v pacman >/dev/null 2>&1; then
+		sudo pacman -S --noconfirm --needed base-devel ccache
+
+		# install paru if missing
+		if ! command -v paru >/dev/null 2>&1; then
+			mkdir "$HOME/paru"
+			git clone "https://aur.archlinux.org/paru-bin.git" "$HOME/paru" --depth=1
+			cd "$HOME/paru" || return
+			makepkg -iscrC --noconfirm --needed
+			cd "$HOME" || return
+			rm -rf "$HOME/paru"
+		fi
+		paru -S --noconfirm --needed "${shared_progs[@]}" "${arch_progs[@]}"
 	fi
 
-
-	if [ "$system_type" = "Linux" ]; then
-		if command -v pacman >/dev/null 2>&1; then
-			sudo pacman -S --noconfirm --needed base-devel ccache
-
-			# install paru if missing
-			if ! command -v paru >/dev/null 2>&1; then
-				mkdir "$HOME/paru"
-				git clone "https://aur.archlinux.org/paru-bin.git" "$HOME/paru" --depth=1
-				cd "$HOME/paru"
-				makepkg -iscrC --noconfirm --needed
-				cd "$HOME"
-				rm -rf "$HOME/paru"
-			fi
-			paru -S --noconfirm --needed ${shared_progs[@]} ${arch_progs[@]}
-		fi
-
-		if command -v pkg >/dev/null 2>&1; then
-			pkg install ${termux_progs[@]}
-		fi
-	fi
-
-	# install tpm
-	if [ ! -d "$HOME/.tmux/plugins" ]; then mkdir -p "$HOME/.tmux/plugins"; fi
-	cd "$HOME/.tmux/plugins"
-	if [ -d tpm ]; then
-		cd tpm 
-		status="$(git pull)"
-		if [ "$status" != "Already up to date." ]; then
-			echo "$status"
-		fi
-	else
-		git clone https://github.com/tmux-plugins/tpm
+	if command -v pkg >/dev/null 2>&1; then
+		pkg install "${termux_progs[@]}"
 	fi
 fi
 
+# install tpm
+if [ ! -d "$HOME/.tmux/plugins" ]; then mkdir -p "$HOME/.tmux/plugins"; fi
+cd "$HOME/.tmux/plugins" || return
+if [ -d "tpm" ]; then
+	cd "tpm" || return 
+	status="$(git pull)"
+	if [ "$status" != "Already up to date." ]; then
+		echo "$status"
+	fi
+else
+	git clone https://github.com/tmux-plugins/tpm
+fi
+
+
 if [ ! -d "$HOME/.config/zsh/plugins" ]; then mkdir -p "$HOME/.config/zsh/plugins"; fi
-for plug in ${zsh_plugs[@]}; do
-	cd "$HOME/.config/zsh/plugins"
-	plugdir="$(basename $plug)"
+for plug in "${zsh_plugs[@]}"; do
+	cd "$HOME/.config/zsh/plugins" || return
+	plugdir=$(basename "$plug")
 	if [ -d "$plugdir" ]; then
-		cd "$plugdir"
+		cd "$plugdir" || return
 		status="$(git pull)"
 		if [ "$status" != "Already up to date." ]; then
 			if [ "$plugdir" = "fzf-tab" ]; then

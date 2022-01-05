@@ -56,17 +56,15 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Path
 #
 
+typeset -U PATH
+typeset -U MANPATH
+
 {% if yadm.os == "Linux" %}
 path=("/usr/lib/ccache/bin/" $path)
 {% endif %}
 
 {% if yadm.os == "Darwin" %}
-export HOMEBREW_PREFIX="/usr/local"
-export HOMEBREW_CELLAR="/usr/local/Cellar"
-export HOMEBREW_REPOSITORY="/usr/local/Homebrew"
-path+=("$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin" "$HOMEBREW_PREFIX/bin/ccache" "$HOMEBREW_PREFIX/opt/python/libexec/bin")
-manpath+=("$HOMEBREW_PREFIX/share/man")
-infopath+=("$HOMEBREW_PREFIX/share/info")
+eval $(/usr/local/bin/brew shellenv)
 fpath+=("$HOMEBREW_PREFIX/share/zsh/site-functions")
 {% endif %}
 

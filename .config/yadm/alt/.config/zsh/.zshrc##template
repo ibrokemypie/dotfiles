@@ -23,7 +23,7 @@ ZSH_PLUG_DIR="${ZDOTDIR:-$HOME/.config/zsh}/plugins"
 ZSH_FUNC_DIR="${ZDOTDIR:-$HOME/.config/zsh}/func"
 ZSH_PLUGS=("powerlevel10k/powerlevel10k.zsh-theme" "zsh-lazyload/zsh-lazyload.zsh" \
 		   "fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" \
-		   "zsh-autosuggestions/zsh-autosuggestions.zsh" "zsh-tab-title/title.plugin.zsh" \
+		   "zsh-autosuggestions/zsh-autosuggestions.zsh" "zsh-tab-title/zsh-tab-title.plugin.zsh" \
 		   "zsh-completions/zsh-completions.plugin.zsh" "zsh-edit/zsh-edit.plugin.zsh" \
 		   "history-search-multi-word/history-search-multi-word.plugin.zsh" \
 		   "zsh-history-substring-search/zsh-history-substring-search.zsh" \
@@ -243,6 +243,9 @@ lazyload pyenv python pip python3 python2 pip3 pip2 easy_install pydoc 2to3 idle
 	'export PYENV_ROOT="$HOME/.pyenv" && \
 	export PATH="$PYENV_ROOT/bin:$PATH" && eval "$(pyenv init --path)" && \
 	eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"'
+
+
+lazyload fnm node npm yarn -- 'eval "$(fnm env --use-on-cd)" && rehash'
 
 
 {% if yadm.os == "Linux" %}

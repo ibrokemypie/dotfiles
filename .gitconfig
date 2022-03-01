@@ -33,3 +33,36 @@
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul
     file-decoration-style = none
+
+[commit]
+	template = ~/.gitcommittemplate
+
+[alias]
+    st = status
+
+    # Rebase and pull latest for all submodules
+    pa = !git pull --rebase && git submodule foreach git pull --rebase
+
+    # Pretty logging
+    lg = log --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(red)%d%Creset %s %C(blue)%an%Creset %Cgreen(%cr)%Creset' --graph --decorate
+    co = checkout
+
+    # Rebase current branch
+    rb = "!sh -c 'git pull --rebase origin `git symbolic-ref --short HEAD`'"
+
+    # Push current branch
+    ps = "!sh -c 'git push origin `git symbolic-ref --short HEAD`'"
+
+    # List all aliases
+    la = "!git config -l | grep alias | cut -c 7-"
+
+    fixme = grep -nE \"(FIXME|TODO|XXX)\"
+    ours = "!f() { git co --ours $@ && git add $@; }; f"
+    theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+    accept-ours = "!f() { files=\"$@\"; [ -z $files ] && files='.'; git checkout --ours -- $files; git add -u $files; }; f"
+    accept-theirs = "!f() { files=\"$@\"; [ -z $files ] && files='.'; git checkout --theirs -- $files; git add -u $files; }; f"
+    listmerged = "branch --merged"
+    recent-branches = "for-each-ref --sort=-committerdate --count=10 --format='%(refname:short)' refs/heads/"
+
+[includeif "gitdir:~/git/livepreso/"]
+	path = ~/git/livepreso/.gitconfig

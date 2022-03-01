@@ -18,6 +18,15 @@
 [[ ! -o 'no_brace_expand' ]] || p10k_config_opts+=('no_brace_expand')
 'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
 
+function prompt_my_fnm() {
+  local fnm_default
+  fnm_default=$(fnm list | grep default | awk '{ print $2 }') || return
+  local fnm_current=$(fnm current | tail -n 1)
+  [[ $fnm_default != $fnm_current ]] || return
+  [[ $fnm_current != 'none' ]] || return
+  p10k segment -b 'magenta' -f 'black' -i 'NODE_ICON' -r -t "$fnm_current"
+}
+
 () {
   emulate -L zsh -o extended_glob
 
@@ -35,10 +44,11 @@
   	timewarrior
     # os_icon               # os identifier
     dir                     # current directory
-    package
+    # package
     pyenv
     virtualenv
     rbenv
+    my_fnm
     vcs                     # git status
     status
     command_execution_time
@@ -350,7 +360,7 @@
   # typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=8
 
   # Branch icon. Set this parameter to '\uF126 ' for the popular Powerline branch icon.
-  typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
+  typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='  '
 
   # Untracked files icon. It's really a question mark, your font isn't broken.
   # Change the value of this parameter to show a different icon.

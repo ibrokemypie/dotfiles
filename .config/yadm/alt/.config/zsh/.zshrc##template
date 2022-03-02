@@ -153,6 +153,7 @@ eval "$(zoxide init zsh)"
 #
 
 alias ls="exa"
+alias ll="exa -lagF --git --icons"
 alias tree="exa --tree"
 alias nano="micro"
 alias cat="bat --paging=never"

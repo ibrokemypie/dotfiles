@@ -51,8 +51,21 @@
     rb = "!sh -c 'git pull --rebase origin `git symbolic-ref --short HEAD`'"
 
     # Push current branch
-    ps = "!sh -c 'git push origin `git symbolic-ref --short HEAD`'"
+    ps = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
 
+    # create and siwtch to new branch
+    new = checkout -b
+
+	# delete branch
+	del = branch -D
+
+	# unstage last commit
+	undo = reset HEAD~1 --mixed
+
+
+	# rename branch
+	rename = branch -m
+	
     # List all aliases
     la = "!git config -l | grep alias | cut -c 7-"
 

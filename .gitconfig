@@ -38,6 +38,8 @@
 	template = ~/.gitcommittemplate
 
 [alias]
+	main = !git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4
+	
     st = status
 
     # Rebase and pull latest for all submodules
@@ -53,15 +55,17 @@
     # Push current branch
     ps = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
 
-    # create and siwtch to new branch
-    new = checkout -b
+    # create and switch to new branch
+    new = "!sh -c 'if [[ -n ${1} ]]; then BASE=${0}; NAME=${1}; else BASE=$(git main); NAME=${0}; fi && if [[ -z $(git rev-parse --quiet --verify $BASE) ]]; then echo \"Base with name $BASE does not exist\"; exit 1; fi && if [[ -n $(git rev-parse --quiet --verify $NAME) ]]; then echo \"Branch with name $NAME already exists\"; exit 1; fi && STASHED=$(git stash push) && git switch $BASE && git pull && git checkout -b $NAME && [[ $STASHED != \"No local changes to save\" ]] && git stash pop'"
+
+	# go to repo's main branch
+	home = "!sh -c 'STASHED=$(git stash push) && git switch $(git main) && [[ $STASHED != \"No local changes to save\" ]] && git stash pop'"
 
 	# delete branch
 	del = branch -D
 
 	# unstage last commit
 	undo = reset HEAD~1 --mixed
-
 
 	# rename branch
 	rename = branch -m

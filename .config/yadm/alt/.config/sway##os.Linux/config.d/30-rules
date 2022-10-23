@@ -40,11 +40,7 @@ for_window [class="^Steam$" title="^Friends$"] floating enable
 for_window [class="^Steam$" title="Friends List"] floating enable
 for_window [class="^Steam$" title="Steam - News"] floating enable
 for_window [class="^Wine"] floating enable
-for_window [title="^Origin"] floating enable
-for_window [title="^User Profile"] floating enable
-for_window [title="^Tools"] floating enable
-for_window [title="^History"] floating enable
-for_window [title="^Layers"] floating enable
+
 for_window [class="steam_app_253230"] fullscreen enable
 for_window [class="hatintimegame.exe"] fullscreen enable
 for_window [class="HatinTimeGame.exe"] fullscreen enable
@@ -52,3 +48,5 @@ for_window [title="Volume Control"] floating disable
 for_window [title="Microsoft Teams Notification" class="microsoft teams - preview"] floating enable
 for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable 
 for_window [title="Firefox — Sharing Indicator"] floating enable 
+for_window [app_id="dropterm"] opacity 0.8
+for_window [class="Nemo-preview-start"] floating enable

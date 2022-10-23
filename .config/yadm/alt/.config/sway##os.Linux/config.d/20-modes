@@ -8,12 +8,14 @@
 ############################################
 
 
-set $power_control "[l]ock log[o]ut [r]eboot [p]oweroff"
+set $power_control "[l]ock log[o]ut [s]uspend [h]ibernate [r]eboot [p]oweroff"
 mode  $power_control {
     bindsym l exec swaylock; mode "default"
     bindsym o exec swaymsg exit; mode "default"
     bindsym r exec systemctl reboot; mode "default"
     bindsym p exec systemctl poweroff; mode "default"
+    bindsym s exec systemctl suspend; mode "default"
+    bindsym h exec systemctl hibernate; mode "default"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -54,3 +56,4 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+

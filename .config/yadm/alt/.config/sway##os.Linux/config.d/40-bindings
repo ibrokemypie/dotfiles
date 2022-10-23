@@ -30,7 +30,7 @@ bindsym $mod+space exec $menu
 bindsym mod1+space exec $menu
 
 # calc
-bindsym $mod+equal exec = --dmenu=bemenu
+bindsym $mod+equal exec = --dmenu=bemenu -- -l 3
 
 # bitwarden
 #bindsym $mod+z exec bwmenu -C
@@ -43,7 +43,7 @@ bindsym $mod+n exec networkmanager_dmenu
 bindsym $mod+a exec $HOME/.config/sway/dmenu_pavucontrol.sh
 
 # emoji
-bindsym $mod+j exec $HOME/.config/sway/emojipicker.sh
+bindsym $mod+j exec bemoji
 
 # clipman
 bindsym $mod+c exec clipman pick -t bemenu --tool-args="-p 'clipman:'"
@@ -202,8 +202,31 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% #incr
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle # mute mic
+
 # Media player controls
 bindsym XF86AudioPlay exec $HOME/.config/i3/playerctl.sh playpause
 bindsym XF86AudioNext exec $HOME/.config/i3/playerctl.sh next
 bindsym XF86AudioPrev exec $HOME/.config/i3/playerctl.sh prev
 bindsym XF86AudioStop exec $HOME/.config/i3/playerctl.sh stop
+
+
+# Thinkpad media player controls
+bindsym XF86PickupPhone exec $HOME/.config/i3/playerctl.sh playpause
+bindsym XF86Favorites exec $HOME/.config/i3/playerctl.sh next
+bindsym XF86NotificationCenter exec $HOME/.config/i3/playerctl.sh prev
+bindsym XF86HangupPhone exec $HOME/.config/i3/playerctl.sh stop
+
+
+############################################
+#
+#			Laptop Brightness 
+#
+############################################
+
+bindsym XF86MonBrightnessDown exec $HOME/.config/sway/./adjust_backlight.sh down
+bindsym XF86MonBrightnessUp exec $HOME/.config/sway/./adjust_backlight.sh up
+
+bindsym XF86Display exec $HOME/.config/sway/output_toggle.sh
+bindsym Control+XF86MonBrightnessDown exec brightnessctl -q -e -d tpacpi::kbd_backlight s 1-
+bindsym Control+XF86MonBrightnessUp exec brightnessctl -q -e -d tpacpi::kbd_backlight s 1+

@@ -5,7 +5,7 @@ set $mod Mod4
 set $term footclient
 set $browser firefox
 set $filemanager nemo
-set $menu j4-dmenu-desktop --usage-log="$HOME/.config/j4-dmenu-desktop.log" --no-generic --dmenu "bemenu -p ''" --term footclient --term-args "" --wrapper "swaymsg exec --"
+set $menu j4-dmenu-desktop --usage-log="$HOME/.config/j4-dmenu-desktop.log" --no-generic --dmenu "bemenu -p ''" --term footclient --wrapper "swaymsg exec --" --use-xdg-de
 
 default_border none
 #gaps outer 0

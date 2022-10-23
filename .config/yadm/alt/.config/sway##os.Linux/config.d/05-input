@@ -2,5 +2,10 @@
 # Sway input configuration
 
 input type:keyboard xkb_numlock enable
+input 1:1:AT_Translated_Set_2_keyboard {
+	xkb_options ctrl:nocaps
+}
 input type:pointer pointer_accel -1
 mouse_warping output
+
+input type:touchpad tap enabled

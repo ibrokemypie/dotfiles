@@ -2,7 +2,7 @@
 # Startup programs not managed by systemd
 
 exec autotiling    
-exec gnome-keyring-daemon --start
+#exec gnome-keyring-daemon --start
 exec systemd-run --user --scope --unit app-foot\\x2deserver.scope -- foot --server
-exec powercord --start-minimized
-exec xrandr --output XWAYLAND1 --primary
+#exec powercord --start-minimized
+#exec xrandr --output XWAYLAND1 --primary

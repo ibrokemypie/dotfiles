@@ -15,7 +15,7 @@ import signal
 import sys
 
 WINDOW_ICONS = {
-    "firefox": "",
+    "firefox": "",
     "foot": "",
     "dropterm": "",
     "alacritty": "",
@@ -42,7 +42,7 @@ DEFAULT_ICON = ""
 
 def icon_for_window(window):
     app_id = window.app_id
-    if app_id is not None and len(app_id) > 0:
+    if app_id and len(app_id) > 0:
         app_id = app_id.lower()
         if app_id in WINDOW_ICONS:
             return WINDOW_ICONS[app_id]
@@ -50,7 +50,7 @@ def icon_for_window(window):
     else:
         # xwayland support
         class_name = window.window_class
-        if len(class_name) > 0:
+        if class_name and len(class_name) > 0:
             class_name = class_name.lower()
             if class_name in WINDOW_ICONS:
                 return WINDOW_ICONS[class_name]
@@ -81,7 +81,7 @@ def rename_workspaces(ipc):
                     focused_name = ""
                     
         name_parts["icons"] = " ".join(icon_tuple) + " "
-        name_parts["title"] = focused_name.replace("\"","'")
+        name_parts["title"] = focused_name.replace("\"","'").replace("&","&amp;")
         new_name = construct_workspace_name(name_parts)
         ipc.command('rename workspace "%s" to "%s"' % (workspace.name, new_name))
 

@@ -9,7 +9,6 @@
     "eofnewline": false,
     "fastdirty": true,
     "hidehelp": false,
-    "ignorecase": false,
     "matchbrace": false,
     "matchbraceleft": false,
     "mkparents": true,
@@ -19,5 +18,6 @@
     "pluginrepos": [],
     "saveundo": true,
     "softwrap": true,
-    "termtitle": false
+    "termtitle": false,
+    "useprimary": false
 }

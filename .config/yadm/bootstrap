@@ -2,9 +2,9 @@
 
 system_type="$(uname -s)"
 
-shared_progs=(aria2 exa fd fzf git pv tealdeer tmux wget yadm zsh bat ccache sccache fd ripgrep micro zoxide git-delta)
+shared_progs=(aria2 exa fd fzf git pv tealdeer tmux wget yadm zsh bat ccache sccache fd ripgrep micro zoxide git-delta fnm )
 mac_progs=(gpg bitwarden iterm2)
-arch_progs=(moar gnupg sway sway-systemd geoclue2 clipman mako thunar wayvnc aria2 foot jq waybar)
+arch_progs=(moar gnupg sway sway-systemd geoclue2 clipman dunst nemo wayvnc aria2 foot jq waybar autotiling bemenu gnome-keyring playerctl)
 termux_progs=(man fzf pv exa fd tmux wget yadm zsh bat ripgrep micro)
 zsh_plugs=("https://github.com/Aloxaf/fzf-tab" "https://github.com/zsh-users/zsh-autosuggestions" \
            "https://github.com/zdharma-continuum/fast-syntax-highlighting" "https://github.com/zsh-users/zsh-history-substring-search"\

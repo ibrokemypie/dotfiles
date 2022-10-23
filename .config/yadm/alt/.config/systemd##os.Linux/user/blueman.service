@@ -1,11 +1,11 @@
 [Unit]
 Description=GTK+ Bluetooth Manager
 Documentation=https://github.com/blueman-project/blueman
-BindsTo=sway-session.target
+BindsTo=graphical-session.target
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/blueman-applet
 
 [Install]
-WantedBy=sway-session.target
+WantedBy=graphical-session.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Dynamic output configuration for Wayland WMs
+Documentation=https://github.com/maximbaz/dotfiles/blob/master/bin/i3-autoname-workspaces
+PartOf=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kanshi
+
+[Install]
+WantedBy=sway-session.target

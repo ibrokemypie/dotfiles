@@ -1,0 +1,13 @@
+[Unit]
+Description=A C daemon that turns your webcam into a light sensor. It will adjust screen backlight based on ambient brightness. 
+Documentation=https://github.com/FedeDP/Clight
+BindsTo=graphical-session.target
+Wants=geoclue.service
+After=geoclue.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/clight
+
+[Install]
+WantedBy=graphical-session.target

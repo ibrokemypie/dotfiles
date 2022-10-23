@@ -1,0 +1,11 @@
+[Unit]
+Description=Idle manager for Wayland
+Documentation=https://github.com/swaywm/swayidle/blob/master/swayidle.1.scd
+PartOf=sway-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swayidle -w
+
+[Install]
+WantedBy=sway-session.target

@@ -1,5 +1,59 @@
-image=$HOME/.config/swaylock/bg
-ignore-empty-password
+# image=$HOME/.config/swaylock/bg
 show-failed-attempts
-grace=15
 clock
+fade-in=2
+screenshots
+effect-blur=10x4
+grace=2
+daemonize
+# 
+# #time-color=#ebdbb2ff
+# #date-color=#ebdbb2ff
+# inside-color=#1d2021cc
+# inside-ver-color=#1d202100
+# inside-wrong-color=#cc241dcc
+# ring-color=#689d6aff
+# ring-ver-color=#689d6a00
+# ring-wrong-color=#fb4934ff
+# key-hl-color=#b16286ff
+# bs-hl-color=#d79921ff
+# #ver-if-color=#00000000
+# #wrong-color=#00000000
+# line-uses-inside
+# #ring-width 5
+# #pass-media-keys
+# separator-color=#00000000
+
+
+indicator-radius=50
+indicator-thickness=20
+
+color=#1d2021
+
+key-hl-color=#1d2021
+bs-hl-color=#1d2021
+
+font=JetBrains Mono
+font-size=14
+
+inside-color=#83a598
+inside-clear-color=#fabd2f
+inside-caps-lock-color=#83a598
+inside-ver-color=#b8bb26
+inside-wrong-color=#fb4934
+
+line-uses-inside
+
+ring-color=#1d2021
+ring-clear-color=#1d2021
+ring-caps-lock-color=#1d2021
+ring-ver-color=#1d2021
+ring-wrong-color=#1d2021
+
+separator-color=#1d2021
+
+text-color=#1d2021
+text-clear-color=#1d2021
+text-caps-lock-color=#1d2021
+text-ver-color=#1d2021
+text-wrong-color=#1d2021

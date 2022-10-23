@@ -70,6 +70,7 @@ fpath+=("$HOMEBREW_PREFIX/share/zsh/site-functions")
 
 path=("$HOME/.local/bin" "$HOME/go/bin" $path)
 fpath+=("${ZSH_FUNC_DIR}")
+fpath+=("${ZSH_PLUG_DIR}/zsh-completions/src")
 
 
 #

@@ -2,3 +2,4 @@
 
 require 'plugins'
 require 'options'
+require 'autocmds'

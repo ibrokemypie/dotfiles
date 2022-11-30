@@ -2,9 +2,9 @@
 
 local ensure_packer = function()
   local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
   if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
     vim.cmd [[packadd packer.im]]
     return true
   end
@@ -15,12 +15,6 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use {
-    'folke/which-key.nvim',
-    config = function()
-      require('config.whichkey')
-    end
-  }
   use 'nvim-tree/nvim-web-devicons'
   use {
     'ellisonleao/gruvbox.nvim',
@@ -57,10 +51,10 @@ return require('packer').startup(function(use)
 	end
   } ]]
   use {
-	  'ahmedkhalf/project.nvim',
-	  config = function()
-		  require('config.project')
-	  end
+    'ahmedkhalf/project.nvim',
+    config = function()
+      require('config.project')
+    end
   }
   use {
     'nvim-telescope/telescope.nvim',
@@ -71,23 +65,74 @@ return require('packer').startup(function(use)
     end
   }
   use {
-      'numToStr/Comment.nvim',
-      config = function()
-	      require('config.comment')
-      end
+    'numToStr/Comment.nvim',
+    config = function()
+      require('config.comment')
+    end
   }
   use 'neovim/nvim-lspconfig'
+  use 'ray-x/lsp_signature.nvim'
   use {
-	  'ms-jpq/coq_nvim',
-	  branch = 'coq',
-	  config = function()
-		  require('config.coq')
-	  end
+    'ms-jpq/coq_nvim',
+    branch = 'coq',
+    config = function()
+      require('config.coq')
+    end
   }
   use {
-	  'ms-jpq/coq.artifacts',
-	  branch = 'artifacts'
+    'ms-jpq/coq.artifacts',
+    branch = 'artifacts'
   }
+  use {
+    'akinsho/toggleterm.nvim',
+    tag = '*',
+    config = function()
+      require('config.toggleterm')
+    end
+  }
+  use {
+    'lewis6991/gitsigns.nvim',
+    tag = 'release',
+    config = function()
+      require('config.gitsigns')
+    end
+  }
+  use 'SmiteshP/nvim-navic'
+  use 'natecraddock/telescope-zf-native.nvim'
+  --[[ use {
+    'Pocco81/auto-save.nvim',
+    config = function()
+      require('config.autosave')
+    end
+  } ]]
+  --[[   use({
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+    end,
+  }) ]]
+  use 'tpope/vim-fugitive'
+  use {
+    'folke/trouble.nvim',
+    config = function()
+      require('config.trouble')
+    end
+  }
+  use 'folke/lsp-colors.nvim'
+  use {
+    'windwp/nvim-autopairs',
+    config = function()
+      require('config.autopairs')
+    end
+  }
+  use {
+    'folke/which-key.nvim',
+    after = { 'coq_nvim', 'nvim-autopairs' },
+    config = function()
+      require('config.whichkey')
+    end
+  }
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

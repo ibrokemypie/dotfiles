@@ -1,18 +1,17 @@
 -- options.lua
 
--- 'all' otions
-local a = vim.opt
-a.colorcolumn = "80"
+local opt = vim.opt
 
--- global options 
-local g = vim.o
-g.mouse = ''
-g.background = 'dark'
+opt.colorcolumn = "80"
+opt.timeoutlen = 300
+opt.undofile = true
+opt.mouse = ''
+opt.background = 'dark'
+opt.smartcase = true
+opt.ignorecase = true
+opt.smartindent = true
+opt.number = true
+opt.cursorline = true
+opt.undofile = true
 
--- window-local options 
-local w = vim.wo
-w.number = true
-
--- buffer-local options 
-local b = vim.bo
-
+vim.g.python3_host_prog = os.getenv("HOME") .. "/.pyenv/versions/nvim/bin/python"

@@ -5,6 +5,7 @@ return {
 		"lewis6991/gitsigns.nvim",
 		"SmiteshP/nvim-navic",
 		"dhruvasagar/vim-zoom",
+		"nvim-tree/nvim-web-devicons",
 	},
 	opts = function()
 		local function diff_source()
@@ -40,7 +41,7 @@ return {
 				lualine_b = { "filename" },
 				lualine_c = {
 					{ "b:gitsigns_head", icon = "" },
-					{ "diff", source = diff_source },
+					{ "diff",            source = diff_source },
 				},
 				lualine_x = { "encoding", "filetype" },
 				lualine_y = {
@@ -61,7 +62,18 @@ return {
 				lualine_a = {
 					{ "filename", path = 1 },
 				},
-				lualine_b = { "navic" },
+				lualine_b = {
+					{
+						"navic",
+						color_correction = "static",
+						navic_opts = {
+							separator = " " ..
+							require("lualine").get_config().options.component_separators
+							.left .. " ",
+						},
+						padding = { left = 1, right = 0 },
+					},
+				},
 				lualine_x = {},
 				lualine_y = {},
 				lualine_z = {},

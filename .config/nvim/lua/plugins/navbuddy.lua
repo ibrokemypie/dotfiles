@@ -4,10 +4,12 @@ return {
 		"SmiteshP/nvim-navic",
 		"MunifTanjim/nui.nvim",
 	},
+	cmd = { "Navbuddy" },
+	config = true,
 	opts = {
 		lsp = {
 			auto_attach = true,
-			preference = { "pyright" },
+			-- preference = { "pyright" },
 		},
 	},
 	keys = {

@@ -2,6 +2,8 @@ return {
 	"nvim-telescope/telescope.nvim",
 	tag = "0.1.1",
 	cmd = "Telescope",
+	enable = false,
+	enabled = false,
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-live-grep-args.nvim",
@@ -11,14 +13,14 @@ return {
 		-- "ahmedkhalf/project.nvim",
 	},
 	keys = {
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>",                desc = "Find File" },
-		{ "<leader>fs", "<cmd>Telescope grep_string search=<cr>",       desc = "Find String" },
+		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File" },
+		{ "<leader>fs", "<cmd>Telescope grep_string search=<cr>", desc = "Find String" },
 		-- { "<leader>fp", "<cmd>Telescope projects<cr>",                  desc = "Find Project" },
-		{ "<leader>fp", "<cmd>Telescope projections<cr>",               desc = "Find Project" },
-		{ "<leader>fc", "<cmd>Telescope registers<cr>",                 desc = "Find Register" },
-		{ "<leader>fh", "<cmd>Telescope help_tags<cr>",                 desc = "Find Help" },
-		{ "<leader>fr", "<cmd>Telescope lsp_references<cr>",            desc = "Find Reference" },
-		{ "<leader>fb", "<cmd>Telescope buffers<cr>",                   desc = "Find Buffer" },
+		{ "<leader>fp", "<cmd>Telescope projections<cr>", desc = "Find Project" },
+		{ "<leader>fc", "<cmd>Telescope registers<cr>", desc = "Find Register" },
+		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Find Help" },
+		{ "<leader>fr", "<cmd>Telescope lsp_references<cr>", desc = "Find Reference" },
+		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Buffer" },
 		{ "<leader>f/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy search file" },
 	},
 	opts = function()
@@ -28,10 +30,10 @@ return {
 				mappings = {
 					i = {
 						["<C-l>"] = false,
-						["<c-t>"] = require("trouble").open_with_trouble,
+						-- ["<c-t>"] = require("trouble").open_with_trouble,
 					},
 					n = {
-						["<c-t>"] = require("trouble").open_with_trouble,
+						-- ["<c-t>"] = require("trouble").open_with_trouble,
 					},
 				},
 			},

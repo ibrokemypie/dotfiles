@@ -4,7 +4,7 @@ return {
 		"petertriho/nvim-scrollbar",
 		"nvim-tree/nvim-web-devicons",
 	},
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPost", "BufNewFile" },
 	opts = {
 		numhl = true,
 		current_line_blame = true,

@@ -1,13 +1,18 @@
 return {
 	"gnikdroy/projections.nvim",
 	event = "VeryLazy",
-	opts = {
-		workspaces = {
-			"~/git",
-			{ "~/.config", {} },
-			"~/git/livepreso",
-		},
-	},
+	branch = "pre_release",
+	opts = function()
+		return {
+			workspaces = {
+				"~/git",
+				{ "~/.config", {} },
+				"~/git/livepreso",
+				"~/git/lgs_grower",
+				{ "~/.config/yadm/alt/.config", {} },
+			},
+		}
+	end,
 	config = function(_, opts)
 		require("projections").setup(opts)
 
@@ -30,5 +35,7 @@ return {
 		})
 
 		vim.opt.sessionoptions:append("localoptions") -- Save localoptions to session file
+		vim.opt.sessionoptions:remove("tabpages") -- Save localoptions to session file
+		vim.opt.sessionoptions:remove("buffers") -- Save localoptions to session file
 	end,
 }

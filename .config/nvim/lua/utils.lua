@@ -13,8 +13,8 @@ M.get_python_root = function(filename)
 		"pyrightconfig.json",
 	}
 	return util.root_pattern(unpack(root_files))(filename)
-			or util.find_git_ancestor(filename)
-			or util.path.dirname(filename)
+		or util.find_git_ancestor(filename)
+		or util.path.dirname(filename)
 end
 
 M.get_pyenv_root = function()
@@ -139,7 +139,7 @@ M.recent_projections_projects = function(number)
 
 	local returned_projects = {}
 	for _, project in ipairs(projects) do
-		if #returned_projects >= number then
+		if number ~= -1 and #returned_projects >= number then
 			break
 		end
 
@@ -147,6 +147,38 @@ M.recent_projections_projects = function(number)
 	end
 
 	return returned_projects
+end
+
+M.recent_projections_sessions = function(number)
+	local projects = M.recent_projections_projects(number)
+
+	local sessions = {}
+	for _, project in ipairs(projects) do
+		local session = tostring(project["workspace"]["path"]) .. "/" .. project["name"]
+		table.insert(sessions, session)
+	end
+
+	return sessions
+end
+
+M.fzf_projects = function(opts)
+	local fzf_lua = require("fzf-lua")
+	opts = opts or {}
+	opts.prompt = "Projects> "
+	opts.actions = {
+		["default"] = function(selected, _)
+			-- extract the session without the icon using a lua pattern
+			local session = selected[1]:match("%s+(.*)")
+			require("projections.session").restore(session)
+		end,
+	}
+	local contents = function(cb)
+		for _, s in ipairs(M.recent_projections_sessions(-1)) do
+			cb(string.format("%s  %s", fzf_lua.utils.ansi_codes.green(""), fzf_lua.path.HOME_to_tilde(s)))
+		end
+		cb(nil) -- signal EOF, ends fzf “loading” indicator
+	end
+	fzf_lua.fzf_exec(contents, opts)
 end
 
 return M

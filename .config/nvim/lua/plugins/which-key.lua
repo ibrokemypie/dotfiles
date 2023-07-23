@@ -1,7 +1,10 @@
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
-	config = function()
+	config = function(_, opts)
+		vim.o.timeoutlen = 300
+		vim.o.timeout = true
+
 		local remap = vim.api.nvim_set_keymap
 
 		-- unmap space
@@ -12,13 +15,7 @@ return {
 
 		local wk = require("which-key")
 
-		wk.setup({
-			plugins = {
-				spelling = {
-					enabled = true,
-				},
-			},
-		})
+		wk.setup(opts)
 
 		-- normal mode mappings
 		wk.register({
@@ -33,36 +30,11 @@ return {
 				q = { "<CMD>q<CR>", "Close window" },
 				Q = { require("utils").close_tab_or_nvim, "Close current tab" },
 				c = { "<PLUG>(comment_toggle_linewise_current)", "Toggle line comment" },
-				r = { "<CMD>Telescope resume<CR>", "Resume last Telescope search" },
-				-- z = { "<PLUG>(zoom-toggle)<CR>", "Toggle pane zoom" },
 				f = {
 					name = "Find",
-					-- f = { "<CMD>Telescope find_files<CR>", "Find File" },
-					-- s = { "<CMD>Telescope grep_string search=<CR>", "Find String" },
-					-- p = { "<CMD>Telescope projects<CR>", "Find Project" },
-					-- c = { "<CMD>Telescope registers<CR>", "Find Clipboard" },
-					-- h = { "<CMD>Telescope help_tags<CR>", "Find Help" },
-					-- r = { "<CMD>Telescope lsp_references<CR>", "Find References" },
-					-- b = { "<CMD>Telescope buffers<CR>", "Find Buffer" },
-					-- o = { "<CMD>SymbolsOutline<CR>", "Find Symbol" },
-					-- ["/"] = { "<CMD>Telescope current_buffer_fuzzy_find<CR>", "Fuzzy search file" },
 				},
-				--[[ u = {
-					name = "Packer",
-					c = { "<CMD>PackerCompile<CR>", "Compile" },
-					s = { "<CMD>PackerSync<CR>", "Sync" },
-					S = { "<CMD>PackerStatus<CR>", "Status" },
-					u = { "<CMD>PackerUpdate<CR>", "Update" },
-				}, ]]
 				t = {
 					name = "Trouble",
-					-- t = { "<CMD>TroubleToggle<CR>", "Toggle" },
-					-- w = { "<CMD>TroubleToggle workspace_diagnostics<CR>", "Workspace" },
-					-- o = { "<CMD>TroubleToggle document_diagnostics<CR>", "Document" },
-					-- d = { "<CMD>TroubleToggle lsp_definitions<CR>", "Definitions" },
-					-- r = { "<CMD>TroubleToggle lsp_references<CR>", "References" },
-					-- i = { "<CMD>TroubleToggle lsp_implementations<CR>", "Implementations" },
-					-- l = { "<CMD>TroubleToggle loclist<CR>", "Loclist" },
 				},
 				g = {
 					name = "Git",
@@ -85,18 +57,9 @@ return {
 			["<C-t>"] = { "<CMD>tabnew<CR>", "New tab" },
 			["<C-tab>"] = { "<CMD>tabnext<CR>", "Next tab" },
 			["<C-s-tab>"] = { "<CMD>tabprevious<CR>", "Previous tab" },
-			["-"] = { "<CMD>Telescope file_browser path=%:p:h<CR>", "Open file browser" },
+			-- ["-"] = { "<CMD>Telescope file_browser path=%:p:h<CR>", "Open file browser" },
 		}, {
 			mode = "n",
-		})
-
-		-- visual mode mappings
-		wk.register({
-			["<LEADER>"] = {
-				c = { "<PLUG>(comment_toggle_blockwise_visual)", "Toggle block comment" },
-			},
-		}, {
-			mode = "x",
 		})
 
 		-- insert mode mappings
@@ -125,4 +88,5 @@ return {
 			mode = "t",
 		})
 	end,
+	opts = {},
 }

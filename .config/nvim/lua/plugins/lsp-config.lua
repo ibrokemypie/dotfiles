@@ -1,12 +1,13 @@
 return {
 	"neovim/nvim-lspconfig",
 	version = false,
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"lukas-reineke/lsp-format.nvim",
 		"ray-x/lsp_signature.nvim",
-		"SmiteshP/nvim-navbuddy",
 		{ "b0o/schemastore.nvim", version = false },
+		"SmiteshP/nvim-navbuddy",
 	},
 	config = function()
 		local util = require("lspconfig/util")
@@ -49,6 +50,7 @@ return {
 			terraformls = {},
 			tsserver = {},
 			html = {},
+			eslint = {},
 			jsonls = {
 				settings = {
 					json = {
@@ -78,13 +80,14 @@ return {
 					if client.config.settings.python == nil then
 						client.config.settings.python = {}
 					end
-					client.config.settings.python.pythonPath = require("utils").get_python_path(client.config.root_dir)
+					client.config.settings.python.pythonPath = require("utils").get_python_path(
+					client.config.root_dir)
 				end,
 				root_dir = require("utils").get_python_root,
 				settings = {
 					python = {
 						venvPath = require("utils").get_pyenv_root(),
-						venv = "",
+						-- venv = "",
 						analysis = {
 							-- turn off warnings about missing types!
 							typeCheckingMode = "off",
@@ -93,46 +96,52 @@ return {
 					},
 				},
 			},
-			pylsp = {
-				cmd = { "/bin/pylsp", "--log-file=/tmp/pylsp.log", "-v" },
-				root_dir = require("utils").get_python_root,
-				on_attach = function(client, bufnr)
-					on_attach(client, bufnr)
-
-					local python_path = require("utils").get_python_venv(client.config.root_dir)
-
-					-- client.config.settings.pylsp.plugins.rope.python_path = { python_path }
-					client.config.settings.pylsp.plugins.rope_autoimport.python_path = { python_path }
-				end,
-				settings = {
-					pylsp = {
-						plugins = {
-							rope_autoimport = {
-								enabled = true,
-								python_path = {},
-							},
-							black = {
-								enabled = true,
-							},
-						},
-					},
-				},
-			},
+			-- pylsp = {
+			-- 	cmd = { "/bin/pylsp", "--log-file=/tmp/pylsp.log", "-v" },
+			-- 	root_dir = require("utils").get_python_root,
+			-- 	on_attach = function(client, bufnr)
+			-- 		on_attach(client, bufnr)
+			--
+			-- 		local python_path = require("utils").get_python_venv(client.config.root_dir)
+			--
+			-- 		-- client.config.settings.pylsp.plugins.rope.python_path = { python_path }
+			-- 		client.config.settings.pylsp.plugins.rope_autoimport.python_path = { python_path }
+			-- 	end,
+			-- 	settings = {
+			-- 		pylsp = {
+			-- 			plugins = {
+			-- 				rope_autoimport = {
+			-- 					enabled = true,
+			-- 					python_path = {},
+			-- 				},
+			-- 				black = {
+			-- 					enabled = false,
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	},
+			-- },
 			ruff_lsp = {
 				root_dir = require("utils").get_python_root,
 			},
 			lua_ls = {
 				single_file_support = true,
 				settings = {
-					Lua = {
-						diagnostics = {
-							-- Get the language server to recognize the `vim` global
-							globals = { "vim" },
-						},
-						workspace = {
-							-- get rid of those 'do you wanna use love for this workspace' messages
-							checkThirdParty = false,
-						},
+					runtime = {
+						-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+						version = "LuaJIT",
+					},
+					diagnostics = {
+						-- Get the language server to recognize the `vim` global
+						globals = { "vim" },
+					},
+					workspace = {
+						-- Make the server aware of Neovim runtime files
+						library = vim.api.nvim_get_runtime_file("", true),
+					},
+					-- Do not send telemetry data containing a randomized but unique identifier
+					telemetry = {
+						enable = false,
 					},
 				},
 			},

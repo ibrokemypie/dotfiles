@@ -13,11 +13,10 @@
 
 [core]
     pager = bat
-    editor = micro
 
 [pager]
     diff = delta
-    log = delta
+    ; log = delta
     reflog = delta
     show = delta
 
@@ -83,3 +82,6 @@
 
 [includeif "gitdir:~/git/livepreso/"]
 	path = ~/git/livepreso/.gitconfig
+
+[credential "https://dev.azure.com"]
+	useHttpPath = true

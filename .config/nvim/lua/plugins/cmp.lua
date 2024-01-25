@@ -24,8 +24,7 @@ return {
 		local has_words_before = function()
 			unpack = unpack or table.unpack
 			local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-			return col ~= 0 and
-			vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+			return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 		end
 
 		local lspkind_comparator = function(conf)
@@ -134,16 +133,26 @@ return {
 				entries = { name = "custom", selection_order = "near_cursor" },
 			},
 			-- https://github.com/hrsh7th/nvim-cmp/wiki/Advanced-techniques#disabling-completion-in-certain-contexts-such-as-comments
+			-- enabled = function()
+			-- 	local context = require("cmp.config.context")
+			-- 	-- complete as normal in command mode
+			-- 	if vim.api.nvim_get_mode().mode == "c" then
+			-- 		return true
+			-- 	else
+			-- 		-- if not in command mode disable when writing a comment or in telescope
+			-- 		return not context.in_treesitter_capture("comment")
+			-- 		    and not context.in_syntax_group("Comment")
+			-- 		    and vim.api.nvim_buf_get_option(0, "buftype") ~= "prompt"
+			-- 	end
+			-- end,
 			enabled = function()
+				-- disable completion in comments
 				local context = require("cmp.config.context")
-				-- complete as normal in command mode
+				-- keep command mode completion enabled when cursor is in a comment
 				if vim.api.nvim_get_mode().mode == "c" then
 					return true
 				else
-					-- if not in command mode disable when writing a comment or in telescope
-					return not context.in_treesitter_capture("comment")
-					    and not context.in_syntax_group("Comment")
-					    and vim.api.nvim_buf_get_option(0, "buftype") ~= "prompt"
+					return not context.in_treesitter_capture("comment") and not context.in_syntax_group("Comment")
 				end
 			end,
 			sorting = {

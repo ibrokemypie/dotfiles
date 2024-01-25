@@ -1,15 +1,7 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	event = { "BufNewFile", "BufReadPost" },
-	dependencies = {
-		"HiPhish/nvim-ts-rainbow2",
-	},
-	build = function()
-		require("nvim-treesitter.install").update({ with_sync = true })
-	end,
-	config = function(_, opts)
-		require("nvim-treesitter.configs").setup(opts)
-	end,
+	build = ":TSUpdate",
 	opts = {
 		ensure_installed = {
 			"python",
@@ -30,18 +22,22 @@ return {
 			"bash",
 			"markdown",
 			"markdown_inline",
+			"hcl",
+			"terraform",
 		},
 
 		highlight = {
 			enable = true,
 		},
-
-		--[[ indent = {
-			enable = true,
-		}, ]]
-
-		rainbow = {
-			enable = true,
-		},
 	},
+	config = function(_, opts)
+		require("nvim-treesitter.configs").setup(opts)
+
+		-- local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
+		--
+		-- parser_configs.hcl = {
+		-- 	filetype = "hcl",
+		-- 	"terraform",
+		-- }
+	end,
 }

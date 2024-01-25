@@ -4,5 +4,12 @@ return {
 	keys = {
 		{ "-", '<cmd>lua require("oil").open()<cr>', "Open file browser" },
 	},
-	opts = {},
+	event = "VeryLazy",
+	opts = {
+		keymaps = {
+			["<C-h>"] = false,
+			["<C-l>"] = false,
+			["<C-r>"] = "actions.refresh",
+		},
+	},
 }

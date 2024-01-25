@@ -29,10 +29,15 @@ if [[ -f "/tmp/show_batteries" ]]; then
             icon=""
         elif [[ "$deviceName" = *"G900"* ]]; then
             icon=""
+        elif [[ "$deviceName" = *"BSK V3 PRO"* ]]; then
+            icon=""
         elif [[ "$deviceName" = *"Wireless Controller"* ]]; then
             icon=""
+        elif [[ "$deviceName" = *"5B10W13975"* ]]; then
+            icon=""
+        elif [[ "$deviceName" = *"Magic Keyboard"* ]]; then
+            icon=""
         fi
-
         outputString="$outputString$icon:$devicePercentage "
     done
 

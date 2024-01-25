@@ -51,6 +51,7 @@ return {
 			tsserver = {},
 			html = {},
 			eslint = {},
+			sqlls = {},
 			jsonls = {
 				settings = {
 					json = {

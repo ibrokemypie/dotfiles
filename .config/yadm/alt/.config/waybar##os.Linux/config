@@ -14,11 +14,14 @@
         "memory",
         "cpu",
         "custom/temperature#cpu",
-        "custom/temperature#gpu",
         "network",
         "custom/batteries",
         "custom/dunst",
-        "custom/pulse",
+        "idle_inhibitor",
+        "backlight",
+        //"custom/pulse",
+		"wireplumber",
+
         "custom/timew",
         "clock",
         "tray"
@@ -64,21 +67,7 @@
         }
     },
     "custom/temperature#cpu": {
-        "exec": "$HOME/.config/waybar/temperature.sh /sys/devices/platform/coretemp.0/hwmon/*/temp1_input",
-        "interval": 3,
-        "exec-on-event": false,
-        "return-type": "json",
-        "format": "{icon} {}°",
-        "format-icons": {
-            "idle": "",
-            "default": "",
-            "good": "",
-            "info": "",
-            "warning": ""
-        }
-    },
-    "custom/temperature#gpu": {
-        "exec": "$HOME/.config/waybar/temperature.sh /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/0000:02:00.0/0000:03:00.0/hwmon/*/temp1_input",
+        "exec": "$HOME/.config/waybar/temperature.sh /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp1_input",
         "interval": 3,
         "exec-on-event": false,
         "return-type": "json",
@@ -126,6 +115,14 @@
             "muted": ""
         }
     },
+	"wireplumber": {
+			"format": "{icon} {volume}% on {node_name}",
+			"format-muted": " {volume}% on {node_name}",
+			"format-icons": ["", "", ""],
+			"on-click": "myxer",
+			"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+			"tooltip": false,
+	},
     "custom/timew": {
         "exec": "$HOME/.config/waybar/timew.sh",
         "return-type": "json",
@@ -142,5 +139,19 @@
         "format": " {:%d/%m/%g %r}",
         "interval":1,
         "tooltip": false
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [""],
+        "on-scroll-up": "$HOME/.config/sway/adjust_backlight.sh up",
+        "on-scroll-down": "$HOME/.config/sway/adjust_backlight.sh down",
     }
 }

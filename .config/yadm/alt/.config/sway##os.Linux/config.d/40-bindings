@@ -43,7 +43,7 @@ bindsym $mod+n exec networkmanager_dmenu
 bindsym $mod+a exec $HOME/.config/sway/dmenu_pavucontrol.sh
 
 # emoji
-bindsym $mod+j exec bemoji
+bindsym $mod+m exec bemoji
 
 # clipman
 bindsym $mod+c exec clipman pick -t bemenu --tool-args="-p 'clipman:'"
@@ -64,22 +64,22 @@ bindsym Control+Shift+Period exec dunstctl context
 floating_modifier $mod
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+# bindsym $mod+Alt+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+# bindsym $mod+Alt+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -141,8 +141,8 @@ bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+Shift+r reload
 
 
-bindsym Control+Mod1+Left workspace prev
-bindsym Control+Mod1+Right workspace next
+bindsym Control+Mod1+h workspace prev
+bindsym Control+Mod1+l workspace next
 
 
 ############################################
@@ -165,10 +165,10 @@ bindsym $mod+r mode "resize"
 
 
 # Resizing windows by 10 in i3 using keyboard only
-bindsym $mod+Mod1+Right resize shrink width 10 px or 10 ppt
-bindsym $mod+Mod1+Up resize grow height 10 px or 10 ppt
-bindsym $mod+Mod1+Down resize shrink height 10 px or 10 ppt
-bindsym $mod+Mod1+Left resize grow width 10 px or 10 ppt
+bindsym $mod+Mod1+l resize shrink width 10 px or 10 ppt
+bindsym $mod+Mod1+k resize grow height 10 px or 10 ppt
+bindsym $mod+Mod1+j resize shrink height 10 px or 10 ppt
+bindsym $mod+Mod1+h resize grow width 10 px or 10 ppt
 
 
 ############################################
@@ -205,7 +205,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle # mute soun
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle # mute mic
 
 # Media player controls
-bindsym XF86AudioPlay exec $HOME/.config/i3/playerctl.sh playpause
+bindsym XF86AudioPlay exec $HOME/.config/i3/playerctl.sh play
+bindsym XF86AudioPause exec $HOME/.config/i3/playerctl.sh pause
 bindsym XF86AudioNext exec $HOME/.config/i3/playerctl.sh next
 bindsym XF86AudioPrev exec $HOME/.config/i3/playerctl.sh prev
 bindsym XF86AudioStop exec $HOME/.config/i3/playerctl.sh stop

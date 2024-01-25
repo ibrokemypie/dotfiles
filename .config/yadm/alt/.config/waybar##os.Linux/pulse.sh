@@ -10,8 +10,12 @@ function print_output() {
         name="analog"
     elif [[ ${cur_sink_name} == "alsa_output.pci-0000_00_1b.0.iec958-stereo" ]]; then
         name="digital"
-    elif [[ ${cur_sink_name} == "bluez_output.CC_98_8B_80_7B_CC.a2dp-sink" ]];then
+    elif [[ ${cur_sink_name} =~ bluez_output.CC_98_8B_80_7B_CC.* ]];then
         name="bluetooth"
+    elif [[ ${cur_sink_name} == "alsa_output.usb-DisplayLink_Dell_Universal_Dock_D6000_2202224210-02.analog-stereo" ]];then
+        name="monitor"
+    elif [[ ${cur_sink_name} =~ alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.* ]];then
+        name="laptop"
     else
         name=${cur_sink_name}
     fi
@@ -46,12 +50,12 @@ function main() {
     fi
 }
 
-# script_name=${BASH_SOURCE[0]}
-# for pid in $(pidof -x $script_name); do
-    # if [ $pid != $$ ]; then
-        # kill -9 $pid
-    # fi
-# done
+script_name=${BASH_SOURCE[0]}
+for pid in $(pidof -x $script_name); do
+    if [ $pid != $$ ]; then
+        kill -9 $pid
+    fi
+done
 
 trap 'jobs -p | xargs kill' EXIT
 

@@ -4,7 +4,7 @@ return {
 	event = { "BufReadPost", "BufNewFile" },
 	opts = {
 		handle = {
-			color = require("gruvbox.palette").get_base_colors().grey,
+			color = require("gruvbox").palette.gray,
 		},
 		handlers = {
 			cursor = false,

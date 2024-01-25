@@ -14,7 +14,7 @@ mode  $power_control {
     bindsym o exec swaymsg exit; mode "default"
     bindsym r exec systemctl reboot; mode "default"
     bindsym p exec systemctl poweroff; mode "default"
-    bindsym s exec systemctl suspend; mode "default"
+    # bindsym s exec systemctl suspend; mode "default"
     bindsym h exec systemctl hibernate; mode "default"
 
     bindsym Return mode "default"

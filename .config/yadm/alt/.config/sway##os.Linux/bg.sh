@@ -9,7 +9,7 @@ while true; do
 	nextpid=$!
 	if [ -n "$oldpid" ]; then kill $oldpid; fi
 	oldpid=$nextpid
-	rm "$HOME/.config/swaylock/bg"
-	ln -s "$img" "$HOME/.config/swaylock/bg"
+#	rm "$HOME/.config/swaylock/bg"
+#	ln -s "$img" "$HOME/.config/swaylock/bg"
 	sleep 60m
 done

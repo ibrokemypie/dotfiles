@@ -4,6 +4,14 @@ if [[ $1 == "playpause" ]]; then
 	for p in $(playerctl -l); playerctl -p $p play-pause;
 fi
 
+if [[ $1 == "play" ]]; then
+	for p in $(playerctl -l); playerctl -p $p play;
+fi
+
+if [[ $1 == "pause" ]]; then
+	for p in $(playerctl -l); playerctl -p $p pause;
+fi
+
 if [[ $1 == "next" ]]; then
 	for p in $(playerctl -l); playerctl -p $p next;
 fi

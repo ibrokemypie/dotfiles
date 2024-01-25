@@ -35,6 +35,7 @@ WINDOW_ICONS = {
     "org.qbittorrent.qbittorrent": "",
     "obsidian": "",
     "psst-gui": "",
+    "slack": ""
 }
 
 DEFAULT_ICON = ""
@@ -46,7 +47,7 @@ def icon_for_window(window):
         app_id = app_id.lower()
         if app_id in WINDOW_ICONS:
             return WINDOW_ICONS[app_id]
-        logging.info("No icon available for window with app_id: %s" % str(app_id))
+        # logging.info("No icon available for window with app_id: %s" % str(app_id))
     else:
         # xwayland support
         class_name = window.window_class
@@ -54,9 +55,9 @@ def icon_for_window(window):
             class_name = class_name.lower()
             if class_name in WINDOW_ICONS:
                 return WINDOW_ICONS[class_name]
-            logging.info(
-                "No icon available for window with class_name: %s" % str(class_name)
-            )
+            # logging.info(
+                # "No icon available for window with class_name: %s" % str(class_name)
+            # )
     return DEFAULT_ICON
 
 

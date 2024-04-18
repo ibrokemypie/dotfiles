@@ -29,6 +29,7 @@ return {
 				s = { "<CMD>update!<CR>", "Save" },
 				q = { "<CMD>q<CR>", "Close window" },
 				Q = { require("utils").close_tab_or_nvim, "Close current tab" },
+				X = { "<CMD>cquit<CR>", "Close current tab" },
 				c = { "<PLUG>(comment_toggle_linewise_current)", "Toggle line comment" },
 				f = {
 					name = "Find",
@@ -65,6 +66,7 @@ return {
 		-- insert mode mappings
 		wk.register({
 			["jk"] = { "<ESC>", "" },
+			["<ESC>"] = { "<ESC>", "" },
 			["<C-h>"] = { "<Left>", "Left" },
 			["<C-j>"] = { "<Down>", "Down" },
 			["<C-k>"] = { "<Up>", "Up" },
@@ -75,6 +77,14 @@ return {
 			["<Right>"] = { "<NOP>", "which_key_ignore" },
 		}, {
 			mode = "i",
+		})
+
+		-- visual mode mappings
+		wk.register({
+			["jk"] = { "<ESC>", "" },
+			["<ESC>"] = { "<ESC>", "" },
+		}, {
+			mode = "v",
 		})
 
 		-- terminal mode mappings

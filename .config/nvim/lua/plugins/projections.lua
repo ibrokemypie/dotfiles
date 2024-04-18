@@ -6,7 +6,7 @@ return {
 		return {
 			workspaces = {
 				"~/git",
-				{ "~/.config", {} },
+				{ "~/.config",                  {} },
 				"~/git/livepreso",
 				"~/git/lgs_grower",
 				{ "~/.config/yadm/alt/.config", {} },
@@ -34,8 +34,9 @@ return {
 			end,
 		})
 
-		vim.opt.sessionoptions:append("localoptions") -- Save localoptions to session file
-		vim.opt.sessionoptions:remove("tabpages") -- Save localoptions to session file
-		vim.opt.sessionoptions:remove("buffers") -- Save localoptions to session file
+		-- vim.opt.sessionoptions:append("localoptions") -- Save localoptions to session file
+		vim.opt.sessionoptions:remove("terminal") -- we don't care about terminal state really
+		vim.opt.sessionoptions:remove("buffers") -- only really care about visible buffers
+		vim.opt.sessionoptions:remove("options") -- dont know what this means!
 	end,
 }

@@ -4,7 +4,7 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
-		"lukas-reineke/lsp-format.nvim",
+		-- "lukas-reineke/lsp-format.nvim",
 		"ray-x/lsp_signature.nvim",
 		{ "b0o/schemastore.nvim", version = false },
 		"SmiteshP/nvim-navbuddy",
@@ -33,7 +33,7 @@ return {
 		-- to add extra formatters etc
 		local on_attach = function(client, bufnr)
 			require("lsp_signature").on_attach({}, bufnr)
-			require("lsp-format").on_attach(client)
+			-- require("lsp-format").on_attach(client)
 		end
 
 		local default_config = {
@@ -52,6 +52,9 @@ return {
 			html = {},
 			eslint = {},
 			sqlls = {},
+			taplo = {
+				cmd = { "taplo", "lsp", "stdio" },
+			},
 			jsonls = {
 				settings = {
 					json = {
@@ -86,6 +89,10 @@ return {
 				end,
 				root_dir = require("utils").get_python_root,
 				settings = {
+					pyright = {
+						-- handled by conform - reorder-python-imports
+						disableOrganizeImports = true,
+					},
 					python = {
 						venvPath = require("utils").get_pyenv_root(),
 						-- venv = "",
@@ -122,9 +129,25 @@ return {
 			-- 		},
 			-- 	},
 			-- },
-			ruff_lsp = {
-				root_dir = require("utils").get_python_root,
-			},
+			-- ruff_lsp = {
+			-- 	on_attach = function(client, bufnr)
+			-- 		if client.name == "ruff_lsp" then
+			-- 			-- Disable hover in favor of Pyright
+			-- 			client.server_capabilities.hoverProvider = false
+			-- 		end
+			-- 		client.server_capabilities.documentFormattingProvider = true
+			-- 		on_attach(client, bufnr)
+			-- 	end,
+			-- 	root_dir = require("utils").get_python_root,
+			-- 	init_options = {
+			-- 		settings = {
+			-- 			organizeImports = false,
+			-- 			lint = {
+			-- 				args = { "--ignore", "F401" },
+			-- 			},
+			-- 		},
+			-- 	},
+			-- },
 			lua_ls = {
 				single_file_support = true,
 				settings = {

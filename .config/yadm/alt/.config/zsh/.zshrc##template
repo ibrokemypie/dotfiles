@@ -36,8 +36,8 @@ if [ -z ${SSH_TTY+x} ] && [ -z ${SSH_CONNECTION+x} ] && [ -z ${SSH_CLIENT+x} ]; 
 fi
 
 
-export EDITOR="micro"
-export GIT_EDITOR="micro"
+export EDITOR="nvim"
+export GIT_EDITOR="nvim"
 export RUSTC_WRAPPER="sccache"
 export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden"
 export GPG_TTY=$TTY
@@ -46,8 +46,9 @@ export GPG_TTY=$TTY
 {% if yadm.os == "Linux" %}
 export WINEESYNC=1
 export WINEFSYNC=1
-export PAGER="moar"
+# export PAGER="moar"
 export SYSTEMD_LESS="FRSMK"
+export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 {% endif %}
 

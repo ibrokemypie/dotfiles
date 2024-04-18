@@ -179,6 +179,7 @@ bindsym $mod+Mod1+h resize grow width 10 px or 10 ppt
 
 
 set $grimshot /usr/share/sway/scripts/grimshot
+set $grimshot grimshot
 
 # Full screen
 bindsym mod1+Shift+3 exec $grimshot save output $HOME/Pictures/Screenshots/$(date +%s).png

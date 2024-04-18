@@ -3,6 +3,13 @@
 
 input type:keyboard xkb_numlock enable
 input type:pointer accel_profile "flat"
-mouse_warping output
+# input type:mouse accel_profile "flat"
+# mouse_warping output
 
 input type:touchpad tap enabled
+
+input 9639:64124:Compx_2.4G_Wireless_Receiver pointer_accel -0.75
+input 13652:62728:* pointer_accel -0.75
+input 9639:64123:Compx_2.4G_Dual_Mode_Mouse_Keyboard pointer_accel -0.75
+input 9639:64123:Compx_2.4G_Dual_Mode_Mouse pointer_accel -0.75
+input 1133:16519:Logitech_G903_LS pointer_accel -0.75

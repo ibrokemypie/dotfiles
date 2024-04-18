@@ -13,8 +13,8 @@ M.get_python_root = function(filename)
 		"pyrightconfig.json",
 	}
 	return util.root_pattern(unpack(root_files))(filename)
-		or util.find_git_ancestor(filename)
-		or util.path.dirname(filename)
+	    or util.find_git_ancestor(filename)
+	    or util.path.dirname(filename)
 end
 
 M.get_pyenv_root = function()
@@ -169,7 +169,7 @@ M.fzf_projects = function(opts)
 		["default"] = function(selected, _)
 			-- extract the session without the icon using a lua pattern
 			local session = selected[1]:match("%s+(.*)")
-			require("projections.session").restore(session)
+			require("projections.switcher").switch(session)
 		end,
 	}
 	local contents = function(cb)

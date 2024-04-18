@@ -19,7 +19,6 @@
         "custom/dunst",
         "idle_inhibitor",
         "backlight",
-        //"custom/pulse",
 		"wireplumber",
 
         "custom/timew",

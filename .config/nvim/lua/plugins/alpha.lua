@@ -13,7 +13,7 @@ return {
 			local short_session = vim.fn.fnamemodify(session, ":~")
 
 			local fn_start = short_session:match(".*[/\\]")
-			local sesssion_restore_cmd = "<CMD>lua require('projections.session').restore('" ..
+			local sesssion_restore_cmd = "<CMD>lua require('projections.switcher').switch('" ..
 			session .. "')<CR>"
 
 			local icon = ""

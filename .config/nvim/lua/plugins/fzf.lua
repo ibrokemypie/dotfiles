@@ -9,26 +9,28 @@ return {
 	},
 	config = function(opts)
 		local fzf = require("fzf-lua")
-		local profile = fzf.load_profile("telescope")
 
 		local feedkeys = function(keys, mode)
 			vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(keys, true, true, true), mode, true)
 		end
 
-		opts = vim.tbl_extend("keep", opts, profile)
-		opts["keymap"] = vim.tbl_deep_extend("force", opts.keymap, {
-			fzf = {
-				["tab"] = "up",
-				["shift-tab"] = "down",
-				["ctrl-d"] = "toggle",
+		opts = {
+			"telescope",
+			keymap = {
+
+				fzf = {
+					["tab"] = "up",
+					["shift-tab"] = "down",
+					["ctrl-d"] = "toggle",
+				},
 			},
-		})
-		opts["winopts"] = vim.tbl_deep_extend("force", opts.winopts, {
-			on_create = function()
-				vim.cmd([[normal! V]])
-				feedkeys("<C-g>", "n")
-			end,
-		})
+			winopts = {
+				-- on_create = function()
+				-- 	vim.cmd([[normal! V]])
+				-- 	feedkeys("<C-g>", "n")
+				-- end,
+			},
+		}
 
 		fzf.setup(opts)
 	end,

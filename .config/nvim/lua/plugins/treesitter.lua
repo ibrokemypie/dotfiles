@@ -1,5 +1,6 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
+	dependencies = { "RRethy/nvim-treesitter-textsubjects" },
 	event = { "BufNewFile", "BufReadPost" },
 	build = ":TSUpdate",
 	opts = {
@@ -47,6 +48,27 @@ return {
 
 		indent = {
 			enable = true,
+		},
+		-- textsubjects = {
+		-- 	enable = true,
+		-- 	prev_selection = ",", -- (Optional) keymap to select the previous selection
+		-- 	keymaps = {
+		-- 		["."] = "textsubjects-smart",
+		-- 		[";"] = "textsubjects-container-outer",
+		-- 		["i;"] = {
+		-- 			"textsubjects-container-inner",
+		-- 			desc = "Select inside containers (classes, functions, etc.)",
+		-- 		},
+		-- 	},
+		-- },
+		incremental_selection = {
+			enable = true,
+			keymaps = {
+				init_selection = "<CR>",
+				scope_incremental = "<CR>",
+				node_incremental = "<TAB>",
+				node_decremental = "<S-TAB>",
+			},
 		},
 	},
 	config = function(_, opts)

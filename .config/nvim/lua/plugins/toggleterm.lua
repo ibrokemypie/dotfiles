@@ -17,9 +17,9 @@ return {
 			end,
 
 			row = function()
-				return math.floor(0.05 * (vim.o.lines - vim.o.cmdheight))
+				return math.floor(0.5 * (vim.o.lines - vim.o.cmdheight))
 			end,
-			border = "none",
+			border = "curved",
 		},
 	},
 	config = true,

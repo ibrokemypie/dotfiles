@@ -3,7 +3,7 @@ return {
 	version = false,
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		"hrsh7th/cmp-nvim-lsp",
+		-- "hrsh7th/cmp-nvim-lsp",
 		-- "lukas-reineke/lsp-format.nvim",
 		"ray-x/lsp_signature.nvim",
 		{ "b0o/schemastore.nvim", version = false },
@@ -51,9 +51,26 @@ return {
 			tsserver = {},
 			html = {},
 			eslint = {},
-			sqlls = {},
-			taplo = {
-				cmd = { "taplo", "lsp", "stdio" },
+			taplo = {},
+			sqls = {
+				on_attach = function(client, bufnr)
+					client.server_capabilities.documentFormattingProvider = false
+					on_attach(client, bufnr)
+				end,
+				settings = {
+					sqls = {
+						connections = {
+							{
+								alias = "rea",
+								driver = "postgresql",
+								proto = "unix",
+								path = "/var/run/postgresql",
+								user = "rea",
+								dbName = "rea",
+							},
+						},
+					},
+				},
 			},
 			jsonls = {
 				settings = {

@@ -6,7 +6,7 @@ return {
 		"neovim/nvim-lspconfig",
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
-		"hrsh7th/cmp-path",
+		"https://codeberg.org/FelipeLema/cmp-async-path",
 		"hrsh7th/cmp-git",
 		"hrsh7th/cmp-cmdline",
 		"hrsh7th/cmp-nvim-lsp-document-symbol",
@@ -24,7 +24,8 @@ return {
 		local has_words_before = function()
 			unpack = unpack or table.unpack
 			local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-			return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+			return col ~= 0 and
+			vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 		end
 
 		local lspkind_comparator = function(conf)
@@ -117,7 +118,7 @@ return {
 						nvim_lsp = "[LSP]",
 						cmp_git = "[Git]",
 						snippy = "[Snippy]",
-						path = "[Path]",
+						async_path = "[Path]",
 						cmdline = "[CMD]",
 						nvim_lsp_document_symbol = "[Symbol]",
 					},
@@ -152,7 +153,8 @@ return {
 				if vim.api.nvim_get_mode().mode == "c" then
 					return true
 				else
-					return not context.in_treesitter_capture("comment") and not context.in_syntax_group("Comment")
+					return not context.in_treesitter_capture("comment") and
+					not context.in_syntax_group("Comment")
 				end
 			end,
 			sorting = {
@@ -218,10 +220,11 @@ return {
 		cmp.setup.cmdline(":", {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = cmp.config.sources({
-				{ name = "path" },
+				{ name = "async_path" },
 			}, {
 				{ name = "cmdline" },
 			}),
+			matching = { disallow_symbol_nonprefix_matching = false },
 		})
 	end,
 }

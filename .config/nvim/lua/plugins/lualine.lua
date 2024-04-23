@@ -6,6 +6,7 @@ return {
 		"SmiteshP/nvim-navic",
 		"dhruvasagar/vim-zoom",
 		"nvim-tree/nvim-web-devicons",
+		"ellisonleao/gruvbox.nvim",
 	},
 	opts = function()
 		local function diff_source()
@@ -41,7 +42,7 @@ return {
 				lualine_b = { "filename" },
 				lualine_c = {
 					{ "b:gitsigns_head", icon = "" },
-					{ "diff",            source = diff_source },
+					{ "diff", source = diff_source },
 				},
 				lualine_x = { "encoding", "filetype" },
 				lualine_y = {

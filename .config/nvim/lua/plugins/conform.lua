@@ -8,16 +8,37 @@ return {
 				python = { "ruff_format", "reorder-python-imports" },
 				lua = { "stylua" },
 				javascript = { "prettierd" },
-				sql = { "sql_formatter" },
+				-- sql = { "sql_formatter" },
+				sql = { "prettier" },
 			},
 			format_on_save = function(bufnr)
 				-- Disable with a global or buffer-local variable
 				if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
 					return
 				end
+				-- local bufnr = vim.api.nvim_get_current_buf()
+				local errors = vim.diagnostic.get(0,
+					{ severity = { min = vim.diagnostic.severity.ERROR } })
+
+				if #errors > 0 then
+					return
+				end
+
 				return { timeout_ms = 500, lsp_fallback = "always" }
 			end,
 			formatters = {
+				prettierd = {
+					env = {
+						NODE_PATH = "/usr/lib/node_modules",
+					},
+				},
+				prettier = {
+					-- command = "env",
+					-- args = { "NODE_PATH=/usr/lib/node_modules/", "prettier", "--stdin-filepath", "$FILENAME" },
+					env = {
+						NODE_PATH = "/usr/lib/node_modules/",
+					},
+				},
 				["reorder-python-imports"] = {
 					cwd = function(ctx)
 						return require("utils").get_python_root(ctx.filename)

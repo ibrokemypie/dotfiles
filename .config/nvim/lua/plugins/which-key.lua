@@ -46,8 +46,6 @@ return {
 			["<C-j>"] = { "<CMD>wincmd j <CR>", "Focus window down" },
 			["<C-k>"] = { "<CMD>wincmd k <CR>", "Focus window up" },
 			["<C-l>"] = { "<CMD>wincmd l <CR>", "Focus window right" },
-			["K"] = { "{", "Up paragraph" },
-			["J"] = { "}", "Down paragraph" },
 			["H"] = { "^", "Start of line" },
 			["L"] = { "$", "End of line" },
 			["<Left>"] = { "<CMD>vertical resize +1<CR>", "Grow window left" },

@@ -2,6 +2,7 @@ return {
 	"hrsh7th/nvim-cmp",
 	version = false,
 	event = { "InsertEnter", "CmdlineEnter" },
+	-- enabled = false,
 	dependencies = {
 		"neovim/nvim-lspconfig",
 		"hrsh7th/cmp-nvim-lsp",
@@ -55,6 +56,8 @@ return {
 		end
 
 		cmp.setup({
+			-- preselect = cmp.PreselectMode.None,
+			-- completion = { completeopt = "menu,menuone,noselect" },
 			snippet = {
 				-- REQUIRED - you must specify a snippet engine
 				expand = function(args)
@@ -70,7 +73,7 @@ return {
 				["<C-f>"] = cmp.mapping.scroll_docs(4),
 				["<C-Space>"] = cmp.mapping.complete(),
 				["<C-e>"] = cmp.mapping.abort(),
-				["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+				["<CR>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				["<Tab>"] = cmp.mapping(function(fallback)
 					if cmp.visible() then
 						cmp.select_next_item()

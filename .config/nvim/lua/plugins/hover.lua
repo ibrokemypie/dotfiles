@@ -9,6 +9,7 @@ return {
 			desc = "Select hover source",
 		},
 	},
+	enable = false,
 	config = function(_, opts)
 		require("hover").setup(opts)
 	end,

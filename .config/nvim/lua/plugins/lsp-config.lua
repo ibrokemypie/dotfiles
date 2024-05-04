@@ -3,48 +3,69 @@ return {
 	version = false,
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		-- "hrsh7th/cmp-nvim-lsp",
-		-- "lukas-reineke/lsp-format.nvim",
 		"ray-x/lsp_signature.nvim",
 		{ "b0o/schemastore.nvim", version = false },
 		"SmiteshP/nvim-navbuddy",
 	},
 	config = function()
-		local util = require("lspconfig/util")
+		local lazy_plugins = require("lazy.core.config").plugins
 
-		-- virtualenv support for python
-		-- cmp capabilities for lsp_config
-		local base_capabilities = vim.tbl_deep_extend(
-			"force",
-			util.default_config.capabilities,
-			require("cmp_nvim_lsp").default_capabilities(),
+		local plugin_enabled = function(plugin_name)
+			local plugin_cfg = lazy_plugins[plugin_name]
+
+			if plugin_cfg == nil or plugin_cfg["enabled"] == false then
+				return false
+			end
+
+			return true
+		end
+
+		local build_caps = function()
+			local default_caps = require("lspconfig/util").default_config.capabilities
+			local base_caps = default_caps
+
 			-- nvim ufo support https://github.com/kevinhwang91/nvim-ufo#minimal-configuration
-			{
-				textDocument = {
-					foldingRange = {
-						dynamicRegistration = false,
-						lineFoldingOnly = true,
+			if plugin_enabled("nvim-ufo") then
+				base_caps = vim.tbl_deep_extend("force", base_caps, {
+					textDocument = {
+						foldingRange = {
+							dynamicRegistration = false,
+							lineFoldingOnly = true,
+						},
 					},
-				},
-			}
-		)
+				})
+			end
+
+			if plugin_enabled("nvim-cmp") then
+				base_caps = vim.tbl_deep_extend("force", base_caps,
+					require("cmp_nvim_lsp").default_capabilities())
+			end
+
+			return base_caps
+		end
 
 		-- see https://github.com/lukas-reineke/lsp-format.nvim#how-do-i-use-format-options
 		-- to add extra formatters etc
 		local on_attach = function(client, bufnr)
-			require("lsp_signature").on_attach({}, bufnr)
-			-- require("lsp-format").on_attach(client)
+			if plugin_enabled("lsp_signature") then
+				require("lsp_signature").on_attach({}, bufnr)
+			end
+
+			if plugin_enabled("lsp-format") then
+				require("lsp-format").on_attach({}, bufnr)
+			end
 		end
 
 		local default_config = {
-			capabilities = base_capabilities,
+			capabilities = build_caps(),
 			on_attach = on_attach,
 			flags = {
 				debounce_text_changes = 150,
 			},
+			handlers = {
+				["textDocument/rename"] = require("lsp.rename").rename_handler,
+			},
 		}
-
-		-- local venv = util.path.join(os.getenv("HOME"), ".pyenv/versions/nvim")
 
 		local enabled_servers = {
 			terraformls = {},
@@ -190,6 +211,11 @@ return {
 
 		for server, config in pairs(enabled_servers) do
 			config = vim.tbl_deep_extend("force", default_config, config)
+
+			if plugin_enabled("coq") then
+				config = require("coq").lsp_ensure_capabilities(config)
+			end
+
 			require("lspconfig")[server].setup(config)
 		end
 	end,

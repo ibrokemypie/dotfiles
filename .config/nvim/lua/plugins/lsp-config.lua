@@ -48,11 +48,11 @@ return {
 		-- to add extra formatters etc
 		local on_attach = function(client, bufnr)
 			if plugin_enabled("lsp_signature") then
-				require("lsp_signature").on_attach({}, bufnr)
+				require("lsp_signature").on_attach(client, bufnr)
 			end
 
 			if plugin_enabled("lsp-format") then
-				require("lsp-format").on_attach({}, bufnr)
+				require("lsp-format").on_attach(client, bufnr)
 			end
 		end
 

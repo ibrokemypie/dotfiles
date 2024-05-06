@@ -39,8 +39,8 @@ return {
 				quit = "<Esc>",
 			},
 		},
-		-- lightbulb = {
-		-- 	enable = false,
-		-- },
+		lightbulb = {
+			enable = false,
+		},
 	},
 }
